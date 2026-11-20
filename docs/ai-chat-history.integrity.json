@@ -1,13 +1,13 @@
 {
   "source": "Local project Codex session JSONL; source path intentionally private",
-  "exported_at": "2026-11-20T10:04:23.446Z",
+  "exported_at": "2026-11-20T10:05:39.236Z",
   "counts": {
     "user_prompts_and_replies": 13,
-    "assistant_prose": 107,
+    "assistant_prose": 108,
     "assistant_questions": 1,
     "excluded_environment_messages": 3
   },
-  "exported_entries": 121,
+  "exported_entries": 122,
   "credential_redaction_occurrences": 0,
   "entries": [
     {
@@ -1097,6 +1097,15 @@
       "source_id": "msg_0e200c61e19ce4a7016b00196f2b7087d2855bf5689baeb5f9",
       "original_sha256": "9909ea2108b0b52345fd9418a767fc21a697b528341cb1b90a278c000474e68f",
       "exported_sha256": "9909ea2108b0b52345fd9418a767fc21a697b528341cb1b90a278c000474e68f",
+      "credential_redacted": false
+    },
+    {
+      "ordinal": 122,
+      "role": "Assistant final response",
+      "source_timestamp": "2026-11-20T10:05:38.527Z",
+      "source_id": "msg_0e200c61e19ce4a7016b001b68f03487d2baae8250a708d28d",
+      "original_sha256": "60f6a79dd790d6c15f32a9952181938d394d1c1194dd0fba00694f5f1692ad32",
+      "exported_sha256": "60f6a79dd790d6c15f32a9952181938d394d1c1194dd0fba00694f5f1692ad32",
       "credential_redacted": false
     }
   ]
