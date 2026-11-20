@@ -24,7 +24,9 @@ for (const width of [1440, 390]) {
     await expect(page.locator('.activation-notice')).toContainText(product.activation_notice)
     await expect(page.locator('.compatibility-notice')).toContainText(product.platform.name)
     await expect(page.getByRole('heading', { name: 'Digital delivery', exact: true })).toBeVisible()
-    await expect(page.getByRole('heading', { name: 'Windows system requirements', exact: true })).toBeVisible()
+    expect(['pc', 'activation']).toContain(product.requirements?.kind)
+    const requirementsHeading = product.requirements.kind === 'pc' ? 'Windows system requirements' : 'Activation requirements'
+    await expect(page.getByRole('heading', { name: requirementsHeading, exact: true })).toBeVisible()
     await expect(page.locator('.activation-steps li')).toHaveCount(3)
     expect(await page.locator('.seller-offer').evaluateAll(elements => elements.map(element => element.getAttribute('data-offer-id')))).toEqual(product.offers.map((offer: { id: string }) => offer.id))
     const card = page.locator('.seller-offer[data-offer-id="' + selected.id + '"]')
