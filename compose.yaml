@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:18-bookworm
+    environment:
+      POSTGRES_DB: marketplace
+      POSTGRES_USER: marketplace
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in the ignored root .env file}
+      TZ: UTC
+    ports:
+      - "127.0.0.1:55433:5432"
+    volumes:
+      - marketplace_pg:/var/lib/postgresql
+      - ./scripts/init-test-database.sql:/docker-entrypoint-initdb.d/01-test.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U marketplace -d marketplace"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  backend:
+    build: ./backend
+    working_dir: /app
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "false"
+      DB_CONNECTION: pgsql
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: marketplace
+      DB_USERNAME: marketplace
+      DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in the ignored root .env file}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+      - marketplace_vendor:/app/vendor
+volumes:
+  marketplace_pg:
+  marketplace_vendor:

@@ -1,0 +1,574 @@
+[
+  {
+    "title": "Elden Ring",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 3499,
+    "categories": [
+      "action",
+      "rpg"
+    ],
+    "type": "game",
+    "comparison_price_minor": 5599,
+    "slug": "elden-ring-steam-global"
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 2499,
+    "categories": [
+      "action",
+      "rpg"
+    ],
+    "type": "game",
+    "comparison_price_minor": 3999,
+    "slug": "cyberpunk-2077-steam-global"
+  },
+  {
+    "title": "Baldur's Gate 3",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 4499,
+    "categories": [
+      "rpg",
+      "strategy"
+    ],
+    "type": "game",
+    "comparison_price_minor": 7199,
+    "slug": "baldur-s-gate-3-steam-global"
+  },
+  {
+    "title": "Hogwarts Legacy",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1999,
+    "categories": [
+      "adventure",
+      "rpg"
+    ],
+    "type": "game",
+    "comparison_price_minor": 3199,
+    "slug": "hogwarts-legacy-steam-global"
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1899,
+    "categories": [
+      "action",
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 3099,
+    "slug": "red-dead-redemption-2-steam-global"
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 899,
+    "categories": [
+      "rpg",
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1499,
+    "slug": "the-witcher-3-wild-hunt-steam-global"
+  },
+  {
+    "title": "Stardew Valley",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1099,
+    "categories": [
+      "indie",
+      "simulation"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1799,
+    "slug": "stardew-valley-steam-global"
+  },
+  {
+    "title": "Hollow Knight",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 799,
+    "categories": [
+      "indie",
+      "action"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1299,
+    "slug": "hollow-knight-steam-global"
+  },
+  {
+    "title": "Hades",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1299,
+    "categories": [
+      "indie",
+      "action"
+    ],
+    "type": "game",
+    "comparison_price_minor": 2099,
+    "slug": "hades-steam-global"
+  },
+  {
+    "title": "Disco Elysium: The Final Cut",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 999,
+    "categories": [
+      "rpg",
+      "indie"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1599,
+    "slug": "disco-elysium-the-final-cut-steam-global"
+  },
+  {
+    "title": "Terraria",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 599,
+    "categories": [
+      "adventure",
+      "indie"
+    ],
+    "type": "game",
+    "comparison_price_minor": 999,
+    "slug": "terraria-steam-global"
+  },
+  {
+    "title": "No Man's Sky",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 2199,
+    "categories": [
+      "adventure",
+      "simulation"
+    ],
+    "type": "game",
+    "comparison_price_minor": 3599,
+    "slug": "no-man-s-sky-steam-global"
+  },
+  {
+    "title": "Sid Meier's Civilization VI",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 799,
+    "categories": [
+      "strategy"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1299,
+    "slug": "sid-meier-s-civilization-vi-steam-global"
+  },
+  {
+    "title": "Cities: Skylines",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 999,
+    "categories": [
+      "simulation",
+      "strategy"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1599,
+    "slug": "cities-skylines-steam-global"
+  },
+  {
+    "title": "Euro Truck Simulator 2",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 699,
+    "categories": [
+      "simulation"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1199,
+    "slug": "euro-truck-simulator-2-steam-global"
+  },
+  {
+    "title": "Celeste",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 599,
+    "categories": [
+      "indie",
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 999,
+    "slug": "celeste-steam-global"
+  },
+  {
+    "title": "Dead Cells",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1499,
+    "categories": [
+      "indie",
+      "action"
+    ],
+    "type": "game",
+    "comparison_price_minor": 2399,
+    "slug": "dead-cells-steam-global"
+  },
+  {
+    "title": "Slay the Spire",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1099,
+    "categories": [
+      "strategy",
+      "indie"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1799,
+    "slug": "slay-the-spire-steam-global"
+  },
+  {
+    "title": "Subnautica",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1299,
+    "categories": [
+      "adventure",
+      "simulation"
+    ],
+    "type": "game",
+    "comparison_price_minor": 2099,
+    "slug": "subnautica-steam-global"
+  },
+  {
+    "title": "Portal 2",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 299,
+    "categories": [
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 499,
+    "slug": "portal-2-steam-global"
+  },
+  {
+    "title": "Sekiro: Shadows Die Twice",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 2999,
+    "categories": [
+      "action",
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 4799,
+    "slug": "sekiro-shadows-die-twice-steam-global"
+  },
+  {
+    "title": "Dark Souls III",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 2499,
+    "categories": [
+      "action",
+      "rpg"
+    ],
+    "type": "game",
+    "comparison_price_minor": 3999,
+    "slug": "dark-souls-iii-steam-global"
+  },
+  {
+    "title": "Resident Evil 4",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 2999,
+    "categories": [
+      "action",
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 4799,
+    "slug": "resident-evil-4-steam-global"
+  },
+  {
+    "title": "DOOM Eternal",
+    "platform": "steam",
+    "region": "GLOBAL",
+    "price_minor": 1299,
+    "categories": [
+      "action",
+      "shooter"
+    ],
+    "type": "game",
+    "comparison_price_minor": 2099,
+    "slug": "doom-eternal-steam-global"
+  },
+  {
+    "title": "Forza Horizon 5",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 2999,
+    "categories": [
+      "racing"
+    ],
+    "type": "game",
+    "comparison_price_minor": 4799,
+    "slug": "forza-horizon-5-xbox-global"
+  },
+  {
+    "title": "Halo Infinite: Campaign",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 2499,
+    "categories": [
+      "shooter"
+    ],
+    "type": "game",
+    "comparison_price_minor": 3999,
+    "slug": "halo-infinite-campaign-xbox-global"
+  },
+  {
+    "title": "Sea of Thieves",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 1999,
+    "categories": [
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 3199,
+    "slug": "sea-of-thieves-xbox-global"
+  },
+  {
+    "title": "Microsoft Flight Simulator: Standard Edition",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 3499,
+    "categories": [
+      "simulation"
+    ],
+    "type": "game",
+    "comparison_price_minor": 5599,
+    "slug": "microsoft-flight-simulator-standard-edition-xbox-global"
+  },
+  {
+    "title": "Gears 5",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 1099,
+    "categories": [
+      "shooter"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1799,
+    "slug": "gears-5-xbox-global"
+  },
+  {
+    "title": "Ori and the Will of the Wisps",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 1299,
+    "categories": [
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 2099,
+    "slug": "ori-and-the-will-of-the-wisps-xbox-global"
+  },
+  {
+    "title": "Minecraft: Xbox One Edition",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 1799,
+    "categories": [
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 2899,
+    "slug": "minecraft-xbox-one-edition-xbox-global"
+  },
+  {
+    "title": "Diablo IV",
+    "platform": "xbox",
+    "region": "GLOBAL",
+    "price_minor": 3499,
+    "categories": [
+      "action",
+      "rpg"
+    ],
+    "type": "game",
+    "comparison_price_minor": 5599,
+    "slug": "diablo-iv-xbox-global"
+  },
+  {
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "platform": "nintendo",
+    "region": "EU",
+    "price_minor": 4499,
+    "categories": [
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 7199,
+    "slug": "the-legend-of-zelda-breath-of-the-wild-nintendo-eu"
+  },
+  {
+    "title": "Mario Kart 8 Deluxe",
+    "platform": "nintendo",
+    "region": "EU",
+    "price_minor": 4499,
+    "categories": [
+      "racing"
+    ],
+    "type": "game",
+    "comparison_price_minor": 7199,
+    "slug": "mario-kart-8-deluxe-nintendo-eu"
+  },
+  {
+    "title": "Animal Crossing: New Horizons",
+    "platform": "nintendo",
+    "region": "EU",
+    "price_minor": 4299,
+    "categories": [
+      "simulation"
+    ],
+    "type": "game",
+    "comparison_price_minor": 6899,
+    "slug": "animal-crossing-new-horizons-nintendo-eu"
+  },
+  {
+    "title": "Super Mario Odyssey",
+    "platform": "nintendo",
+    "region": "EU",
+    "price_minor": 4299,
+    "categories": [
+      "adventure"
+    ],
+    "type": "game",
+    "comparison_price_minor": 6899,
+    "slug": "super-mario-odyssey-nintendo-eu"
+  },
+  {
+    "title": "Steam Wallet €10",
+    "platform": "steam",
+    "region": "EU",
+    "price_minor": 979,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 1000,
+    "slug": "steam-wallet-eur-10-steam-eu"
+  },
+  {
+    "title": "Steam Wallet €20",
+    "platform": "steam",
+    "region": "EU",
+    "price_minor": 1949,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 2000,
+    "slug": "steam-wallet-eur-20-steam-eu"
+  },
+  {
+    "title": "PlayStation Store €10",
+    "platform": "playstation",
+    "region": "EU",
+    "price_minor": 949,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 1000,
+    "slug": "playstation-store-eur-10-playstation-eu"
+  },
+  {
+    "title": "PlayStation Store €20",
+    "platform": "playstation",
+    "region": "EU",
+    "price_minor": 1899,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 2000,
+    "slug": "playstation-store-eur-20-playstation-eu"
+  },
+  {
+    "title": "Xbox Gift Card €10",
+    "platform": "xbox",
+    "region": "EU",
+    "price_minor": 929,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 1000,
+    "slug": "xbox-gift-card-eur-10-xbox-eu"
+  },
+  {
+    "title": "Xbox Gift Card €25",
+    "platform": "xbox",
+    "region": "EU",
+    "price_minor": 2329,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 2500,
+    "slug": "xbox-gift-card-eur-25-xbox-eu"
+  },
+  {
+    "title": "Nintendo eShop €15",
+    "platform": "nintendo",
+    "region": "EU",
+    "price_minor": 1449,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 1500,
+    "slug": "nintendo-eshop-eur-15-nintendo-eu"
+  },
+  {
+    "title": "Nintendo eShop €25",
+    "platform": "nintendo",
+    "region": "EU",
+    "price_minor": 2399,
+    "categories": [
+      "gift-cards"
+    ],
+    "type": "gift_card",
+    "comparison_price_minor": null,
+    "face_value_minor": 2500,
+    "slug": "nintendo-eshop-eur-25-nintendo-eu"
+  },
+  {
+    "title": "Stardew Valley",
+    "platform": "steam",
+    "region": "US",
+    "price_minor": 1299,
+    "categories": [
+      "indie",
+      "simulation"
+    ],
+    "type": "game",
+    "comparison_price_minor": 1799,
+    "slug": "stardew-valley-steam-us",
+    "artwork_slug": "stardew-valley-steam-global"
+  }
+]

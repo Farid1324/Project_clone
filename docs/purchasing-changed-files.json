@@ -1,0 +1,348 @@
+{
+  "milestone": "Authenticated simulated purchasing",
+  "comparison": "Hashes captured immediately before this task; repository has no initial commit.",
+  "generated_at": "2026-11-19T21:40:55.816Z",
+  "self_hash": "Omitted to avoid recursive self-hashing.",
+  "files": [
+    {
+      "path": "backend/app/Http/Controllers/Api/V1/AuthController.php",
+      "change": "A",
+      "sha256": "80e6fa473a83af8eb5f8525e1bda02f7d7204373d8cabcd36d005993abf05584"
+    },
+    {
+      "path": "backend/app/Http/Controllers/Api/V1/CheckoutController.php",
+      "change": "A",
+      "sha256": "4e894574adbf82090148197c2d43023e4a7876ec1607d4f279284321a6186bd7"
+    },
+    {
+      "path": "backend/app/Http/Controllers/Api/V1/OrderController.php",
+      "change": "A",
+      "sha256": "9c3e034e8df03c51ab0c8aedeb55671ec73f644a3fe638a571ab93b0c73c6e6e"
+    },
+    {
+      "path": "backend/app/Http/Middleware/PrivateResponse.php",
+      "change": "A",
+      "sha256": "6d528bf5ee92d779ea1021bd993f2e671a919f403148b99bbee9847998acb482"
+    },
+    {
+      "path": "backend/app/Http/Requests/CheckoutRequest.php",
+      "change": "A",
+      "sha256": "1cf1dd187781a7d9deba05c89df163a3d49f8a12ba9f012563fb1b02c700c14a"
+    },
+    {
+      "path": "backend/app/Http/Requests/LoginRequest.php",
+      "change": "A",
+      "sha256": "43a4fa9f16c64897335faa0cafd683f23d065b67a2d7ed66cce09759766b7e49"
+    },
+    {
+      "path": "backend/app/Http/Requests/RegisterRequest.php",
+      "change": "A",
+      "sha256": "c9dfb2339d9f823954750c3aca58d9e1b2b785d6903a525c87881a91144b60f1"
+    },
+    {
+      "path": "backend/app/Http/Resources/OrderResource.php",
+      "change": "A",
+      "sha256": "9f953f7a7868175c6b252e9affcd712d230b65fa6c6ffff45c95f44fb0984be7"
+    },
+    {
+      "path": "backend/app/Providers/AppServiceProvider.php",
+      "change": "M",
+      "sha256": "c5ccfe6d7b0baae6cda7f3f93ddb53b6b9d65c308399d30e526c4aef3812831b"
+    },
+    {
+      "path": "backend/app/Services/Auth/SessionAuthService.php",
+      "change": "A",
+      "sha256": "d32961376a48b79e90499d62ba68e9648f0999245a9cef76120c1631d0e77c9f"
+    },
+    {
+      "path": "backend/app/Services/Checkout/CheckoutService.php",
+      "change": "A",
+      "sha256": "04ba20c01a79876e7c6af22afbbb9048101169b914ec3eb9dea24357a8bc2373"
+    },
+    {
+      "path": "backend/app/Services/Checkout/SimulatedPayment.php",
+      "change": "A",
+      "sha256": "0d0055c365fda0d04bd9755c58d25fd42549aceb2d277d10f6fe8987eff86e71"
+    },
+    {
+      "path": "backend/bootstrap/app.php",
+      "change": "M",
+      "sha256": "02a03a68508f09881b7564dab0b4bc2654a9dce99ac88aaaebcd8b24cb38b46c"
+    },
+    {
+      "path": "backend/config/session.php",
+      "change": "M",
+      "sha256": "a9a0d129745acc0e0c63875dac8fbc006ee1b16ce4e48a6b1c2013a9511d904f"
+    },
+    {
+      "path": "backend/database/seeders/DemoMarketplaceSeeder.php",
+      "change": "M",
+      "sha256": "071bc19023ed68aa9adae1ea362bae3cf63d16e36c0b9b1d5ecd049ff9b28d5a"
+    },
+    {
+      "path": "backend/routes/api.php",
+      "change": "M",
+      "sha256": "68999702fb20fd2e6910a29e237dcb1cc4b75e2dd6a6dfc96409609814824cdc"
+    },
+    {
+      "path": "backend/tests/Feature/AuthenticationTest.php",
+      "change": "A",
+      "sha256": "108a3da899c9673c10f9c8d447fcbc688f435f51de027452ddc735bb54fc307d"
+    },
+    {
+      "path": "backend/tests/Feature/CheckoutConcurrencyTest.php",
+      "change": "A",
+      "sha256": "06b2507d30a5c2ecb60e4e64ef211e29f041846c07713677e545c8d9d037d6d7"
+    },
+    {
+      "path": "backend/tests/Feature/CheckoutTest.php",
+      "change": "A",
+      "sha256": "fc4eac99f1cb8421a58a39eda1676ec827813cb6f2409cf03558fe5933f0886d"
+    },
+    {
+      "path": "backend/tests/Support/checkout-worker.php",
+      "change": "A",
+      "sha256": "b7597a4259d78a2261a2449f6ede8e344714ff0518af385750fdde31ad406c57"
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "change": "M",
+      "sha256": "5744f71e89520d356fbacee79828b23222c162a0e6b877be23c342c5fdb070ab"
+    },
+    {
+      "path": "docs/api-design.md",
+      "change": "M",
+      "sha256": "2634f4d9fca11658b7d1713630bfa4007765cd5d242de4c0c660cadf23ebfbc4"
+    },
+    {
+      "path": "docs/architecture.md",
+      "change": "M",
+      "sha256": "c34fe0ae5e76ee4cdd643994b19cb485f7ea851b5f2bb78812da49a924154929"
+    },
+    {
+      "path": "docs/backend-setup.md",
+      "change": "M",
+      "sha256": "d87461275340542d3280df6be454cf056433b34fd0f8fea2f0b6f099f4484152"
+    },
+    {
+      "path": "docs/database-schema.md",
+      "change": "M",
+      "sha256": "49be4ccd30571addb288111e48506d2baaf091c64059c7a5ba129be44c9fe46e"
+    },
+    {
+      "path": "docs/implementation-plan.md",
+      "change": "M",
+      "sha256": "7d88a76191984dc6c7a5978682935c8ce3ef79f2d5e635bd0e2610342e4532d0"
+    },
+    {
+      "path": "docs/purchasing-changed-files.json",
+      "change": "A",
+      "sha256": null
+    },
+    {
+      "path": "docs/purchasing-milestone.md",
+      "change": "A",
+      "sha256": "6827d8a074a3b9f85ea66f9a243e19459e900b84021b316d5433423f7f75d598"
+    },
+    {
+      "path": "docs/purchasing-verification.json",
+      "change": "A",
+      "sha256": "9d1aac049ddb1aea3ec5e228502a38890b418db05ce0b0e9ae090048d5e0bfb9"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-checkout-desktop-1440-full.png",
+      "change": "A",
+      "sha256": "8d0b1ddcde1818d263216dda0ef9c9faaa25af1e8b2598510e649264cfd28162"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-checkout-desktop-1440.png",
+      "change": "A",
+      "sha256": "2a9c88f3d1513b617a66d0e952313b68ac3aac2b609fc32ba7d4fe2919426dd7"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-checkout-mobile-390-full.png",
+      "change": "A",
+      "sha256": "e61557a713936c4aa5f8dcd5a83a1554a4fc46a3d6125a8dc4e637f62dad0539"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-checkout-mobile-390.png",
+      "change": "A",
+      "sha256": "ae89fb21bb0c3e3ba529c8ae0ea7c22f63c66431c667fa8c5e8db309a2c1ff9f"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-confirmation-desktop-1440-full.png",
+      "change": "A",
+      "sha256": "6e7b4cb093da442ce5bcb18fee1e52ec899b4670654da209bd7726f268ae438f"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-confirmation-desktop-1440.png",
+      "change": "A",
+      "sha256": "9f6d8a334c2eb7a50a521d58de985ac43d24218a0dae6c8396f47fef15124e2c"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-confirmation-mobile-390-full.png",
+      "change": "A",
+      "sha256": "7dcf6f50ef19a2d34cad8d9c6f9a593fe925f9a3ed2d3bb666d3ef92d08028ec"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-confirmation-mobile-390.png",
+      "change": "A",
+      "sha256": "77b781f99857316b3acb510557e7528045acd29e720654b226411524848b1b86"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-login-desktop-1440-full.png",
+      "change": "A",
+      "sha256": "795e9f80903f4b41f9932bd9fcb959df15bb66eb065c5b06525f5c38f13dd523"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-login-desktop-1440.png",
+      "change": "A",
+      "sha256": "40b325f0bbecdf64bdfd366e7b6c26d913a01494c1e7007393499caeaa7d1170"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-login-mobile-390-full.png",
+      "change": "A",
+      "sha256": "ac4aee69a7f6888022b285811cb215d1e9a41e1e3aca3faf625faabaac5bcc39"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-login-mobile-390.png",
+      "change": "A",
+      "sha256": "c9ca3c9ff4d1dac758098ad4e369e215b2932ade969753ce046b8f07cbe15ebe"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-orders-desktop-1440-full.png",
+      "change": "A",
+      "sha256": "4be152021d6f2ae5eef91acf0362105038b2c42edb25a0ff98e494fa84c2e73a"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-orders-desktop-1440.png",
+      "change": "A",
+      "sha256": "f8d410f5f818e69dfc5116942da5e0a3e600f73c3bbfb763a3c42590bb4e20bf"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-orders-mobile-390-full.png",
+      "change": "A",
+      "sha256": "0fdc1f962f60c63f139f42f6fd7ff764035b35288aec141100d915111cea96e6"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-orders-mobile-390.png",
+      "change": "A",
+      "sha256": "d9eeac2eb67e1500a6a23462714cacfd7ca89cfe51d18afb22e79f6d262f98ef"
+    },
+    {
+      "path": "docs/ui-screenshots/purchasing-observations.json",
+      "change": "A",
+      "sha256": "72b0377dd612a8316fa010f0e9f8eebc3a2de111e3eb00391a565eec17c88efd"
+    },
+    {
+      "path": "frontend/README.md",
+      "change": "M",
+      "sha256": "f97b411dc13bf7ed827a5672fca9e59a646102e2edfa598bfd470977ac26b4b9"
+    },
+    {
+      "path": "frontend/scripts/capture-purchasing.mjs",
+      "change": "A",
+      "sha256": "96a75497bc437b0f68261156083b6d0bddf76a6092a874c5eaefeaeb193950b3"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "change": "M",
+      "sha256": "850337913c2db9500c5037f1f2cb77f7373df379d18e13564e1207259dd864c2"
+    },
+    {
+      "path": "frontend/src/components/Header.tsx",
+      "change": "M",
+      "sha256": "f2b31fa88b0a1ecd888171f562d0350e89918957e4d25a98d3a15ababfac5f85"
+    },
+    {
+      "path": "frontend/src/components/RequireAuth.tsx",
+      "change": "A",
+      "sha256": "e453b92d2e77e9847deed6cb6fc0c2d6020158bacd3259476ce49f2905e477e6"
+    },
+    {
+      "path": "frontend/src/hooks/useCart.ts",
+      "change": "M",
+      "sha256": "0fddc2a7040fb23c1afcb3e4d37c9bc1e541f1343e8d8779b7cc12b41bee3a8b"
+    },
+    {
+      "path": "frontend/src/hooks/useSession.ts",
+      "change": "A",
+      "sha256": "54f756b40e1b891e2bfecfb9dd593262efc9138d0e9416aa2c1fddd4b4b52c92"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "change": "M",
+      "sha256": "36bf177edf8e548c8e8d3e41d5369be9140014b396e4ef79fe904344a3f8cd53"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "change": "M",
+      "sha256": "ee900ec01a554c44bf83c3dd5cae83b8dfd962c3ba21c7fc5560ae32f4336607"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "change": "M",
+      "sha256": "e44ef71055db186db1f282ccdb1be6d783e3f6028463c089dbb095ad4d0751d8"
+    },
+    {
+      "path": "frontend/src/pages/AboutPage.tsx",
+      "change": "M",
+      "sha256": "187ce8093c1e2d705f587ace105bb6184c602ec695902a675ebb0927cd99f4d1"
+    },
+    {
+      "path": "frontend/src/pages/AccountPage.tsx",
+      "change": "A",
+      "sha256": "f4e35bce2577c5c20c15ea7610d5fb917892e314d098e33a7080389ab24c857b"
+    },
+    {
+      "path": "frontend/src/pages/AuthPage.tsx",
+      "change": "A",
+      "sha256": "a64f36f1f98aee1c0cb2915d8f671cfbc7f8f27c457a772bf12bc3b42df50685"
+    },
+    {
+      "path": "frontend/src/pages/CartPage.tsx",
+      "change": "M",
+      "sha256": "6daa16675745b9466caa121aa08d57d9b605154b974a8eb68d0619f33a83c2ed"
+    },
+    {
+      "path": "frontend/src/pages/CheckoutPage.tsx",
+      "change": "A",
+      "sha256": "958be443b060716080296283fe25527b46ee83a384c0eb6ac4db2d92ac3252ed"
+    },
+    {
+      "path": "frontend/src/pages/OrdersPage.tsx",
+      "change": "A",
+      "sha256": "074ba0844607865f0c25f9fce78c41e9adff0c4c7d0f6ca30bf1c2f6ba4e427e"
+    },
+    {
+      "path": "frontend/src/pages/ProductPage.tsx",
+      "change": "M",
+      "sha256": "c477da843b8b76e0f27a469532412c675b1f1153879a258e83e8519b042eca92"
+    },
+    {
+      "path": "frontend/src/styles/purchasing.css",
+      "change": "A",
+      "sha256": "b78a1f7a43053f45be9ca48496f4778fd5e628a58673e2ba9b9a1f1ea501020a"
+    },
+    {
+      "path": "frontend/src/types/api.ts",
+      "change": "M",
+      "sha256": "35665e0907718d5c4057d2e5cb29e3b711a33245b46f1da808f5d3557a96b4db"
+    },
+    {
+      "path": "frontend/tests/marketplace.spec.ts",
+      "change": "M",
+      "sha256": "2b5a729a80c7ed5204a815939ddf0442a80da483ee5b18f8f871e1114cbd1380"
+    },
+    {
+      "path": "frontend/tests/purchasing.spec.ts",
+      "change": "A",
+      "sha256": "e2bd1e3be57a78f34620d493e79e802293f66f66219ff647aed006d04b11dcc3"
+    },
+    {
+      "path": "README.md",
+      "change": "M",
+      "sha256": "97652afe28d19aaa61580a484315c3a7d5b44a874c7f7b8167443ff85f3ceaa2"
+    }
+  ]
+}

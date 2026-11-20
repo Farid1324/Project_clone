@@ -1,0 +1,148 @@
+# Keymarket â€” Eneba Intern Assignment 2027
+
+Independent marketplace demo using **React, TypeScript, Vite, Tailwind CSS, Laravel REST, PostgreSQL and Sanctum**. The interface is inspired by Eneba, with original demo artwork and a clear internship identity. No real money or redeemable keys are used.
+
+**Live demo URL: not deployed; no public URL verified.** The [Render + Neon deployment configuration](docs/deployment.md) is prepared. A localhost preview is not a public deployment.
+
+## Submission package
+
+[Requirements checklist](docs/submission-checklist.md) · [Architecture and interview guide](docs/architecture-explained.md) · [Project summary](docs/project-summary.md) · [Security and transcript export](docs/submission-security.md) · [Changed files](docs/submission-changed-files.json).
+
+**GitHub repository:** [Farid1324/Project_clone](https://github.com/Farid1324/Project_clone). Verified to exist but empty on November 20, 2026; configured as local origin. The local source has not been committed or pushed. [Publishing and transcript instructions](docs/submission-security.md).
+
+## Features and demo data
+
+Six independently queried homepage sections; searchable/filterable/sortable store with pagination and URL state; global partial/typo autocomplete; detailed activation/requirements information; multiple independently priced/rated sellers; seller-offer carts; registration/login/logout; authenticated quote review; successful/declined payment simulations; unique encrypted demo-key allocation and private order/key history. Loading, empty, error and responsive states are implemented. React has no hardcoded product fixtures.
+
+The seed supplies **45 product variants, 135 offers, three sellers, nine categories, four platforms and three regions**: 25 PC variants, 12 console games and eight gift cards. Sixteen historical fixture orders and subsequent demo purchases drive actual sales aggregates. Prices, ratings and entitlements are illustrative. All keys are nonredeemable.
+
+## Install and run
+
+Portable Windows requires Node.js 24, PowerShell 7 and the Microsoft Visual C++ runtime. From the repository root:
+
+```powershell
+.\scripts\setup-local.ps1
+npm.cmd ci --prefix frontend
+.\scripts\build-single-origin.ps1
+Set-Location backend
+& ..\.tools\php\php.exe artisan serve --host=127.0.0.1 --port=8000
+```
+
+Open [the local marketplace](http://127.0.0.1:8000). Compiled React and the API share one origin. Setup provisions ignored local PHP/Composer/PostgreSQL tools, starts PostgreSQL on loopback 55432, creates development/test databases, installs locked dependencies, initializes missing secrets once, migrates and seeds. Retain existing encryption/fingerprint secrets. Restart the database using .\scripts\local-database.ps1 start.
+
+For hot reload, run npm.cmd run dev --prefix frontend separately and open http://127.0.0.1:5173. Vite proxies /api, /sanctum and /demo to Laravel. Rebuild before returning to the compiled app on port 8000.
+
+Global PHP/Composer/PostgreSQL and the development Compose alternative are covered in [backend setup](docs/backend-setup.md). With global runtimes, install Composer dependencies in backend and npm dependencies in frontend, configure backend/.env, initialize stable secrets, then migrate/seed. The existing compose.yaml serves the development backend/database; the root Dockerfile is the production application image.
+
+## Environment, migrations and login
+
+Use [backend/.env.example](backend/.env.example) locally and [backend/.env.production.example](backend/.env.production.example) as the production reference. Never commit actual environment files. Frontend API URLs are relative; no secret belongs in Vite variables.
+
+From backend/ on the portable runtime:
+
+```powershell
+& ..\.tools\php\php.exe artisan migrate --no-interaction
+& ..\.tools\php\php.exe artisan db:seed --no-interaction
+& ..\.tools\php\php.exe artisan migrate:status
+```
+
+Global runtimes use php artisan. Seed reruns retain allocated inventory and orders while updating demo metadata/prices. Production demo seeding needs explicit opt-in; startup skips a nonempty catalog. [Production operations](docs/deployment.md#migration-and-seed-operations).
+
+Register your own demo account. The seeded historical-sales fixture has an undisclosed random password and is not a shared login. Choose a specific seller, add to cart, sign in, review checkout and select a simulated outcome. Approval delivers fake keys; decline keeps the cart and delivers none.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    Browser[React SPA] --> Origin[One HTTPS origin: Nginx]
+    Origin --> Static[Compiled assets and original artwork]
+    Origin --> Laravel[Laravel REST and Sanctum sessions]
+    Laravel --> PG[(PostgreSQL: Neon)]
+```
+
+Laravel is a modular monolith: controllers/Form Requests validate and authorize; Eloquent defines relationships; catalog queries own filtering/search; six homepage services select their own data; auth/cart/checkout services own mutations. Resources control serialization, and only owner-scoped order detail decrypts fulfilled keys.
+
+React Router owns navigation/query parameters. TanStack Query owns API state. Session/CSRF cookies authenticate same-origin writes. Server prices/stock are authoritative. Quotes bind user/cart version, selected offers, price, stock and compatibility. Checkout locks rows and commits snapshots/payment/allocation/cart clearing together; duplicate requests return the original order. [Schema](docs/database-schema.md), [checkout design](docs/purchasing-milestone.md).
+
+| Directory | Responsibility |
+| --- | --- |
+| frontend/src | Components, route pages, query hooks, typed API contracts and Tailwind tokens |
+| backend/app | HTTP layer, models, queries, section/auth/cart/checkout services and deploy command |
+| backend/database | Seven migrations, factories and connected demo seed data |
+| backend/docker | Nginx, FPM, PHP, supervisor and production startup |
+| scripts | Local runtime/database setup and single-origin build |
+| docs | API/schema, provenance, milestones, audit/deployment evidence and available verbatim AI history |
+
+## API routes
+
+Marketplace paths use **/api/v1**. Resources use data envelopes, paginated lists include meta/links, and errors expose safe code/message/request_id/optional fields. Prices are integer EUR minor units; IDs are UUIDs.
+
+| Method/path | Purpose |
+| --- | --- |
+| GET /products, /products/{slug} | Search/filter/sort/paginate and product detail/offers |
+| GET /categories, /categories/{slug}, /catalog/filters | Taxonomy and facets |
+| GET /offers, /offers/{uuid} | Seller prices, ratings and stock |
+| GET /search/suggestions | Ranked partial/typo suggestions |
+| GET /home/banners, /home/categories, /home/best-sellers | Independent section providers |
+| GET /home/deals, /home/gift-cards, /home/recommendations | Independent section providers |
+| GET /home/promotions | Promotion collections |
+| GET /cart | Session/account cart with current backend totals |
+| POST /cart/items; PATCH/DELETE /cart/items/{uuid} | Specific-offer mutations |
+| GET /auth/session; POST /auth/register, /auth/login, /auth/logout | Cookie authentication/session lifecycle |
+| GET /checkout/quote; POST /checkout | Protected quote and idempotent simulated purchase |
+| GET /orders, /orders/{uuid} | Owner history and delivered keys |
+| GET /health | Database readiness; process liveness is /up outside the API prefix |
+
+CSRF initializes at /sanctum/csrf-cookie. Catalog reads are stateless; cart/auth/checkout/history use session middleware. [Complete API contract](docs/api-design.md).
+
+## Tests
+
+From the repository root:
+
+```powershell
+npm.cmd run lint --prefix frontend
+npm.cmd run typecheck --prefix frontend
+npm.cmd run build --prefix frontend
+.\scripts\build-single-origin.ps1 -SkipBuild
+node --test scripts/check-submission-secrets.test.mjs scripts/export-ai-chat.test.mjs
+node scripts/check-submission-secrets.mjs
+Set-Location backend
+& ..\.tools\php\php.exe artisan test --compact
+& ..\.tools\php\php.exe vendor/bin/pint --dirty --format agent
+Set-Location ..\frontend
+npx.cmd playwright install chromium
+# Keep the separate QA server described below running on port 8010:
+$env:PLAYWRIGHT_EXTERNAL_SERVER='1'
+$env:PLAYWRIGHT_BASE_URL='http://127.0.0.1:8010'
+npm.cmd run test:e2e
+```
+
+Start the QA server in another terminal, with PostgreSQL running:
+
+```powershell
+$env:CACHE_STORE='array'
+$env:BCRYPT_ROUNDS='4'
+Set-Location backend
+& ..\.tools\php\php.exe artisan serve --host=127.0.0.1 --port=8010
+```
+
+These QA-only process settings prevent bulk browser sweeps from exhausting normal rate-limit counters and speed up disposable account fixtures. Leave the ordinary preview and deployment settings unchanged. Without Playwright overrides, it starts/reuses Vite on 5173, whose normal API rate limits can interrupt a full rapid sweep; use the separate QA origin for the full suite. Browser purchase tests create demo users/orders and consume stock: use development fixtures. Backend tests require the isolated marketplace_testing database. Concurrency tests spawn independent PHP/PostgreSQL sessions and observe actual overlapping locks.
+
+Current results and limits: [assignment audit](docs/assignment-audit.md), [structured verification](docs/audit-verification.json). [CI](.github/workflows/backend.yml) prepares frontend/backend checks, browser regression and production-image startup smoke checks. Local checks and hosted CI execution are reported separately.
+
+Latest submission rerun: **111 Laravel tests / 1,320 assertions, 78 browser tests over compiled single-origin HTTP**, TypeScript, lint and production build. All seven migrations and seed rerun passed. The prior integration audit also passed the 78-browser suite over local Nginx HTTPS with fourteen accessibility scans. Production dependency scans in that audit reported no known advisories. [Submission verification](docs/submission-verification.json) distinguishes the two executed environments.
+
+The [artwork follow-up](docs/artwork-milestone.md) passes **85 browser tests**, including seven new cover checks. Every one of the 45 seeded product covers decodes in catalog/detail views, and all 47 referenced cover/banner/promotion image URLs work. Shared image failure handling now covers cards, details, search, cart and hero artwork. TypeScript, lint and build passed again. [Artwork verification](docs/artwork-verification.json).
+
+## Deployment and limitations
+
+[Deployment guide](docs/deployment.md): current Render Free + Neon Free availability, environment/secrets, migrations/seeding, verification and quotas. render.yaml passes Render's official JSON schema. Production uses the root Dockerfile with Nginx/PHP-FPM and compiled React.
+
+- No verified public demo exists yet. Hosting setup, a connected Git repository and successful public verification are required. Docker/hosted CI were not run on this Windows host.
+- Only simulated money and nonredeemable keys. Seller administration, real payments/refunds, account recovery and email verification are outside this slice.
+- Requirements are sourced Windows snapshots; region/edition eligibility is illustrative. [Data provenance](docs/product-data-provenance.md).
+- Artwork is original demo material, not official Eneba/game cover art. [Artwork provenance](docs/artwork-provenance.md).
+- EUR/English only; recommendations are public discovery rankings. Carts do not reserve inventory; checkout rejects stale quotes.
+- Free services can sleep, hit quotas or restart. Durable database state and stable secrets must be retained together; there is no uptime guarantee.
+
+[Available full AI prose transcript](docs/ai-chat-history.md) Â· [Architecture notes](docs/architecture.md) Â· [Historical incremental milestones](docs/implementation-plan.md)

@@ -1,0 +1,82 @@
+[
+  {
+    "page": "login",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-login-desktop-1440.png",
+    "fullScreenshot": "keymarket-login-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "page": "checkout",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-checkout-desktop-1440.png",
+    "fullScreenshot": "keymarket-checkout-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "page": "confirmation",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-confirmation-desktop-1440.png",
+    "fullScreenshot": "keymarket-confirmation-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "page": "orders",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-orders-desktop-1440.png",
+    "fullScreenshot": "keymarket-orders-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  {
+    "page": "login",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-login-mobile-390.png",
+    "fullScreenshot": "keymarket-login-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "errors": []
+  },
+  {
+    "page": "checkout",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-checkout-mobile-390.png",
+    "fullScreenshot": "keymarket-checkout-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "errors": []
+  },
+  {
+    "page": "confirmation",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-confirmation-mobile-390.png",
+    "fullScreenshot": "keymarket-confirmation-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "errors": []
+  },
+  {
+    "page": "orders",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-orders-mobile-390.png",
+    "fullScreenshot": "keymarket-orders-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "errors": []
+  }
+]

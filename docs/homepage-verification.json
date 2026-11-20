@@ -1,0 +1,253 @@
+{
+  "source": "Final real-backend homepage browser run",
+  "stats": {
+    "startTime": "2026-11-19T19:43:29.251Z",
+    "duration": 150350.066,
+    "expected": 39,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "backend": {
+    "tests": 53,
+    "assertions": 585,
+    "result": "passed"
+  },
+  "accessibilityScans": 8,
+  "tests": [
+    {
+      "title": "homepage responds at 1440px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 6971,
+      "errors": []
+    },
+    {
+      "title": "homepage responds at 768px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 8397,
+      "errors": []
+    },
+    {
+      "title": "homepage responds at 390px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 8880,
+      "errors": []
+    },
+    {
+      "title": "hero controls change the banner and its call to action navigates",
+      "status": "expected",
+      "durationMs": 15020,
+      "errors": []
+    },
+    {
+      "title": "keyboard typo suggestions navigate to the selected product",
+      "status": "expected",
+      "durationMs": 10126,
+      "errors": []
+    },
+    {
+      "title": "superseded suggestions cannot replace the current search results",
+      "status": "expected",
+      "durationMs": 7144,
+      "errors": []
+    },
+    {
+      "title": "submitted search and filtering are reflected in the URL",
+      "status": "expected",
+      "durationMs": 8528,
+      "errors": []
+    },
+    {
+      "title": "price sorting and range validation use actual rendered prices",
+      "status": "expected",
+      "durationMs": 3389,
+      "errors": []
+    },
+    {
+      "title": "pagination and browser back preserve the catalog state",
+      "status": "expected",
+      "durationMs": 2787,
+      "errors": []
+    },
+    {
+      "title": "mobile navigation, search, and filters have working dialogs and focus",
+      "status": "expected",
+      "durationMs": 2631,
+      "errors": []
+    },
+    {
+      "title": "homepage banners failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 3147,
+      "errors": []
+    },
+    {
+      "title": "homepage banners has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2056,
+      "errors": []
+    },
+    {
+      "title": "homepage categories failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 3103,
+      "errors": []
+    },
+    {
+      "title": "homepage categories has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2393,
+      "errors": []
+    },
+    {
+      "title": "homepage best-sellers failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 3265,
+      "errors": []
+    },
+    {
+      "title": "homepage best-sellers has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2072,
+      "errors": []
+    },
+    {
+      "title": "homepage deals failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 2941,
+      "errors": []
+    },
+    {
+      "title": "homepage deals has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2066,
+      "errors": []
+    },
+    {
+      "title": "homepage gift-cards failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 2888,
+      "errors": []
+    },
+    {
+      "title": "homepage gift-cards has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2332,
+      "errors": []
+    },
+    {
+      "title": "homepage recommendations failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 2919,
+      "errors": []
+    },
+    {
+      "title": "homepage recommendations has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2278,
+      "errors": []
+    },
+    {
+      "title": "every homepage section renders the matching seeded endpoint data",
+      "status": "expected",
+      "durationMs": 3002,
+      "errors": []
+    },
+    {
+      "title": "homepage best-sellers card opens the correct product details",
+      "status": "expected",
+      "durationMs": 2597,
+      "errors": []
+    },
+    {
+      "title": "homepage deals card opens the correct product details",
+      "status": "expected",
+      "durationMs": 2445,
+      "errors": []
+    },
+    {
+      "title": "homepage gift-cards card opens the correct product details",
+      "status": "expected",
+      "durationMs": 2557,
+      "errors": []
+    },
+    {
+      "title": "homepage recommendations card opens the correct product details",
+      "status": "expected",
+      "durationMs": 2599,
+      "errors": []
+    },
+    {
+      "title": "popular category link opens the matching database-backed store facet",
+      "status": "expected",
+      "durationMs": 2614,
+      "errors": []
+    },
+    {
+      "title": "seller offer details expand and purchase controls are not faked",
+      "status": "expected",
+      "durationMs": 1368,
+      "errors": []
+    },
+    {
+      "title": "missing products and unmatched routes have real recovery links",
+      "status": "expected",
+      "durationMs": 1841,
+      "errors": []
+    },
+    {
+      "title": "skip link moves keyboard focus to the main landmark",
+      "status": "expected",
+      "durationMs": 1116,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /",
+      "status": "expected",
+      "durationMs": 3633,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /store",
+      "status": "expected",
+      "durationMs": 2767,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /about",
+      "status": "expected",
+      "durationMs": 1798,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /products",
+      "status": "expected",
+      "durationMs": 2217,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /",
+      "status": "expected",
+      "durationMs": 3216,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /store",
+      "status": "expected",
+      "durationMs": 2582,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /about",
+      "status": "expected",
+      "durationMs": 1609,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /products",
+      "status": "expected",
+      "durationMs": 2156,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,1634 @@
+{
+    "Elden Ring": {
+        "description": "Explore the Lands Between in an open-world action RPG, developing your character and confronting demanding enemies.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "INTEL CORE I5-8400 or AMD RYZEN 3 3300X"
+                },
+                {
+                    "label": "Memory",
+                    "value": "12 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Storage",
+                    "value": "60 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "Windows Compatible Audio Device"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10/11"
+                },
+                {
+                    "label": "Processor",
+                    "value": "INTEL CORE I7-8700K or AMD RYZEN 5 3600X"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Storage",
+                    "value": "60 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "Windows Compatible Audio Device"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/1245620/",
+            "captured_at": "2026-11-19T20:30:03.801Z"
+        }
+    },
+    "Cyberpunk 2077": {
+        "description": "Build your mercenary’s abilities and explore Night City in a story-driven role-playing adventure.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Core i7-6700 or Ryzen 5 1600"
+                },
+                {
+                    "label": "Memory",
+                    "value": "12 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "GeForce GTX 1060 6GB or Radeon RX 580 8GB or Arc A380"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Storage",
+                    "value": "70 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "SSD required. Attention: In this game you will encounter a variety of visual effects that may provide seizures or loss of consciousness in a minority of people. If you or someone you know experiences any of the above symptoms while playing, stop and seek medical attention immediately."
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Core i7-12700 or Ryzen 7 7800X3D"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "GeForce RTX 2060 SUPER or Radeon RX 5700 XT or Arc A770"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Storage",
+                    "value": "70 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "SSD required."
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/1091500/",
+            "captured_at": "2026-11-19T20:30:03.813Z"
+        }
+    },
+    "Baldur's Gate 3": {
+        "description": "Assemble a party for a fantasy role-playing adventure with turn-based combat, character choices and cooperative play.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel I5 4690 / AMD FX 8350 / Snapdragon X Elite"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia GTX 970 / RX 480 / Intel Arc A380 / Qualcomm Adreno X1 (4GB+ of VRAM)"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "150 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "SSD required"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel i7 8700K / AMD r5 3600"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia 2060 Super / RX 5700 XT / Intel Arc A580 (8GB+ of VRAM)"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "150 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "SSD required"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/1086940/",
+            "captured_at": "2026-11-19T20:30:03.816Z"
+        }
+    },
+    "Hogwarts Legacy": {
+        "description": "Explore a wizarding world, learn spells and develop your character in an open-world action RPG.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i5-6600 (3.3Ghz) or AMD Ryzen 5 1400 (3.2Ghz)"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Storage",
+                    "value": "85 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "SSD (Preferred), HDD (Supported), 720p/30 fps, Low Quality Settings"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i7-8700 (3.2Ghz) or AMD Ryzen 5 3600 (3.6 Ghz)"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce 1080 Ti or AMD Radeon RX 5700 XT or INTEL Arc A770"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Storage",
+                    "value": "85 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "SSD, 1080p/60 fps, High Quality Settings"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/990080/",
+            "captured_at": "2026-11-19T20:30:04.045Z"
+        }
+    },
+    "Red Dead Redemption 2": {
+        "description": "Follow an outlaw gang through a changing American frontier in a story-driven open-world adventure.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 - 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel® Core™ i5-2500K / AMD FX-6300"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "150 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "Direct X Compatible"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 - 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel® Core™ i7-4770K / AMD Ryzen 5 1500X"
+                },
+                {
+                    "label": "Memory",
+                    "value": "12 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "150 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "Direct X Compatible"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/1174180/",
+            "captured_at": "2026-11-19T20:30:04.039Z"
+        }
+    },
+    "The Witcher 3: Wild Hunt": {
+        "description": "Travel a war-torn fantasy world as a monster hunter, taking contracts and making choices with lasting consequences.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 11"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Core i5-8400 / Ryzen 5 2600"
+                },
+                {
+                    "label": "Memory",
+                    "value": "12 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "GeForce GTX 1660 / Radeon RX 5500 XT 8GB / Arc A580"
+                },
+                {
+                    "label": "Storage",
+                    "value": "60 SSD GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "VRAM 6 GB"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 11"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i7 8700K / AMD Ryzen 5 3600X"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "RTX 2060 Super / AMD Radeon RX 6600 XT / Intel Arc B580"
+                },
+                {
+                    "label": "Storage",
+                    "value": "60 SSD GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "VRAM 8 GB"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/292030/",
+            "captured_at": "2026-11-19T20:30:04.030Z"
+        }
+    },
+    "Stardew Valley": {
+        "description": "Develop a farm, explore the countryside, fish, craft and build relationships in a relaxed country-life role-playing game.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows Vista or greater"
+                },
+                {
+                    "label": "Processor",
+                    "value": "2 Ghz"
+                },
+                {
+                    "label": "Memory",
+                    "value": "2 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "256 mb video memory, shader model 3.0+"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 10"
+                },
+                {
+                    "label": "Storage",
+                    "value": "500 MB available space"
+                }
+            ],
+            "recommended": [],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/413150/",
+            "captured_at": "2026-11-19T20:30:04.258Z"
+        }
+    },
+    "Hollow Knight": {
+        "description": "Explore a hand-drawn underground kingdom, uncover hidden routes and battle challenging enemies in an action adventure.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 version 21H1 (build 19043) or newer"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i3-3240, AMD FX-4300"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "GeForce GTX 560 Ti (1GB), Radeon HD 7750 (1GB)"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 10"
+                },
+                {
+                    "label": "Storage",
+                    "value": "9 GB available space"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 version 21H1 (build 19043) or newer"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i5-3470"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "GeForce GTX 1050 (2GB), Radeon R9 380 (2GB)"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 10"
+                },
+                {
+                    "label": "Storage",
+                    "value": "9 GB available space"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/367520/",
+            "captured_at": "2026-11-19T20:30:04.281Z"
+        }
+    },
+    "Hades": {
+        "description": "Attempt an escape from the underworld through evolving action runs, new abilities and encounters with mythological characters.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 SP1"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Dual Core 2.4 GHz"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "1GB VRAM / DirectX 10+ support"
+                },
+                {
+                    "label": "Storage",
+                    "value": "15 GB available space"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 SP1"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Dual Core 3.0 GHz+"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "2GB VRAM / DirectX 10+ support"
+                },
+                {
+                    "label": "Storage",
+                    "value": "20 GB available space"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/1145360/",
+            "captured_at": "2026-11-19T20:30:04.280Z"
+        }
+    },
+    "Disco Elysium: The Final Cut": {
+        "description": "Investigate a murder through dialogue, exploration and an unusual set of character skills in a detective role-playing game.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 7"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core 2 Duo"
+                },
+                {
+                    "label": "Memory",
+                    "value": "2 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "DirectX 11 compatible video card (integrated or dedicated with min 512MB memory)"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "20 GB available space"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 7/8/10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i7 or AMD 1800 equivalent"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA Geforce 1060 or equivalent"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "20 GB available space"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/632470/",
+            "captured_at": "2026-11-19T20:30:04.503Z"
+        }
+    },
+    "Terraria": {
+        "description": "Explore, build and fight through a two-dimensional sandbox world with crafting, equipment and cooperative possibilities.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows Xp, Vista, 7, 8/8.1, 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "2.0 Ghz"
+                },
+                {
+                    "label": "Memory",
+                    "value": "2.5GB"
+                },
+                {
+                    "label": "Hard Disk Space",
+                    "value": "200MB"
+                },
+                {
+                    "label": "Video Card",
+                    "value": "128mb Video Memory, capable of Shader Model 2.0+"
+                },
+                {
+                    "label": "DirectX®",
+                    "value": "9.0c or Greater"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7, 8/8.1, 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Dual Core 3.0 Ghz"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4GB"
+                },
+                {
+                    "label": "Hard Disk Space",
+                    "value": "200MB"
+                },
+                {
+                    "label": "Video Card",
+                    "value": "256mb Video Memory, capable of Shader Model 2.0+"
+                },
+                {
+                    "label": "DirectX®",
+                    "value": "9.0c or Greater"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/105600/",
+            "captured_at": "2026-11-19T20:30:04.502Z"
+        }
+    },
+    "No Man's Sky": {
+        "description": "Travel between planets, gather resources, build bases and explore a procedural science-fiction universe.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10/11 (64-bit versions)"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i3"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia GTX 1060 3GB, AMD RX 470 4GB, Intel UHD graphics 630"
+                },
+                {
+                    "label": "Storage",
+                    "value": "15 GB available space"
+                },
+                {
+                    "label": "VR Support",
+                    "value": "SteamVR"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/275850/",
+            "captured_at": "2026-11-19T20:30:04.594Z"
+        }
+    },
+    "Sid Meier's Civilization VI": {
+        "description": "Develop a civilization across historical eras through exploration, research, diplomacy and turn-based strategy.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 7x64 / Windows 8.1x64 / Windows 10x64"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i3 2.5 Ghz or AMD Phenom II 2.6 Ghz or greater"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "1 GB & AMD 5570 or nVidia 450 or Intel Integrated Graphics 530"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "17 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "DirectX Compatible Sound Device"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "Initial installation requires one-time Internet connection for Steam authentication; software installations required (included with the game) include Steam Client, Microsoft Visual C++ 2012 and 2015 Runtime Libraries, and Microsoft DirectX. Internet connection and acceptance of Steam™ Subscriber Agreement required for activation. See for details."
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 7x64 / Windows 8.1x64 / Windows 10x64"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Fourth Generation Intel Core i5 2.5 Ghz or AMD FX8350 4.0 Ghz or greater"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "2GB & AMD 7970 or nVidia 770 or greater"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "23 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "DirectX Compatible Sound Device"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/289070/",
+            "captured_at": "2026-11-19T20:30:04.890Z"
+        }
+    },
+    "Cities: Skylines": {
+        "description": "Design transport networks, manage public services and guide the growth of a modern city.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows® 10 Home 64 Bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel® Core™ I7 930 | AMD® FX 6350"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia® GeForce™ GTS 450 (1 GB) | AMD® R7 250 (2 GB) | Intel Iris Xe G7 (Tiger Lake)"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 9.0c"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "4 GB available space"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows® 10 Home 64 bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel® Core™ I7 2700K | AMD® Ryzen 7 2700X"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia® GeForce™ GTX 580 (1.5 GB) | AMD® Radeon™ RX 560 (4 GB)"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "4 GB available space"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/255710/",
+            "captured_at": "2026-11-19T20:30:04.849Z"
+        }
+    },
+    "Euro Truck Simulator 2": {
+        "description": "Drive freight across European roads while developing a transport business and upgrading your trucks.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows 10 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i5-6400 or AMD Ryzen 3 1200 or similar"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce GTX 660 or AMD Radeon RX 460 or Intel HD 630 (2GB VRAM)"
+                },
+                {
+                    "label": "Hard Drive",
+                    "value": "25 GB available space (Euro Truck Simulator 2 base game)"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "OS",
+                    "value": "Windows 10 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i5-9600 or AMD Ryzen 5 3600 or similar"
+                },
+                {
+                    "label": "Memory",
+                    "value": "12 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce GTX 1660 or AMD Radeon RX 590 (2GB VRAM)"
+                },
+                {
+                    "label": "Hard Drive",
+                    "value": "25 GB available space (Euro Truck Simulator 2 base game)"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/227300/",
+            "captured_at": "2026-11-19T20:30:04.829Z"
+        }
+    },
+    "Celeste": {
+        "description": "Guide a climber through precise platforming challenges and a personal story of perseverance.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 or newer"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i3 M380"
+                },
+                {
+                    "label": "Memory",
+                    "value": "2 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Intel HD 4000"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 10"
+                },
+                {
+                    "label": "Storage",
+                    "value": "1200 MB available space"
+                }
+            ],
+            "recommended": [],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/504230/",
+            "captured_at": "2026-11-19T20:30:05.108Z"
+        }
+    },
+    "Dead Cells": {
+        "description": "Explore a shifting castle through fast combat, platforming and repeated runs with different equipment.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7+"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel i5+"
+                },
+                {
+                    "label": "Memory",
+                    "value": "2 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia 450 GTS / Radeon HD 5750 or better"
+                },
+                {
+                    "label": "Storage",
+                    "value": "500 MB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "DirectX 9.1+ or OpenGL 3.2+"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7+"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel i5+"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia GTX 460 / Radeon HD 7800 or better"
+                },
+                {
+                    "label": "Storage",
+                    "value": "500 MB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "DirectX 9.1+ or OpenGL 3.2+"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/588650/",
+            "captured_at": "2026-11-19T20:30:05.121Z"
+        }
+    },
+    "Slay the Spire": {
+        "description": "Build a deck of cards and combine abilities while climbing through strategic, turn-based encounters.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows XP, Vista, 7, 8/8.1, 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "2.0 Ghz"
+                },
+                {
+                    "label": "Memory",
+                    "value": "2 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "1Gb Video Memory, capable of OpenGL 3.0+ support (2.1 with ARB extensions acceptable)"
+                },
+                {
+                    "label": "Storage",
+                    "value": "1 GB available space"
+                }
+            ],
+            "recommended": [],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/646570/",
+            "captured_at": "2026-11-19T20:30:05.113Z"
+        }
+    },
+    "Subnautica": {
+        "description": "Explore an alien ocean, gather materials and build equipment to survive beneath the surface.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows Vista SP2 or newer, 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Haswell 2 cores / 4 threads @ 2.5Ghz or equivalent"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Intel HD 4600 or equivalent - This includes most GPUs scoring greater than 950 points in the 3DMark Fire Strike benchmark"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "20 GB available space"
+                },
+                {
+                    "label": "VR Support",
+                    "value": "SteamVR. Keyboard or gamepad required"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows Vista SP2 or newer, 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Haswell 4 cores / 4 threads @ 3.2Ghz or equivalent"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Nvidia GTX 550 Ti or equivalent, 2GB VRAM"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Storage",
+                    "value": "20 GB available space"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/264710/",
+            "captured_at": "2026-11-19T20:30:05.392Z"
+        }
+    },
+    "Portal 2": {
+        "description": "Solve spatial puzzles using linked portals, environmental devices and carefully timed movement.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 / Vista / XP"
+                },
+                {
+                    "label": "Processor",
+                    "value": "3.0 GHz P4, Dual Core 2.0 (or higher) or AMD64X2 (or higher)"
+                },
+                {
+                    "label": "Memory",
+                    "value": "2 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "Video card must be 128 MB or more and with support for Pixel Shader 2.0b (ATI Radeon X800 or higher / NVIDIA GeForce 7600 or higher / Intel HD Graphics 2000 or higher)."
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 9.0c"
+                },
+                {
+                    "label": "Storage",
+                    "value": "8 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "DirectX 9.0c compatible"
+                }
+            ],
+            "recommended": [],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/620/",
+            "captured_at": "2026-11-19T20:30:05.347Z"
+        }
+    },
+    "Sekiro: Shadows Die Twice": {
+        "description": "Master precise sword combat, stealth and traversal in a challenging action adventure.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i3-2100 | AMD FX-6300"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce GTX 760 | AMD Radeon HD 7950"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "25 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "DirectX 11 Compatible"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i5-2500K | AMD Ryzen 5 1400"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce GTX 970 | AMD Radeon RX 570"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "25 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "DirectX 11 Compatible"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/814380/",
+            "captured_at": "2026-11-19T20:30:05.348Z"
+        }
+    },
+    "Dark Souls III": {
+        "description": "Explore a dark fantasy world, develop a combat build and face demanding enemies and bosses.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i3-2100 / AMD® FX-6300"
+                },
+                {
+                    "label": "Memory",
+                    "value": "4 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA® GeForce GTX 750 Ti / ATI Radeon HD 7950"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "25 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "DirectX 11 sound device"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "Internet connection required for online play and product activation"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "OS",
+                    "value": "Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i7-3770 / AMD® FX-8350"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA® GeForce GTX 970 / ATI Radeon R9 series"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 11"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "25 GB available space"
+                },
+                {
+                    "label": "Sound Card",
+                    "value": "DirectX 11 sound device"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "Internet connection required for online play and product activation"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/374320/",
+            "captured_at": "2026-11-19T20:30:05.642Z"
+        }
+    },
+    "Resident Evil 4": {
+        "description": "Survive dangerous encounters and manage limited equipment in a modern survival-horror action adventure.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 (64 bit)"
+                },
+                {
+                    "label": "Processor",
+                    "value": "AMD Ryzen 3 1200 / Intel Core i5-7500"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "AMD Radeon RX 560 with 4GB VRAM / NVIDIA GeForce GTX 1050 Ti with 4GB VRAM"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "Estimated performance (when set to Prioritize Performance): 1080p/45fps. ・Framerate might drop in graphics-intensive scenes. ・AMD Radeon RX 6700 XT or NVIDIA GeForce RTX 2060 required to support ray tracing."
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "Windows 10 (64 bit)/Windows 11 (64 bit)"
+                },
+                {
+                    "label": "Processor",
+                    "value": "AMD Ryzen 5 3600 / Intel Core i7 8700"
+                },
+                {
+                    "label": "Memory",
+                    "value": "16 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070"
+                },
+                {
+                    "label": "DirectX",
+                    "value": "Version 12"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "Estimated performance: 1080p/60fps ・Framerate might drop in graphics-intensive scenes. ・AMD Radeon RX 6700 XT or NVIDIA GeForce RTX 2070 required to support ray tracing."
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/2050650/",
+            "captured_at": "2026-11-19T20:30:05.621Z"
+        }
+    },
+    "DOOM Eternal": {
+        "description": "Fight through fast-paced demon encounters using movement, weapons and resource management.",
+        "requirements": {
+            "kind": "pc",
+            "minimum": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 7 / 64-Bit Windows 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i5 @ 3.3 GHz or better, or AMD Ryzen 3 @ 3.1 GHz or better"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce GTX 1050Ti (4GB), GTX 1060 (3GB), GTX 1650 (4GB) or AMD Radeon R9 280(3GB), AMD Radeon R9 290 (4GB), RX 470 (4GB)"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "80 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "( 1080p / 60 FPS / Low Quality Settings )"
+                }
+            ],
+            "recommended": [
+                {
+                    "label": "Requirement",
+                    "value": "Requires a 64-bit processor and operating system"
+                },
+                {
+                    "label": "OS",
+                    "value": "64-bit Windows 10"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Intel Core i7-6700K or better, or AMD Ryzen 7 1800X or better"
+                },
+                {
+                    "label": "Memory",
+                    "value": "8 GB RAM"
+                },
+                {
+                    "label": "Graphics",
+                    "value": "NVIDIA GeForce GTX 1060 (6GB), NVIDIA GeForce 970 (4GB), AMD RX 480 (8GB)"
+                },
+                {
+                    "label": "Network",
+                    "value": "Broadband Internet connection"
+                },
+                {
+                    "label": "Storage",
+                    "value": "80 GB available space"
+                },
+                {
+                    "label": "Additional Notes",
+                    "value": "( 1080p / 60 FPS / High Quality Settings ) - *On NVIDIA GTX 970 cards Texture Quality should be set to Medium"
+                }
+            ],
+            "notes": [
+                "Publisher Windows specifications captured for this demo. Steam's current Windows client also requires Windows 10 or later. Verify the linked store listing before a real purchase."
+            ],
+            "source_url": "https://store.steampowered.com/app/782330/",
+            "captured_at": "2026-11-19T20:30:05.642Z"
+        }
+    },
+    "Forza Horizon 5": {
+        "description": "Explore an open-world racing festival, collect cars and compete in varied driving events."
+    },
+    "Halo Infinite: Campaign": {
+        "description": "Explore a science-fiction campaign with vehicle combat, traversal tools and battles against hostile forces."
+    },
+    "Sea of Thieves": {
+        "description": "Sail with a crew, search for treasure and navigate shared-world pirate adventures."
+    },
+    "Microsoft Flight Simulator: Standard Edition": {
+        "description": "Plan routes and pilot civilian aircraft through a detailed flight-simulation world."
+    },
+    "Gears 5": {
+        "description": "Fight through a cinematic science-fiction campaign featuring cover-based combat and cooperative play."
+    },
+    "Ori and the Will of the Wisps": {
+        "description": "Explore a colorful interconnected world through fluid movement, platforming and combat."
+    },
+    "Minecraft: Xbox One Edition": {
+        "description": "Build, explore and survive in a block-based sandbox, with creative and survival ways to play."
+    },
+    "Diablo IV": {
+        "description": "Develop an adventurer’s abilities, collect equipment and confront enemies in an action role-playing world."
+    },
+    "The Legend of Zelda: Breath of the Wild": {
+        "description": "Explore Hyrule, experiment with equipment and discover routes through an open-world adventure."
+    },
+    "Mario Kart 8 Deluxe": {
+        "description": "Race through varied courses with familiar characters, items and local multiplayer options."
+    },
+    "Animal Crossing: New Horizons": {
+        "description": "Develop an island home, collect materials and build a community through everyday creative activities."
+    },
+    "Super Mario Odyssey": {
+        "description": "Explore inventive kingdoms and solve platforming challenges with Mario and his companion Cappy."
+    }
+}

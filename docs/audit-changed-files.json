@@ -1,0 +1,248 @@
+{
+  "milestone": "Assignment audit and deployment preparation",
+  "comparison": "File hashes captured before this task; repository has no initial commit.",
+  "generated_at": "2026-11-19T22:42:48.037Z",
+  "self_hash": "Omitted to avoid recursive self-hashing.",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "change": "A",
+      "sha256": "3b2677d83ca6b32456b2779637621317bc5059d562869c69f5da89219b96aa20"
+    },
+    {
+      "path": ".gitattributes",
+      "change": "A",
+      "sha256": "87eedb7e839ab2da7df37a555296e8e8fa2d99509f68b912480164ed58dfb568"
+    },
+    {
+      "path": ".github/workflows/backend.yml",
+      "change": "M",
+      "sha256": "8f7ac9affea926d989eb02a57941e6a669497d3ec168ab3d904181a1ce9b1c87"
+    },
+    {
+      "path": ".gitignore",
+      "change": "M",
+      "sha256": "16ec59baa7d2034eaa8c3adc2ef5f5c4d05cf58e02c49880a36ef807655a08ed"
+    },
+    {
+      "path": "backend/.env.example",
+      "change": "M",
+      "sha256": "2100fb13ece53e6191e57f258adbe85765dccefa3b67f68fef6584e8d3689578"
+    },
+    {
+      "path": "backend/.env.production.example",
+      "change": "A",
+      "sha256": "edc15bbde5c3df7ab24d55f63102d3147cf88b8677dddb5b0c09d2c126553d2e"
+    },
+    {
+      "path": "backend/app/Console/Commands/DeployMarketplace.php",
+      "change": "A",
+      "sha256": "f067b743dd353c00419cd46393abc193545b37e12f2807b707913b9f1652bf0f"
+    },
+    {
+      "path": "backend/app/Http/Controllers/SpaController.php",
+      "change": "A",
+      "sha256": "46ce5f852c78bd50036549a67bc08cf9770e2e7851791683da98e446ee2513d2"
+    },
+    {
+      "path": "backend/app/Http/Requests/LoginRequest.php",
+      "change": "M",
+      "sha256": "4cb3a8359e0cf5efbb007e214b2f2570c64766180c5ccde6d1a2874340cf4aaa"
+    },
+    {
+      "path": "backend/app/Http/Requests/RegisterRequest.php",
+      "change": "M",
+      "sha256": "95a0473a6464a18b38cd47e801fc0830841984c527194219419ef2ffd1f9967f"
+    },
+    {
+      "path": "backend/app/Providers/AppServiceProvider.php",
+      "change": "M",
+      "sha256": "e968714734fe4f8b7426c90e93a022516eb5c7ab6da1122266045de68762c2f3"
+    },
+    {
+      "path": "backend/bootstrap/app.php",
+      "change": "M",
+      "sha256": "28697a1a457670bb191a6c477d176867e7f346d15150dcdb314748d991f4be13"
+    },
+    {
+      "path": "backend/config/database.php",
+      "change": "M",
+      "sha256": "b4e101caaf3accc959da89f7d41a64e872d80d8cfd39885a324e267c10f0c86c"
+    },
+    {
+      "path": "backend/config/marketplace.php",
+      "change": "M",
+      "sha256": "1689d4531bd0c93feabdfe207691a192086b8215b8b2b1fb3771a3002c32d4fb"
+    },
+    {
+      "path": "backend/config/trustedproxy.php",
+      "change": "A",
+      "sha256": "550dcb586207a1484b2574d388db441e443cc051c555628ff89428f38b6ec3b8"
+    },
+    {
+      "path": "backend/database/seeders/DemoMarketplaceSeeder.php",
+      "change": "M",
+      "sha256": "d225d2ca18f4a263eec015420c5fa546fd9dbf70950b30ff436f2ce27b692d3a"
+    },
+    {
+      "path": "backend/docker/nginx.conf.template",
+      "change": "A",
+      "sha256": "688abc25cbb0426303041d3a800236577621e279b13cdf4b3f813b43818a723e"
+    },
+    {
+      "path": "backend/docker/php-fpm.conf",
+      "change": "A",
+      "sha256": "78ce83c26c154aacb920681a20dd0670b6dd0635362846377ca9905cbce4a3e6"
+    },
+    {
+      "path": "backend/docker/php-production.ini",
+      "change": "A",
+      "sha256": "a91343eb4986aba6ae48d949216ac2b5b7e3f519ad1628f64d645dfdcc309251"
+    },
+    {
+      "path": "backend/docker/production-entrypoint.sh",
+      "change": "A",
+      "sha256": "9d04b6e2082719280914284082310254ef48c0cb89faad0877c1b24ae71e03ac"
+    },
+    {
+      "path": "backend/docker/supervisord.conf",
+      "change": "A",
+      "sha256": "0e0efe83cc38b42787327e28ee3e2ca1e79e6e942799aeee35b548170da97de4"
+    },
+    {
+      "path": "backend/routes/web.php",
+      "change": "M",
+      "sha256": "443f13701d787fc921322b5f13d92f4570db8cafd4adfbf752171ce04504b2c3"
+    },
+    {
+      "path": "backend/tests/Feature/AuthenticationTest.php",
+      "change": "M",
+      "sha256": "057f503e9dcccda5b39d07670809e123a67f8a440a41c672aa211cd513efc802"
+    },
+    {
+      "path": "backend/tests/Feature/DeploymentTest.php",
+      "change": "A",
+      "sha256": "5e10dc80c6e6ae08683aa3717a5323d5e468691392119f00e447d37a40324151"
+    },
+    {
+      "path": "backend/tests/Feature/ExampleTest.php",
+      "change": "M",
+      "sha256": "f2c03c244993bf6b0dc1415bc02a5ea1c093f7f4d5b411c856999416992eab16"
+    },
+    {
+      "path": "Dockerfile",
+      "change": "A",
+      "sha256": "41747871478898f459ad03d460aa0297b5a30cbdc0e340b00966956944869e03"
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "change": "M",
+      "sha256": "71e0f716ef3fb5dc9f1cd31fa0a4209916ca4e44ffe3be90e05796c688e4b788"
+    },
+    {
+      "path": "docs/api-design.md",
+      "change": "M",
+      "sha256": "d25fbf346c67dab70e715e512d1b3415f9ec50cd6c191b32fdc883689ce7734c"
+    },
+    {
+      "path": "docs/architecture.md",
+      "change": "M",
+      "sha256": "95251bf3ea7f7a4af752c84cb9a36448995904493113498b70b533b88df2523f"
+    },
+    {
+      "path": "docs/assignment-audit.md",
+      "change": "A",
+      "sha256": "f08116749a072e7092b51747343183dda621d55f992e86c0731d5a5f5d48f962"
+    },
+    {
+      "path": "docs/audit-changed-files.json",
+      "change": "A",
+      "sha256": null
+    },
+    {
+      "path": "docs/audit-verification.json",
+      "change": "A",
+      "sha256": "7042d0bcf746c110561c08b6c5db030a494ffe014a663357c64f055c650377fd"
+    },
+    {
+      "path": "docs/backend-setup.md",
+      "change": "M",
+      "sha256": "d97ddd98aafa50cb3486df2c28b61413c623bf6061c24ccb1bce9e36e1d08b04"
+    },
+    {
+      "path": "docs/database-schema.md",
+      "change": "M",
+      "sha256": "eba47d0735b20bb711d256fc3c3ea7c905ae3348fd49d99ced799a326b484e15"
+    },
+    {
+      "path": "docs/deployment.md",
+      "change": "A",
+      "sha256": "ab7a704a5caa195232165a3eaccd49ce7a764b60091dceb51cf5aaa86b8b5f27"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-audit-home-390-full.png",
+      "change": "A",
+      "sha256": "34d776e1a260e00925a1121e2e79b3b081cd02a4787414132221356728a1026f"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-audit-store-1440-full.png",
+      "change": "A",
+      "sha256": "f96ffce1ebaa161a8cd71c9b4258768655a7197cb04593323075f788eeb40a3a"
+    },
+    {
+      "path": "frontend/playwright.config.ts",
+      "change": "M",
+      "sha256": "508f22558662a2c18bd632496166232438d68e3ddfc554a34d74276627d83d08"
+    },
+    {
+      "path": "frontend/README.md",
+      "change": "M",
+      "sha256": "459bed7872b65d3c979f1186bc4af2b05cb574ac496bc362fccc8bf6adc9f503"
+    },
+    {
+      "path": "frontend/scripts/verify-public.mjs",
+      "change": "A",
+      "sha256": "4a405186effa16ebcb19a06c1472b780b614b692e4c68f330f8f4a84f56fd6b2"
+    },
+    {
+      "path": "frontend/src/pages/AuthPage.tsx",
+      "change": "M",
+      "sha256": "33931c730590f22085209a014ef0fb600c58c977c0a53b8a3a19ffc7044af3e0"
+    },
+    {
+      "path": "frontend/src/pages/OrdersPage.tsx",
+      "change": "M",
+      "sha256": "37f07e36208e039dd579e3b2f3c9da7e763c389ce202fda7013c7a7e75ebfd09"
+    },
+    {
+      "path": "frontend/tests/assignment-audit.spec.ts",
+      "change": "A",
+      "sha256": "ff796f02e721ae3f04a84beb334c72564efcbc85d2eb9668a63709cd3031f3c4"
+    },
+    {
+      "path": "frontend/tests/product-cart.spec.ts",
+      "change": "M",
+      "sha256": "1115654ba0298f9aaba69161c5fe4df11f19b24bcaf3ea33371132dfd74354de"
+    },
+    {
+      "path": "frontend/tests/purchasing.spec.ts",
+      "change": "M",
+      "sha256": "e4cceb05c40c0a01d1c9ec1361329875d5664d567cc841cf7a3f2972acea5440"
+    },
+    {
+      "path": "README.md",
+      "change": "M",
+      "sha256": "86683c0fbfff9dca965eb27e647a752a46c266692582318104e760b289c575ca"
+    },
+    {
+      "path": "render.yaml",
+      "change": "A",
+      "sha256": "1d47b97a4ae5be06350db910118ef0bdcb39849c8f6513fd6113320ad60ef762"
+    },
+    {
+      "path": "scripts/build-single-origin.ps1",
+      "change": "A",
+      "sha256": "b5d63fd2b78fe55d411733dd8830fade82930e521e1e5d045d1d0ac05ba63439"
+    }
+  ]
+}

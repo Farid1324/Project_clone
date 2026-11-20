@@ -1,0 +1,83 @@
+{
+  "milestone": "Artwork assurance",
+  "comparison": "Files edited in this follow-up; working tree remains uncommitted. Manifest excludes its own recursive hash.",
+  "files": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "sha256": "02f049ea98f53a7dc5853701f5b650dbfff30aa072ae19d007f916b4a720c34f"
+    },
+    {
+      "path": "backend/public/demo/cover-unavailable.svg",
+      "change": "added",
+      "sha256": "e56b0460a09b96df3f1933c198941256d747cbceb7c1e76c06297191ce0a18e7"
+    },
+    {
+      "path": "docs/artwork-milestone.md",
+      "change": "added",
+      "sha256": "5d6aa796c78b7cde4846aa2ff5152ea9a1f18cf40d3332b046125db6ddbd343a"
+    },
+    {
+      "path": "docs/artwork-provenance.md",
+      "change": "modified",
+      "sha256": "67c57bd9ac28b57e116cedfaa04f9cbc25088e40a6ff0bb1d0a0d31d28dc7eca"
+    },
+    {
+      "path": "docs/artwork-verification.json",
+      "change": "added",
+      "sha256": "c824a5a1e6b4992b32b9d261d1720dae2894108f124b084a8a9e53814c9f0773"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-covers-mobile-live.jpg",
+      "change": "added",
+      "sha256": "5e1587250e17aa4771d61a94444548c2528610d80a07e2fd3f6286cb28808244"
+    },
+    {
+      "path": "frontend/src/components/HeroBanner.tsx",
+      "change": "modified",
+      "sha256": "44b59da59f301ee50e7f519391631cd0b5514903b20e565b635e951890f54d31"
+    },
+    {
+      "path": "frontend/src/components/MarketplaceImage.tsx",
+      "change": "added",
+      "sha256": "358e97594d4299b9b2b6fd2e438b4d0aff747bb0e9fb78f1a3af8b0562647974"
+    },
+    {
+      "path": "frontend/src/components/ProductCard.tsx",
+      "change": "modified",
+      "sha256": "e246ee1cc4e3369c374ddc28b4c33f156b21ff574639e9927ccba657975cb5cb"
+    },
+    {
+      "path": "frontend/src/components/SearchBar.tsx",
+      "change": "modified",
+      "sha256": "b189152d2107d4f7672d82f0cf2f9c1376f700b392b2d4553224facb8fc65c78"
+    },
+    {
+      "path": "frontend/src/pages/CartPage.tsx",
+      "change": "modified",
+      "sha256": "cf7fc31d3f0412e048f9a0f8541461500eb4096d8c27998ad79f74042dbf1f8c"
+    },
+    {
+      "path": "frontend/src/pages/ProductPage.tsx",
+      "change": "modified",
+      "sha256": "ca9cdcc69f1fc2eb28a3e0f0f9f7192542b8f39ef2f231a2648c264aad66ba05"
+    },
+    {
+      "path": "frontend/tests/artwork.spec.ts",
+      "change": "added",
+      "sha256": "80724399175e62c2809c9db0487c969e32b2b9d3bae5fc2a0bf67e583caa7dee"
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "change": "regenerated from source",
+      "sha256": null,
+      "note": "Active final-response tail captured after persistence; per-message hashes are in ai-chat-history.integrity.json."
+    },
+    {
+      "path": "docs/ai-chat-history.integrity.json",
+      "change": "regenerated from source",
+      "sha256": null,
+      "note": "Active final-response tail captured after persistence; per-message hashes are in ai-chat-history.integrity.json."
+    }
+  ]
+}

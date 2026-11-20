@@ -1,0 +1,101 @@
+{
+  "milestone": "Internship submission preparation",
+  "checked_at": "2026-11-20T09:13:32.401612+00:00",
+  "requirements_source": "Nine project task prompts and subsequent repository-URL clarification; no external assignment rubric supplied",
+  "backend": {
+    "command": "php -d zend_extension=opcache -d opcache.enable_cli=1 artisan test --compact",
+    "status": "passed",
+    "tests": 111,
+    "assertions": 1320,
+    "duration_ms": 24455,
+    "database": "PostgreSQL marketplace_testing",
+    "test_secrets": "random per process via tests/bootstrap.php; worker processes inherit the same configured test secrets",
+    "formatter": "Pint passed"
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "production_build": "passed",
+    "browser": {
+      "tests": 78,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "duration_ms": 174207.50600000002,
+      "origin": "http://127.0.0.1:8000",
+      "server": "compiled React and Laravel PHP development HTTP server; no Vite",
+      "viewports": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "accessibility_scans": 14
+    }
+  },
+  "database": {
+    "migrations_applied": 7,
+    "migrate": "passed; nothing pending",
+    "seed": "passed; existing allocated inventory/order state retained; fixture password randomized"
+  },
+  "submission_tool_tests": {
+    "command": "node --test scripts/check-submission-secrets.test.mjs scripts/export-ai-chat.test.mjs",
+    "status": "passed",
+    "tests": 7,
+    "covers": [
+      "credential locations without value disclosure",
+      "provider/private-key/encryption-key detection",
+      "blank templates",
+      "verbatim message and question preservation",
+      "Unicode and Markdown fences",
+      "source/export hashes",
+      "credential-only redaction without entry omission",
+      "unsupported-block rejection",
+      "actual later final-response capture"
+    ]
+  },
+  "security": {
+    "working_tree_secret_scan": "passed; no findings in Git candidates",
+    "scope": "Heuristic common signatures and known local environment values of at least 16 characters; not a universal guarantee",
+    "shared_fixture_login": "removed; random undisclosed fixture credential on every seed",
+    "fresh_portable_database_password": "generated into ignored files",
+    "ci_credentials": "generated per disposable run; CI execution unverified",
+    "synthetic_backend_validation_vectors": "Test-only input strings, not application or hosting credentials",
+    "gitignore": "Environment variants/private key files ignored; blank examples retained"
+  },
+  "configuration": {
+    "github_workflow_yaml": "parsed",
+    "ci_shell": "bash syntax passed",
+    "docker_compose": "password supplied from ignored environment; not executed",
+    "php_bootstrap": "syntax and full PHPUnit passed"
+  },
+  "github": {
+    "url": "https://github.com/Farid1324/Project_clone",
+    "verified_public_repository_exists": true,
+    "remote_refs": [],
+    "local_origin_configured": true,
+    "committed_or_pushed_in_this_pass": false,
+    "publication_status": "Remote empty when checked; prepared source remains local"
+  },
+  "deployment": {
+    "status": "prepared_not_deployed",
+    "verified_public_url": null,
+    "docker_executed": false,
+    "hosted_ci_executed": false,
+    "prior_local_https_evidence": "docs/audit-verification.json"
+  },
+  "conversation": {
+    "source": "Direct local Codex session JSONL, not reconstructed summaries",
+    "export": "docs/ai-chat-history.md",
+    "integrity": "docs/ai-chat-history.integrity.json",
+    "last_export_redactions": 0,
+    "scope": "Original human user/assistant prose and tool-presented questions; excludes internal instructions/reasoning/tool execution records",
+    "active_final_tail": "Temporary --after-final exporter is started at handoff; manual exact refresh instructions are provided as fallback"
+  },
+  "remaining_submission_gaps": [
+    "Publish initial source commit to the supplied empty repository",
+    "Execute Linux Docker image and hosted Actions workflow",
+    "Deploy and verify actual public HTTPS origin plus authenticated purchase/history",
+    "Confirm final transcript tail after assistant response is persisted"
+  ]
+}

@@ -1,0 +1,339 @@
+[
+  {
+    "page": "home",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-home-desktop-1440.png",
+    "fullScreenshot": "keymarket-home-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "header": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "search": {
+      "x": 306,
+      "y": 48,
+      "width": 550,
+      "height": 56
+    },
+    "hero": {
+      "x": 0,
+      "y": 174,
+      "width": 1008,
+      "height": 288
+    },
+    "card": {
+      "x": 120,
+      "y": 676,
+      "width": 224,
+      "height": 507.59375
+    },
+    "columns": "224px 224px 224px 224px 224px",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "store",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-store-desktop-1440.png",
+    "fullScreenshot": "keymarket-store-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "header": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "search": {
+      "x": 306,
+      "y": 48,
+      "width": 550,
+      "height": 56
+    },
+    "hero": null,
+    "card": {
+      "x": 376,
+      "y": 427.390625,
+      "width": 224,
+      "height": 507.59375
+    },
+    "columns": "224px 224px 224px 224px",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "product",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-product-desktop-1440.png",
+    "fullScreenshot": "keymarket-product-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "header": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "search": {
+      "x": 306,
+      "y": 48,
+      "width": 550,
+      "height": 56
+    },
+    "hero": null,
+    "card": null,
+    "columns": "none",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "cart",
+    "width": 1440,
+    "height": 1000,
+    "screenshot": "keymarket-cart-desktop-1440.png",
+    "fullScreenshot": "keymarket-cart-desktop-1440-full.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "header": {
+      "x": 120,
+      "y": 28,
+      "width": 1200,
+      "height": 96
+    },
+    "search": {
+      "x": 306,
+      "y": 48,
+      "width": 550,
+      "height": 56
+    },
+    "hero": null,
+    "card": null,
+    "columns": "none",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "home",
+    "width": 768,
+    "height": 1024,
+    "screenshot": "keymarket-home-tablet-768.png",
+    "fullScreenshot": "keymarket-home-tablet-768-full.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 20,
+      "y": 28,
+      "width": 728,
+      "height": 56
+    },
+    "header": {
+      "x": 20,
+      "y": 28,
+      "width": 728,
+      "height": 56
+    },
+    "search": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "hero": {
+      "x": 0,
+      "y": 84,
+      "width": 768,
+      "height": 288
+    },
+    "card": {
+      "x": 20,
+      "y": 586,
+      "width": 229.328125,
+      "height": 510.6875
+    },
+    "columns": "229.328px 229.328px 229.328px",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "home",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-home-mobile-390.png",
+    "fullScreenshot": "keymarket-home-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "header": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "search": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "hero": {
+      "x": 0,
+      "y": 84,
+      "width": 390,
+      "height": 260
+    },
+    "card": {
+      "x": 20,
+      "y": 535,
+      "width": 350,
+      "height": 145
+    },
+    "columns": "350px",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "store",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-store-mobile-390.png",
+    "fullScreenshot": "keymarket-store-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "header": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "search": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "hero": null,
+    "card": {
+      "x": 20,
+      "y": 338.6875,
+      "width": 169,
+      "height": 426.65625
+    },
+    "columns": "169px 169px",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "product",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-product-mobile-390.png",
+    "fullScreenshot": "keymarket-product-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "header": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "search": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "hero": null,
+    "card": null,
+    "columns": "none",
+    "unloadedImages": [],
+    "errors": []
+  },
+  {
+    "page": "cart",
+    "width": 390,
+    "height": 844,
+    "screenshot": "keymarket-cart-mobile-390.png",
+    "fullScreenshot": "keymarket-cart-mobile-390-full.png",
+    "viewport": 390,
+    "scrollWidth": 390,
+    "background": "rgb(70, 24, 172)",
+    "container": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "header": {
+      "x": 12,
+      "y": 28,
+      "width": 366,
+      "height": 56
+    },
+    "search": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "hero": null,
+    "card": null,
+    "columns": "none",
+    "unloadedImages": [],
+    "errors": []
+  }
+]

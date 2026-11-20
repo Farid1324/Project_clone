@@ -1,0 +1,354 @@
+{
+  "source": "Final real-backend catalog/search and marketplace browser run",
+  "stats": {
+    "startTime": "2026-11-19T20:12:28.507Z",
+    "duration": 134224.31399999998,
+    "expected": 55,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "backend": {
+    "tests": 70,
+    "assertions": 742,
+    "result": "passed"
+  },
+  "accessibilityScans": 8,
+  "environment": {
+    "portablePostgresSharedBuffers": "32MB",
+    "portablePostgresMaxConnections": 20,
+    "notes": "Final clean run after recovery from host memory pressure and stopped preview processes."
+  },
+  "tests": [
+    {
+      "title": "combined URL filters restore inputs, matching rows and page size through reload and Back",
+      "status": "expected",
+      "durationMs": 5563,
+      "errors": []
+    },
+    {
+      "title": "popularity pagination displays the corresponding backend-ranked products and resets on sort changes",
+      "status": "expected",
+      "durationMs": 2024,
+      "errors": []
+    },
+    {
+      "title": "price directions and newest render the exact database order",
+      "status": "expected",
+      "durationMs": 2901,
+      "errors": []
+    },
+    {
+      "title": "applying a facet resets the page while preserving search, sorting and price bounds",
+      "status": "expected",
+      "durationMs": 1355,
+      "errors": []
+    },
+    {
+      "title": "rapid typing debounces autocomplete into one database request",
+      "status": "expected",
+      "durationMs": 2156,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from / at 1440px",
+      "status": "expected",
+      "durationMs": 2949,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /store at 1440px",
+      "status": "expected",
+      "durationMs": 3218,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /about at 1440px",
+      "status": "expected",
+      "durationMs": 2371,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /products at 1440px",
+      "status": "expected",
+      "durationMs": 2357,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /does-not-exist at 1440px",
+      "status": "expected",
+      "durationMs": 2360,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from / at 390px",
+      "status": "expected",
+      "durationMs": 2886,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /store at 390px",
+      "status": "expected",
+      "durationMs": 2284,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /about at 390px",
+      "status": "expected",
+      "durationMs": 2865,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /products at 390px",
+      "status": "expected",
+      "durationMs": 2598,
+      "errors": []
+    },
+    {
+      "title": "global case-insensitive typo search works from /does-not-exist at 390px",
+      "status": "expected",
+      "durationMs": 2583,
+      "errors": []
+    },
+    {
+      "title": "out-of-range pages recover without losing the current search and filters",
+      "status": "expected",
+      "durationMs": 1461,
+      "errors": []
+    },
+    {
+      "title": "homepage responds at 1440px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 2299,
+      "errors": []
+    },
+    {
+      "title": "homepage responds at 768px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 2044,
+      "errors": []
+    },
+    {
+      "title": "homepage responds at 390px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 1861,
+      "errors": []
+    },
+    {
+      "title": "hero controls change the banner and its call to action navigates",
+      "status": "expected",
+      "durationMs": 3356,
+      "errors": []
+    },
+    {
+      "title": "keyboard typo suggestions navigate to the selected product",
+      "status": "expected",
+      "durationMs": 3102,
+      "errors": []
+    },
+    {
+      "title": "superseded suggestions cannot replace the current search results",
+      "status": "expected",
+      "durationMs": 3905,
+      "errors": []
+    },
+    {
+      "title": "submitted search and filtering are reflected in the URL",
+      "status": "expected",
+      "durationMs": 2969,
+      "errors": []
+    },
+    {
+      "title": "price sorting and range validation use actual rendered prices",
+      "status": "expected",
+      "durationMs": 2555,
+      "errors": []
+    },
+    {
+      "title": "pagination and browser back preserve the catalog state",
+      "status": "expected",
+      "durationMs": 1738,
+      "errors": []
+    },
+    {
+      "title": "mobile navigation, search, and filters have working dialogs and focus",
+      "status": "expected",
+      "durationMs": 2636,
+      "errors": []
+    },
+    {
+      "title": "homepage banners failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 3195,
+      "errors": []
+    },
+    {
+      "title": "homepage banners has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2871,
+      "errors": []
+    },
+    {
+      "title": "homepage categories failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 3029,
+      "errors": []
+    },
+    {
+      "title": "homepage categories has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 2290,
+      "errors": []
+    },
+    {
+      "title": "homepage best-sellers failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 2724,
+      "errors": []
+    },
+    {
+      "title": "homepage best-sellers has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 1673,
+      "errors": []
+    },
+    {
+      "title": "homepage deals failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 2559,
+      "errors": []
+    },
+    {
+      "title": "homepage deals has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 1800,
+      "errors": []
+    },
+    {
+      "title": "homepage gift-cards failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 2545,
+      "errors": []
+    },
+    {
+      "title": "homepage gift-cards has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 1847,
+      "errors": []
+    },
+    {
+      "title": "homepage recommendations failure is isolated and its retry restores content",
+      "status": "expected",
+      "durationMs": 2639,
+      "errors": []
+    },
+    {
+      "title": "homepage recommendations has a loading and empty state without fallback content",
+      "status": "expected",
+      "durationMs": 1720,
+      "errors": []
+    },
+    {
+      "title": "every homepage section renders the matching seeded endpoint data",
+      "status": "expected",
+      "durationMs": 2312,
+      "errors": []
+    },
+    {
+      "title": "homepage best-sellers card opens the correct product details",
+      "status": "expected",
+      "durationMs": 2094,
+      "errors": []
+    },
+    {
+      "title": "homepage deals card opens the correct product details",
+      "status": "expected",
+      "durationMs": 1710,
+      "errors": []
+    },
+    {
+      "title": "homepage gift-cards card opens the correct product details",
+      "status": "expected",
+      "durationMs": 2314,
+      "errors": []
+    },
+    {
+      "title": "homepage recommendations card opens the correct product details",
+      "status": "expected",
+      "durationMs": 2251,
+      "errors": []
+    },
+    {
+      "title": "popular category link opens the matching database-backed store facet",
+      "status": "expected",
+      "durationMs": 2502,
+      "errors": []
+    },
+    {
+      "title": "seller offer details expand and purchase controls are not faked",
+      "status": "expected",
+      "durationMs": 1612,
+      "errors": []
+    },
+    {
+      "title": "missing products and unmatched routes have real recovery links",
+      "status": "expected",
+      "durationMs": 1824,
+      "errors": []
+    },
+    {
+      "title": "skip link moves keyboard focus to the main landmark",
+      "status": "expected",
+      "durationMs": 966,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /",
+      "status": "expected",
+      "durationMs": 2732,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /store",
+      "status": "expected",
+      "durationMs": 2100,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /about",
+      "status": "expected",
+      "durationMs": 1416,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /products",
+      "status": "expected",
+      "durationMs": 1764,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /",
+      "status": "expected",
+      "durationMs": 2845,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /store",
+      "status": "expected",
+      "durationMs": 1912,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /about",
+      "status": "expected",
+      "durationMs": 1527,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /products",
+      "status": "expected",
+      "durationMs": 1928,
+      "errors": []
+    }
+  ]
+}

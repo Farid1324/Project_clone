@@ -1,0 +1,9 @@
+# Keymarket project summary
+
+Keymarket is an independent Eneba-inspired digital marketplace built with React, TypeScript, Vite, Tailwind CSS, Laravel, PostgreSQL and Sanctum. It contains 45 seeded game/gift-card variants and 135 seller offers. Visitors browse six independently queried homepage sections, combine catalog filters and sorting, use partial/typo autocomplete, compare sellers and add a specific offer to a persistent cart.
+
+Authenticated buyers review current backend prices and stock, choose a successful or declined simulated payment, and retrieve unique nonredeemable keys from private order history. PostgreSQL transactions, ordered row locks, idempotency and database constraints protect inventory allocation. Keys are encrypted; duplicate detection uses a separate HMAC fingerprint. Session cookies and CSRF protection support a single-origin React/Laravel deployment.
+
+The architecture is a modular monolith with thin HTTP controllers, validated requests, Eloquent relationships, reusable catalog queries and focused services. PostgreSQL pg_trgm provides indexed fuzzy search without another search service. Shared purple theme tokens, accessible React components, original artwork and responsive layouts give the demo a consistent identity distinct from Eneba.
+
+The deliberate scope is one complete discovery-to-key journey, rather than a broad marketplace shell. Payments are simulated; seller administration, real billing/refunds, account recovery, email verification, personalization, multiple currencies and verified real-world activation eligibility are excluded. Docker/Render/Neon configuration is prepared, but the public application URL and hosted production run remain unverified. The supplied GitHub repository exists and was empty when checked; source publication is still a submission step.

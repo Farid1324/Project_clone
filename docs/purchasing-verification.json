@@ -1,0 +1,1346 @@
+{
+  "milestone": "Authenticated simulated purchasing",
+  "captured_at": "2026-11-19T21:40:23.515Z",
+  "backend": {
+    "tool": "phpunit",
+    "result": "passed",
+    "tests": 102,
+    "passed": 102,
+    "assertions": 1234,
+    "duration_ms": 22994,
+    "database": "marketplace_testing (PostgreSQL)",
+    "new_auth_checkout_tests": 20,
+    "concurrency": {
+      "independent_php_processes": 2,
+      "overlap_verified": "Both sessions observed waiting on locks through pg_stat_activity before parent lock release.",
+      "last_key_race": "one fulfilled order; other buyer receives 409 and retains cart",
+      "duplicate_request_race": "same order ID; one payment and one allocation"
+    }
+  },
+  "frontend": {
+    "lint": "passed",
+    "production_build": "passed",
+    "playwright": {
+      "stats": {
+        "startTime": "2026-11-19T21:36:56.136Z",
+        "duration": 158208.3,
+        "expected": 71,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "errors": [],
+      "specs": [
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "combined URL filters restore inputs, matching rows and page size through reload and Back",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2122,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "popularity pagination displays the corresponding backend-ranked products and resets on sort changes",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1714,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "price directions and newest render the exact database order",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1812,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "applying a facet resets the page while preserving search, sorting and price bounds",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1022,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "rapid typing debounces autocomplete into one database request",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1292,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from / at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1874,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /store at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1893,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /about at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1357,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /products at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1823,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /does-not-exist at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1892,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from / at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1810,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /store at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1817,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /about at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1769,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /products at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1847,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "global case-insensitive typo search works from /does-not-exist at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1951,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "catalog-search.spec.ts",
+          "title": "out-of-range pages recover without losing the current search and filters",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1126,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage responds at 1440px without horizontal page overflow",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1347,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage responds at 768px without horizontal page overflow",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1714,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage responds at 390px without horizontal page overflow",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1457,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "hero controls change the banner and its call to action navigates",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2327,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "keyboard typo suggestions navigate to the selected product",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2431,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "superseded suggestions cannot replace the current search results",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 3495,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "submitted search and filtering are reflected in the URL",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1665,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "price sorting and range validation use actual rendered prices",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1974,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "pagination and browser back preserve the catalog state",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1776,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "mobile navigation, search, and filters have working dialogs and focus",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2053,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage banners failure is isolated and its retry restores content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2486,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage banners has a loading and empty state without fallback content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1356,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage categories failure is isolated and its retry restores content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2476,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage categories has a loading and empty state without fallback content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1790,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage best-sellers failure is isolated and its retry restores content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2478,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage best-sellers has a loading and empty state without fallback content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1506,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage deals failure is isolated and its retry restores content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2407,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage deals has a loading and empty state without fallback content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1833,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage gift-cards failure is isolated and its retry restores content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2439,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage gift-cards has a loading and empty state without fallback content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1308,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage recommendations failure is isolated and its retry restores content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2373,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage recommendations has a loading and empty state without fallback content",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1592,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "every homepage section renders the matching seeded endpoint data",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2172,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage best-sellers card opens the correct product details",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1951,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage deals card opens the correct product details",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2076,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage gift-cards card opens the correct product details",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1959,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "homepage recommendations card opens the correct product details",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2052,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "popular category link opens the matching database-backed store facet",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1914,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "seller offer details expand and purchase controls are not faked",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1062,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "missing products and unmatched routes have real recovery links",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1390,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "skip link moves keyboard focus to the main landmark",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 671,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 1440px on /",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2649,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 1440px on /store",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1834,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 1440px on /about",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1181,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 1440px on /products",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1644,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 390px on /",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2401,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 390px on /store",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1678,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 390px on /about",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1097,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "marketplace.spec.ts",
+          "title": "accessibility scan at 390px on /products",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1599,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "specific seller selection persists in the cart at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2369,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "specific seller selection persists in the cart at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2686,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "two sellers for one product stay distinct and quantity changes affect only the selected offer",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2271,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "sold-out offers, unavailable products and no-offer products have honest disabled states",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2170,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "a stock conflict shows a real error without retrying or inventing a cart addition",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1853,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "real HTTP cart writes require CSRF protection and sessions cannot access another cart line",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1208,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "populated cart is accessible and fits the viewport at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1909,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "product-cart.spec.ts",
+          "title": "populated cart is accessible and fits the viewport at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2328,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "guest cart merges through registration, purchase delivers keys, and history survives logout at 1440px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 7575,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "guest cart merges through registration, purchase delivers keys, and history survives logout at 390px",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 8025,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "failed simulated payment retains cart and a new attempt can succeed",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 5638,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "duplicate HTTP purchase returns one order and another session cannot read its keys",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 4192,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "price and stock conflicts refresh the summary and require explicit confirmation again",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 3753,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "an interrupted response recovers the original successful purchase after reload",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 4973,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "real HTTP registration enforces CSRF, rotates sessions, and logout revokes protected access",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 2225,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "purchasing.spec.ts",
+          "title": "a revoked server session clears cached identity before showing a protected page",
+          "ok": true,
+          "tests": [
+            {
+              "status": "expected",
+              "results": [
+                {
+                  "status": "passed",
+                  "duration": 1623,
+                  "errors": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "axe_scans": 14,
+    "detected_axe_violations": 0,
+    "configured_scan_scope": "Existing WCAG-tagged scans plus full-rule checkout and confirmation scans."
+  },
+  "captures": [
+    {
+      "page": "login",
+      "width": 1440,
+      "height": 1000,
+      "screenshot": "keymarket-login-desktop-1440.png",
+      "fullScreenshot": "keymarket-login-desktop-1440-full.png",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "errors": []
+    },
+    {
+      "page": "checkout",
+      "width": 1440,
+      "height": 1000,
+      "screenshot": "keymarket-checkout-desktop-1440.png",
+      "fullScreenshot": "keymarket-checkout-desktop-1440-full.png",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "errors": []
+    },
+    {
+      "page": "confirmation",
+      "width": 1440,
+      "height": 1000,
+      "screenshot": "keymarket-confirmation-desktop-1440.png",
+      "fullScreenshot": "keymarket-confirmation-desktop-1440-full.png",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "errors": []
+    },
+    {
+      "page": "orders",
+      "width": 1440,
+      "height": 1000,
+      "screenshot": "keymarket-orders-desktop-1440.png",
+      "fullScreenshot": "keymarket-orders-desktop-1440-full.png",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "errors": []
+    },
+    {
+      "page": "login",
+      "width": 390,
+      "height": 844,
+      "screenshot": "keymarket-login-mobile-390.png",
+      "fullScreenshot": "keymarket-login-mobile-390-full.png",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "errors": []
+    },
+    {
+      "page": "checkout",
+      "width": 390,
+      "height": 844,
+      "screenshot": "keymarket-checkout-mobile-390.png",
+      "fullScreenshot": "keymarket-checkout-mobile-390-full.png",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "errors": []
+    },
+    {
+      "page": "confirmation",
+      "width": 390,
+      "height": 844,
+      "screenshot": "keymarket-confirmation-mobile-390.png",
+      "fullScreenshot": "keymarket-confirmation-mobile-390-full.png",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "errors": []
+    },
+    {
+      "page": "orders",
+      "width": 390,
+      "height": 844,
+      "screenshot": "keymarket-orders-mobile-390.png",
+      "fullScreenshot": "keymarket-orders-mobile-390-full.png",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "errors": []
+    }
+  ],
+  "scope": {
+    "payment": "In-process approve/decline simulation only; no real payment provider, cards or money.",
+    "delivery": "Unique nonredeemable demo keys only.",
+    "auth": "Sanctum web-session cookies; bearer-token retrieval disabled."
+  },
+  "qa_environment": {
+    "http_database": "marketplace (local seeded demo)",
+    "cache_store": "array, process-only for browser QA",
+    "bcrypt_rounds": 4,
+    "notes": [
+      "Browser tests create demo accounts/orders and consume demo inventory.",
+      "Concurrency tests use committed fixtures and independent processes against the dedicated test database.",
+      "Explicit price/stock-conflict browser scenario is intercepted; backend tests perform actual database mutations.",
+      "HTTP development server is single-threaded; purchase contention is independently proven in the PHP worker tests.",
+      "Docker and hosted CI were not executed."
+    ]
+  }
+}

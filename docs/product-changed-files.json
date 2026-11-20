@@ -1,0 +1,308 @@
+{
+  "milestone": "Product details and seller-specific cart",
+  "comparison": "Hashes captured immediately before this task; repository has no initial commit.",
+  "generated_at": "2026-11-19T21:04:32.437Z",
+  "self_hash": "Omitted to avoid recursive self-hashing.",
+  "files": [
+    {
+      "path": "backend/app/Http/Controllers/Api/V1/CartController.php",
+      "change": "A",
+      "sha256": "0b850e780c5db3f2b588d3d0b2422779835fb8d7e34387263ce98ae2313f957e"
+    },
+    {
+      "path": "backend/app/Http/Requests/AddCartItemRequest.php",
+      "change": "A",
+      "sha256": "17f4461208294ae37ecb1c301641e988b8101016b01e0e629dc0d192bbbbab7a"
+    },
+    {
+      "path": "backend/app/Http/Requests/UpdateCartItemRequest.php",
+      "change": "A",
+      "sha256": "0a6be2bc6cf7802ca3c458d1c1aaa1f1fda887d0de67deddfe8d9f91b1735111"
+    },
+    {
+      "path": "backend/app/Http/Resources/CartResource.php",
+      "change": "A",
+      "sha256": "9829a1cb35feafa1116f9ef808c69c6bf6648e75981a487e33a630788ee32120"
+    },
+    {
+      "path": "backend/app/Http/Resources/ProductResource.php",
+      "change": "M",
+      "sha256": "706c6cc3918e12d2c387e4e238135b0c76e877514701b1cf807d231678c6a826"
+    },
+    {
+      "path": "backend/app/Models/Product.php",
+      "change": "M",
+      "sha256": "5cdb26d1415b11910e99504508d4cf13eb4ce7fe5c4f7f4541abde6b8244dbe5"
+    },
+    {
+      "path": "backend/app/Providers/AppServiceProvider.php",
+      "change": "M",
+      "sha256": "165c7d5d797ec4b84db136abcbf6af9fc1286ea419193cf8376b4f310b84cb90"
+    },
+    {
+      "path": "backend/app/Services/Cart/CartService.php",
+      "change": "A",
+      "sha256": "f77cda538883eb9a051df3642d13a0a9aa5bebcd1aae6c85c214eafcf0149ac9"
+    },
+    {
+      "path": "backend/bootstrap/app.php",
+      "change": "M",
+      "sha256": "b03e7a5d6508e04d1c16f53061733923d2bf31f483efe3cff143bff47979b4fe"
+    },
+    {
+      "path": "backend/database/migrations/2026_11_19_203002_add_product_details_to_products_table.php",
+      "change": "A",
+      "sha256": "d5172ec46da9aef80fe6d1e8be9a0d002f45e18f4c38fee26b3eec044a8d0834"
+    },
+    {
+      "path": "backend/database/seeders/data/product-details.json",
+      "change": "A",
+      "sha256": "8caa9e8b316d472938b2bf44d7f5705e84f2938ccbbb207cda4d5c03f67155f0"
+    },
+    {
+      "path": "backend/database/seeders/DemoMarketplaceSeeder.php",
+      "change": "M",
+      "sha256": "d6c67835a7eb9c937c4a56edac84a0572c6b4896990e96c6cfed534d1af789a3"
+    },
+    {
+      "path": "backend/routes/api.php",
+      "change": "M",
+      "sha256": "ad4df60fc7fa3807138212801c07b691710cf8011cefa474b8aa447465631656"
+    },
+    {
+      "path": "backend/tests/Feature/ProductCartTest.php",
+      "change": "A",
+      "sha256": "7e830516e51dbab86ea1f5108c0bd367b6c5a0db23b6677e5e0419569682229b"
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "change": "M",
+      "sha256": "3b5e7219e6151660abeef3cad9287b8963f8c9ee1b1f2ad60186bb0a7f2025d2"
+    },
+    {
+      "path": "docs/api-design.md",
+      "change": "M",
+      "sha256": "bf3dc374909fcae78b3e79aa8917ba614707966d873e7c46363d4889eb5e8df4"
+    },
+    {
+      "path": "docs/architecture.md",
+      "change": "M",
+      "sha256": "a42d878a0c0a99723f6aeb98b2c185057fdb2281162186eb02c777573250a49b"
+    },
+    {
+      "path": "docs/backend-setup.md",
+      "change": "M",
+      "sha256": "579b1c05cb9fff4cc046e370bb20a51ca1210263085e4bca8d5bbaf78c189a16"
+    },
+    {
+      "path": "docs/database-schema.md",
+      "change": "M",
+      "sha256": "7931484509f9104dc18bea20282fe17b525b25de95d1b86230f834c27b3f2b81"
+    },
+    {
+      "path": "docs/implementation-plan.md",
+      "change": "M",
+      "sha256": "d958a679da846ab852871310377dbbfa5660d5b7fe515f83bdbb57b30b10d18d"
+    },
+    {
+      "path": "docs/product-changed-files.json",
+      "change": "A",
+      "sha256": null
+    },
+    {
+      "path": "docs/product-data-provenance.md",
+      "change": "A",
+      "sha256": "0252d351d6ec52cb0ceab668328033ed3601f92937eac5283a1a897b8bc97435"
+    },
+    {
+      "path": "docs/product-milestone.md",
+      "change": "A",
+      "sha256": "7d536230ee26c113dca640fa0f67dcd303b09d975b4b66bd50ffa7ad4ce9dc6a"
+    },
+    {
+      "path": "docs/product-verification.json",
+      "change": "A",
+      "sha256": "92868f6f9dc41c722c6e1cf060b3b705a948bc3fe8ad46ab04d74d517dc22dd5"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-cart-desktop-1440-full.png",
+      "change": "A",
+      "sha256": "b2d9e3a54814c3ef727434dd451db0c6ebf28860fa8d10c71a1e799f890504bd"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-cart-desktop-1440.png",
+      "change": "A",
+      "sha256": "514ae7823efac2dab5e3e036c2df8f7ec52b110a2555ce3c0ce0d184f66b4d2d"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-cart-mobile-390-full.png",
+      "change": "A",
+      "sha256": "64689c458e57b7af58787ba9e9b64abab1ff3467a7ed121c1b072f877915496e"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-cart-mobile-390.png",
+      "change": "A",
+      "sha256": "c39625d61d0be4ab58dd39129eb439b163b38da5adb2c6ee40d2e71095ea9964"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-home-desktop-1440-full.png",
+      "change": "M",
+      "sha256": "3ed2bfb2d991516c9e4cc4223db1bc7269baf01b98bdd115ab3c2435cfaae28a"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-home-desktop-1440.png",
+      "change": "M",
+      "sha256": "5047f19136681bbefad95eca0561eec162227a0fb54597fef396275312980415"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-home-mobile-390-full.png",
+      "change": "M",
+      "sha256": "3805901e5d7779e16d518cf67baf96c72e3670c97575721befd2f1cadba437f2"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-home-mobile-390.png",
+      "change": "M",
+      "sha256": "b7a3c0d49bfe1c107f1d0b5a0a0afe24af5f806fb928f57f9858cf1a8965d1c7"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-home-tablet-768-full.png",
+      "change": "M",
+      "sha256": "a9b781fd0eb8748519ef5b4ccf53f7ef7e80f9b80ff8b4959e8b60bed9b9354d"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-home-tablet-768.png",
+      "change": "M",
+      "sha256": "44c7cfbacf9bb51e13fe52495f4d6747deb35d2e725e99594ff6d9751dc0e546"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-product-desktop-1440-full.png",
+      "change": "M",
+      "sha256": "6755e19580b7c520da1cc1da6df9363b0759e9ec793eafb003e340875a660041"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-product-desktop-1440.png",
+      "change": "M",
+      "sha256": "534dd26c4ad1c87338ff6e49bdceb8c2829b4bce6226f5eddb4889dbd555826b"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-product-mobile-390-full.png",
+      "change": "M",
+      "sha256": "71cb9536d606231b27d085333e2e55f90edded6beff71fb61db65d68c3d383da"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-product-mobile-390.png",
+      "change": "M",
+      "sha256": "c20d77812b13651f0ebf0f69d1f542408a5431e06c0bb63df2c8b71d430c4ed0"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-store-desktop-1440-full.png",
+      "change": "M",
+      "sha256": "3060d7cb99e797bb3d0228ec328b5689d55c2a3f41a5efa56af0229fa5d77008"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-store-desktop-1440.png",
+      "change": "M",
+      "sha256": "37c3c0bc83393ff198f9c64310a8b616e56476b850a170f4daa9dd4ff4d51b2f"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-store-mobile-390-full.png",
+      "change": "M",
+      "sha256": "d02900f509c03aa39b45159fcfdb2d25944281a83f7ff466adb0c411f63fc510"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-store-mobile-390.png",
+      "change": "M",
+      "sha256": "deb80c993fcef3b2db818d01fb366f29abc0c3d8563f286de75006f3ab6065ca"
+    },
+    {
+      "path": "docs/ui-screenshots/observations.json",
+      "change": "M",
+      "sha256": "e6a89aba03ec0d79d41552150c7a4300f0a6243f992cb5d19cd1de9dda132788"
+    },
+    {
+      "path": "frontend/README.md",
+      "change": "M",
+      "sha256": "030b23682c1f6a6856d05bf7868929e45d3a15849449aa1b56bb828fee0cf5b5"
+    },
+    {
+      "path": "frontend/scripts/capture-local.mjs",
+      "change": "M",
+      "sha256": "f72644a16cc32137333f9b74a09dbbdd325106a12a3cd1415576711987f85679"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "change": "M",
+      "sha256": "28162f0c1cf64424e7fcf6efc15c7171b0bcd09a0c567097857b30542832f47d"
+    },
+    {
+      "path": "frontend/src/components/Header.tsx",
+      "change": "M",
+      "sha256": "b9793f5e9b283b298a63f93dd963f6c106e6cf3e015bb3ecd2eafa2ca3adfb34"
+    },
+    {
+      "path": "frontend/src/components/ProductRequirements.tsx",
+      "change": "A",
+      "sha256": "791a5a4564ea7b8962f86b647cdd5b0f040cb8b4f62167d516b1c69a119423a9"
+    },
+    {
+      "path": "frontend/src/components/SellerOfferCard.tsx",
+      "change": "M",
+      "sha256": "4f2e930cb7c0d3db0a19b52e7b50ed4c56079c9d4235e99020dba15cc3c83272"
+    },
+    {
+      "path": "frontend/src/hooks/useCart.ts",
+      "change": "A",
+      "sha256": "560a7c324c3ce3ea2c4dec039ab96933c3a7e85adb2cdb0f14b496a59bce0bb6"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "change": "M",
+      "sha256": "506dc67d796be56bceb27b0f0025d2f8cc37d90d2810947f0bd4a813cc13524b"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "change": "M",
+      "sha256": "d183de002c5914c546131e91537b506b540603894d4ffdf2115cb5be11da12ab"
+    },
+    {
+      "path": "frontend/src/pages/AboutPage.tsx",
+      "change": "M",
+      "sha256": "5e8e9ba9b6cc2443cd41fe0d98e82eb62cc191e4d7d7cc94ddbcc81c9319a426"
+    },
+    {
+      "path": "frontend/src/pages/CartPage.tsx",
+      "change": "A",
+      "sha256": "9c8cf248377ab3cdeabef046dc08086be48d7c4fb2e7d074c60fb2fc67fc5a72"
+    },
+    {
+      "path": "frontend/src/pages/ProductPage.tsx",
+      "change": "M",
+      "sha256": "95b5b00c29d02e976ca5a295d9f2bb4c5cf36ab19c58303bd286c5d2b04c2d73"
+    },
+    {
+      "path": "frontend/src/styles/product-cart.css",
+      "change": "A",
+      "sha256": "699ce51487fba836bd91a3d3d40149bd2396654df5a1f5e575881576347e6e23"
+    },
+    {
+      "path": "frontend/src/types/api.ts",
+      "change": "M",
+      "sha256": "b58942a9f7464c3490c85d94b6242dec1ef7bba3143d0206383416ef36e93907"
+    },
+    {
+      "path": "frontend/tests/marketplace.spec.ts",
+      "change": "M",
+      "sha256": "3e8f4576152952fc6599ae7a797040374baed2ce3dcb58e58da34f919f42dffb"
+    },
+    {
+      "path": "frontend/tests/product-cart.spec.ts",
+      "change": "A",
+      "sha256": "b373825151d3e2344ae1494feed958a70df95d17bf64a58df2144c2e12f9fd8a"
+    },
+    {
+      "path": "README.md",
+      "change": "M",
+      "sha256": "cb9f6fc9b598001115541e1d65d6b862770ccd2f1afd5c4e38fc816cce951182"
+    }
+  ]
+}

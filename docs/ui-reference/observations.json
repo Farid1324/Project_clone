@@ -1,0 +1,724 @@
+[
+  {
+    "page": "home",
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "capturedAt": "2026-11-19T19:22:16.217Z",
+    "navigationError": null,
+    "screenshot": "eneba-desktop-1440.png",
+    "title": "Buy Games, Gift Cards & Top Ups Cheaper",
+    "url": "https://www.eneba.com/",
+    "body": {
+      "tag": "BODY",
+      "background": "rgb(70, 24, 172)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 4521.984375
+      }
+    },
+    "search": {
+      "tag": "INPUT",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "19px",
+      "radius": "0px",
+      "rect": {
+        "x": 306,
+        "y": 21,
+        "width": 528,
+        "height": 55
+      }
+    },
+    "headings": [
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 120,
+          "y": 575,
+          "width": 1200,
+          "height": 37.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 120,
+          "y": 1265.296875,
+          "width": 1200,
+          "height": 37.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 120,
+          "y": 1921.984375,
+          "width": 1200,
+          "height": 37.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 120,
+          "y": 2434.484375,
+          "width": 1200,
+          "height": 37.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 120,
+          "y": 3041.984375,
+          "width": 1200,
+          "height": 37.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 120,
+          "y": 3659.484375,
+          "width": 1200,
+          "height": 37.5
+        }
+      }
+    ]
+  },
+  {
+    "page": "store",
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "capturedAt": "2026-11-19T19:22:21.591Z",
+    "navigationError": null,
+    "screenshot": "eneba-store-desktop-1440.png",
+    "title": "Game keys | PC keys | CD keys | Console game keys",
+    "url": "https://www.eneba.com/store/games",
+    "body": {
+      "tag": "BODY",
+      "background": "rgb(70, 24, 172)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 5972.140625
+      }
+    },
+    "search": {
+      "tag": "INPUT",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "19px",
+      "radius": "0px",
+      "rect": {
+        "x": 306,
+        "y": 21,
+        "width": 528,
+        "height": 55
+      }
+    },
+    "headings": [
+      {
+        "tag": "H1",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "30px",
+        "radius": "0px",
+        "rect": {
+          "x": 120,
+          "y": 201,
+          "width": 704.734375,
+          "height": 37.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "24px",
+        "radius": "0px",
+        "rect": {
+          "x": 140,
+          "y": 4472.140625,
+          "width": 1160,
+          "height": 30
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "24px",
+        "radius": "0px",
+        "rect": {
+          "x": 140,
+          "y": 4934.140625,
+          "width": 1160,
+          "height": 30
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "24px",
+        "radius": "0px",
+        "rect": {
+          "x": 140,
+          "y": 5168.140625,
+          "width": 1160,
+          "height": 30
+        }
+      }
+    ]
+  },
+  {
+    "page": "product",
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "capturedAt": "2026-11-19T19:22:25.998Z",
+    "navigationError": null,
+    "screenshot": "eneba-product-desktop-1440.png",
+    "title": "Buy Minecraft: Java & Bedrock Edition Windows Store key PC! Cheap price",
+    "url": "https://www.eneba.com/other-minecraft-java-bedrock-edition-pc-official-website-key-global",
+    "body": {
+      "tag": "BODY",
+      "background": "rgb(70, 24, 172)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 4646.671875
+      }
+    },
+    "search": {
+      "tag": "INPUT",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "19px",
+      "radius": "0px",
+      "rect": {
+        "x": 306,
+        "y": 21,
+        "width": 528,
+        "height": 55
+      }
+    },
+    "headings": [
+      {
+        "tag": "H1",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "26px",
+        "radius": "0px",
+        "rect": {
+          "x": 294,
+          "y": 248,
+          "width": 593.0625,
+          "height": 58.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "18px",
+        "radius": "0px",
+        "rect": {
+          "x": 40,
+          "y": 871.484375,
+          "width": 980,
+          "height": 22.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "18px",
+        "radius": "0px",
+        "rect": {
+          "x": 40,
+          "y": 1185.984375,
+          "width": 153.375,
+          "height": 22.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "18px",
+        "radius": "0px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "18px",
+        "radius": "0px",
+        "rect": {
+          "x": 40,
+          "y": 1681.484375,
+          "width": 980,
+          "height": 22.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "18px",
+        "radius": "0px",
+        "rect": {
+          "x": 40,
+          "y": 2273.984375,
+          "width": 980,
+          "height": 22.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "18px",
+        "radius": "0px",
+        "rect": {
+          "x": 40,
+          "y": 3125.484375,
+          "width": 965,
+          "height": 22.5
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "17px",
+        "radius": "0px",
+        "rect": {
+          "x": 60,
+          "y": 3531.375,
+          "width": 940,
+          "height": 20.390625
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "17px",
+        "radius": "0px",
+        "rect": {
+          "x": 60,
+          "y": 3670.765625,
+          "width": 940,
+          "height": 20.390625
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "17px",
+        "radius": "0px",
+        "rect": {
+          "x": 60,
+          "y": 3971.15625,
+          "width": 940,
+          "height": 20.390625
+        }
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "capturedAt": "2026-11-19T19:22:31.665Z",
+    "navigationError": null,
+    "screenshot": "eneba-mobile-390.png",
+    "title": "Buy Games, Gift Cards & Top Ups Cheaper",
+    "url": "https://www.eneba.com/",
+    "body": {
+      "tag": "BODY",
+      "background": "rgb(70, 24, 172)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 7604.1875
+      }
+    },
+    "search": {
+      "tag": "INPUT",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)",
+      "font": "metropolis, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "radius": "0px",
+      "rect": {
+        "x": 228,
+        "y": 0,
+        "width": 80,
+        "height": 55
+      }
+    },
+    "headings": [
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "20px",
+        "radius": "0px",
+        "rect": {
+          "x": 20,
+          "y": 356,
+          "width": 350,
+          "height": 25
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "20px",
+        "radius": "0px",
+        "rect": {
+          "x": 20,
+          "y": 497.1875,
+          "width": 350,
+          "height": 25
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "20px",
+        "radius": "0px",
+        "rect": {
+          "x": 20,
+          "y": 1472.1875,
+          "width": 350,
+          "height": 25
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "20px",
+        "radius": "0px",
+        "rect": {
+          "x": 20,
+          "y": 2785.1875,
+          "width": 350,
+          "height": 25
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "20px",
+        "radius": "0px",
+        "rect": {
+          "x": 20,
+          "y": 3153.1875,
+          "width": 350,
+          "height": 25
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "20px",
+        "radius": "0px",
+        "rect": {
+          "x": 20,
+          "y": 4466.1875,
+          "width": 350,
+          "height": 25
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "font": "metropolis, Arial, Helvetica, sans-serif",
+        "fontSize": "20px",
+        "radius": "0px",
+        "rect": {
+          "x": 20,
+          "y": 5789.1875,
+          "width": 350,
+          "height": 25
+        }
+      }
+    ]
+  },
+  {
+    "page": "store",
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "capturedAt": "2026-11-19T19:22:35.830Z",
+    "navigationError": null,
+    "screenshot": "eneba-store-mobile-390.png",
+    "title": "Just a moment...",
+    "url": "https://www.eneba.com/store/games",
+    "body": {
+      "tag": "BODY",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(49, 49, 49)",
+      "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      }
+    },
+    "search": {
+      "tag": "INPUT",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "Arial",
+      "fontSize": "13.3333px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "headings": [
+      {
+        "tag": "H1",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(49, 49, 49)",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "40px",
+        "radius": "0px",
+        "rect": {
+          "x": 72,
+          "y": 128,
+          "width": 296.71875,
+          "height": 50
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(49, 49, 49)",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "24px",
+        "radius": "0px",
+        "rect": {
+          "x": 16,
+          "y": 186,
+          "width": 358,
+          "height": 30
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(49, 49, 49)",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "24px",
+        "radius": "0px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  {
+    "page": "product",
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "capturedAt": "2026-11-19T19:22:41.072Z",
+    "navigationError": null,
+    "screenshot": "eneba-product-mobile-390.png",
+    "title": "Just a moment...",
+    "url": "https://www.eneba.com/other-minecraft-java-bedrock-edition-pc-official-website-key-global",
+    "body": {
+      "tag": "BODY",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(49, 49, 49)",
+      "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "16px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      }
+    },
+    "search": {
+      "tag": "INPUT",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "font": "Arial",
+      "fontSize": "13.3333px",
+      "radius": "0px",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "headings": [
+      {
+        "tag": "H1",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(49, 49, 49)",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "40px",
+        "radius": "0px",
+        "rect": {
+          "x": 72,
+          "y": 128,
+          "width": 296.71875,
+          "height": 50
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(49, 49, 49)",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "24px",
+        "radius": "0px",
+        "rect": {
+          "x": 16,
+          "y": 186,
+          "width": 358,
+          "height": 30
+        }
+      },
+      {
+        "tag": "H2",
+        "background": "rgba(0, 0, 0, 0)",
+        "color": "rgb(49, 49, 49)",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "fontSize": "24px",
+        "radius": "0px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      }
+    ]
+  }
+]

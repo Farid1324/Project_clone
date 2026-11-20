@@ -1,0 +1,141 @@
+{
+  "milestone": "Submission preparation",
+  "generated_at": "2026-11-20T09:14:35.898888+00:00",
+  "comparison": "Explicit files edited/created in this submission pass. The local repository has no commits; git diff cannot provide a committed baseline. Prior milestone manifests remain historical. This manifest excludes its own recursive hash.",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "8ae56407179afada9e42ec808e606b5da34424bb20c0cae81002dcc396a9a4cc"
+    },
+    {
+      "path": ".github/workflows/backend.yml",
+      "sha256": "db98b739276a31c945b861f49b6dfdd74f5408aaf833cfcd9e5a371276c58d7b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "618c0ea4d7b5a9fccd1c9b30133118855973682ef10aa9cc5c04f7998c1760e7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "74887391b4d848a71661f75bbbaf777193f9abbcfa13026482452076fe3a9e81"
+    },
+    {
+      "path": "backend/.env.example",
+      "sha256": "a56487e89dfb194f74407f316d0401ce960a29d5e9869680fb1823dafc48dbee"
+    },
+    {
+      "path": "backend/database/factories/UserFactory.php",
+      "sha256": "286fc40a8fff476c3dd75c0e40e6620743fb9a551f5d319c48fcc588e732f3f3"
+    },
+    {
+      "path": "backend/database/seeders/DemoMarketplaceSeeder.php",
+      "sha256": "f13c0c2209eeb873048536e06d4a00cffafb5c76908e76f570d190db8ea3f9fa"
+    },
+    {
+      "path": "backend/phpunit.xml",
+      "sha256": "a6d64f32a58f3400443732425dfd1b8231588a6d2d63f2ed4ec4704e2d004bc1"
+    },
+    {
+      "path": "backend/tests/Feature/DemoSeederTest.php",
+      "sha256": "9e4bbe520bc37fcb0478d1e2e2e74c6345399912c6ccbadba9231dd4e53e06a7"
+    },
+    {
+      "path": "backend/tests/Feature/DeploymentTest.php",
+      "sha256": "9f73b790cec1aa8333aa97b25da38ecc415898128910ad6b2f5ea564f44cc44a"
+    },
+    {
+      "path": "backend/tests/bootstrap.php",
+      "sha256": "887c1efd49199cf5ab400e927e2a6ef444461aa8bd131bcfdd289f7a13d2f3f8"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "e8b5f58692e15491d6a17dbfa9477afa46dd340d191c8020359dd26b141b84ce"
+    },
+    {
+      "path": "docs/ai-chat-history.integrity.json",
+      "sha256": null,
+      "note": "Regenerated after final response; message-level source/export hashes live in the integrity manifest."
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "sha256": null,
+      "note": "Regenerated after final response; message-level source/export hashes live in the integrity manifest."
+    },
+    {
+      "path": "docs/architecture-explained.md",
+      "sha256": "3094737231a351ceadb4445ba887b2fac99bb53e2ccf9f1db385637903aa81bc"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "3a74b494655d531fd6b23fe76c82089fd562963abb8c6217ab590a3712d2f693"
+    },
+    {
+      "path": "docs/assignment-audit.md",
+      "sha256": "233873596dd1c80c8f4c75621eef0bead4bfbdf19f299fd73f14341bc5690190"
+    },
+    {
+      "path": "docs/backend-setup.md",
+      "sha256": "13b6a1c992abe2d20e24c175863bf120d6191faa30e8cb4941fbf911ab846cce"
+    },
+    {
+      "path": "docs/project-summary.md",
+      "sha256": "462de9977f1ab690deb22ec829dd8dc16a9588d29ad8d6f2e4c05c4d5262a698"
+    },
+    {
+      "path": "docs/purchasing-milestone.md",
+      "sha256": "7139e2730abdc486374f374253b2aae20a4d9607d0c1dfe113faa568c0b3fe78"
+    },
+    {
+      "path": "docs/submission-checklist.md",
+      "sha256": "c6d63edf9a7a6fec6039de4c6b09bec7bb2ad4115a67414f6472f81c76517705"
+    },
+    {
+      "path": "docs/submission-security.md",
+      "sha256": "c8d100054099809333d42983d8f08f54b0a369ec217ac74fff249a642165f04e"
+    },
+    {
+      "path": "docs/submission-verification.json",
+      "sha256": "39c10bb12aa0b01022ce2114ede467098eb294dfbe76adc29619623f9776f8a2"
+    },
+    {
+      "path": "frontend/tests/assignment-audit.spec.ts",
+      "sha256": "53309fde7bd680b190c00f715ca0dd334c34dad02486f2a4679e209a05cfb6cc"
+    },
+    {
+      "path": "frontend/tests/purchasing.spec.ts",
+      "sha256": "4cdba005b009633e9eaba79ef1453e4a39c1476f8af8783cf1527f1a52f4158b"
+    },
+    {
+      "path": "scripts/check-submission-secrets.mjs",
+      "sha256": "3faebb78900a97190061abe9cb1812a5ce827bb8958861b6c0e1ce8d3edc8f01"
+    },
+    {
+      "path": "scripts/check-submission-secrets.test.mjs",
+      "sha256": "cc40b8968cb7a7ed902b75ac80fe063f7e2fb66bc8c045ffa3dcfda7999dbfca"
+    },
+    {
+      "path": "scripts/create-local-databases.php",
+      "sha256": "00588b8a143f351435af2739143b4b7116ffec90e3b6a842b9cbacbf21eea987"
+    },
+    {
+      "path": "scripts/export-ai-chat.mjs",
+      "sha256": "8859fbd5eaff6f753802711e7c190e414a279c7a9c5712bc96f5636c05298d68"
+    },
+    {
+      "path": "scripts/export-ai-chat.test.mjs",
+      "sha256": "1af1b53798b200ce484a9d958aa216042f9d423281f790b19f942e47529a3859"
+    },
+    {
+      "path": "scripts/local-database.ps1",
+      "sha256": "cf3c160500502b58411e50a2cbc39248dd1644c19b878e58a4eaa0c4a8f315ba"
+    },
+    {
+      "path": "scripts/setup-local.ps1",
+      "sha256": "c16d46e8a56e935b4ecaf5bf040207ca27f5685efc9e249ea0b73014c260bf64"
+    },
+    {
+      "path": "scripts/start-ci-database.sh",
+      "sha256": "c871154a58187cf379fed641530982b32dc771c957230f3c1783bed37a68d722"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "source": "Playwright final real-backend browser run",
+  "stats": {
+    "startTime": "2026-11-19T19:22:46.387Z",
+    "duration": 104977.63100000001,
+    "expected": 23,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "accessibilityScans": 8,
+  "tests": [
+    {
+      "title": "homepage responds at 1440px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 4959,
+      "errors": []
+    },
+    {
+      "title": "homepage responds at 768px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 4874,
+      "errors": []
+    },
+    {
+      "title": "homepage responds at 390px without horizontal page overflow",
+      "status": "expected",
+      "durationMs": 4645,
+      "errors": []
+    },
+    {
+      "title": "hero controls change the banner and its call to action navigates",
+      "status": "expected",
+      "durationMs": 7016,
+      "errors": []
+    },
+    {
+      "title": "keyboard typo suggestions navigate to the selected product",
+      "status": "expected",
+      "durationMs": 7712,
+      "errors": []
+    },
+    {
+      "title": "superseded suggestions cannot replace the current search results",
+      "status": "expected",
+      "durationMs": 6581,
+      "errors": []
+    },
+    {
+      "title": "submitted search and filtering are reflected in the URL",
+      "status": "expected",
+      "durationMs": 6138,
+      "errors": []
+    },
+    {
+      "title": "price sorting and range validation use actual rendered prices",
+      "status": "expected",
+      "durationMs": 5070,
+      "errors": []
+    },
+    {
+      "title": "pagination and browser back preserve the catalog state",
+      "status": "expected",
+      "durationMs": 4081,
+      "errors": []
+    },
+    {
+      "title": "mobile navigation, search, and filters have working dialogs and focus",
+      "status": "expected",
+      "durationMs": 4982,
+      "errors": []
+    },
+    {
+      "title": "homepage failure is isolated and retry restores the section",
+      "status": "expected",
+      "durationMs": 4895,
+      "errors": []
+    },
+    {
+      "title": "loading and empty states are useful and do not invent products",
+      "status": "expected",
+      "durationMs": 3430,
+      "errors": []
+    },
+    {
+      "title": "seller offer details expand and purchase controls are not faked",
+      "status": "expected",
+      "durationMs": 2954,
+      "errors": []
+    },
+    {
+      "title": "missing products and unmatched routes have real recovery links",
+      "status": "expected",
+      "durationMs": 2911,
+      "errors": []
+    },
+    {
+      "title": "skip link moves keyboard focus to the main landmark",
+      "status": "expected",
+      "durationMs": 910,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /",
+      "status": "expected",
+      "durationMs": 6997,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /store",
+      "status": "expected",
+      "durationMs": 3975,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /about",
+      "status": "expected",
+      "durationMs": 1683,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 1440px on /products",
+      "status": "expected",
+      "durationMs": 4006,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /",
+      "status": "expected",
+      "durationMs": 6055,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /store",
+      "status": "expected",
+      "durationMs": 3294,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /about",
+      "status": "expected",
+      "durationMs": 1454,
+      "errors": []
+    },
+    {
+      "title": "accessibility scan at 390px on /products",
+      "status": "expected",
+      "durationMs": 3922,
+      "errors": []
+    }
+  ]
+}
