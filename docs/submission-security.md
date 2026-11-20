@@ -2,7 +2,7 @@
 
 ## Repository and public URL
 
-The supplied repository is [Farid1324/Project_clone](https://github.com/Farid1324/Project_clone). Its public page and git ls-remote were checked November 20, 2026: **the repository exists and has no published refs/source**. It is configured as local origin. This preparation does not claim that an initial commit or push occurred.
+The supplied repository is [Farid1324/Project_clone](https://github.com/Farid1324/Project_clone). **The complete project is published on main.** The initial source commit was pushed and verified against git ls-remote on November 20, 2026. Publication details and the initial hosted Actions run are recorded in [github-publication.json](github-publication.json). Local origin uses the credential-free HTTPS repository URL.
 
 **Verified deployment URL: unavailable.** Do not put localhost, an example onrender.com hostname, or the repository URL into the live-demo field. Follow [deployment.md](deployment.md), execute the container/CI checks and then verify the actual public origin. Read-only public verification is supplemented by an authenticated purchase/history browser run.
 
@@ -51,19 +51,19 @@ For a private original export, resume this same session in Codex CLI and use **/
 
 For conversations originally held in ChatGPT, eligible accounts can use **Settings → Data controls → Export data**, or the Privacy Portal. Inspect the downloaded viewer/JSON for the needed conversation. This account export should not be assumed to contain this local Codex session. See [OpenAI's export instructions](https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data). Keep original exports private; redact only credentials in the submission copy, record redactions, and retain every message. If a source is unavailable, disclose the gap instead of inventing text.
 
-## Publish the reviewed source
+## Update the published source
 
-Git sign-in and author identity belong in your local Git/GitHub configuration, not repository files or remote URL credentials. After reviewing the prepared files, these commands publish the initial submission to the supplied empty repository:
+Git sign-in and author identity belong in your local Git/GitHub configuration, not repository files or remote URL credentials. The initial submission is already published. After reviewing future changes, these commands update main from the current checkout:
 
 ```sh
 node scripts/check-submission-secrets.mjs
 git add .
 git diff --cached --stat
-git commit -m "Prepare Keymarket internship submission"
-git push -u origin HEAD:main
+git commit -m "Update Keymarket submission"
+git push origin HEAD:main
 ```
 
-These are instructions, not evidence that a push occurred. If the remote has changed since the empty-repository check, inspect/fetch it before pushing and never force-push over another person's work. The gate is also included in the prepared CI workflow. Once source is published, record a real passing Actions run and exact deployed commit before claiming hosted verification.
+These are future update instructions; the initial publication has separate remote verification. Fetch/inspect any concurrent remote work before pushing and never force-push over another person's changes. The gate is also included in the published CI workflow. Record a real passing Actions run and exact deployed commit before claiming hosted verification.
 
 ## Reproduce and demonstrate
 

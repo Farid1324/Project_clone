@@ -1,0 +1,37 @@
+{
+  "repository_url": "https://github.com/Farid1324/Project_clone",
+  "branch": "main",
+  "visibility": "public",
+  "initial_source_commit": "da28788fd24434bc3b78b37b8ac564ea3c3e3a11",
+  "verified_remote_commit": "da28788fd24434bc3b78b37b8ac564ea3c3e3a11",
+  "verified_at": "2026-11-20T09:44:38.004498+00:00",
+  "initial_source_files": 383,
+  "published_contents": [
+    "React TypeScript frontend",
+    "Laravel REST backend",
+    "PostgreSQL migrations/factories/seeders",
+    "Original demo covers and banners",
+    "Automated tests",
+    "Docker/Render/CI configuration",
+    "README and architecture/submission documentation",
+    "Original available user/assistant prose transcript with integrity metadata"
+  ],
+  "excluded_local_material": [
+    "Environment credentials",
+    "Private keys",
+    "Local tools and databases",
+    "Dependencies and generated builds",
+    "Runtime logs/caches/browser test traces"
+  ],
+  "initial_actions_run": {
+    "url": "https://github.com/Farid1324/Project_clone/actions/runs/44712941898",
+    "source_commit": "da28788fd24434bc3b78b37b8ac564ea3c3e3a11",
+    "status_when_checked": "in_progress",
+    "passing_result_verified": false
+  },
+  "live_deployment": {
+    "verified_url": null,
+    "status": "not deployed"
+  },
+  "later_commits": "Publication status documentation and subsequent verbatim chat-tail updates may follow this initial source commit. Resolve main for the latest SHA."
+}

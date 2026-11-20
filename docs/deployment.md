@@ -1,6 +1,6 @@
 # Single-origin deployment: Render + Neon
 
-Status: configuration prepared; **not publicly deployed and no public URL verified**. No authenticated Render/Neon deployment session or Git remote is available in this workspace. Local HTTPS verification is recorded in [the assignment audit](assignment-audit.md).
+Status: configuration prepared; **not publicly deployed and no public URL verified**. Source is published to [Farid1324/Project_clone](https://github.com/Farid1324/Project_clone). No authenticated Render/Neon deployment session is available in this workspace. Local HTTPS verification is recorded in [the assignment audit](assignment-audit.md).
 
 ## Hosting choice, checked November 20, 2026
 

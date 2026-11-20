@@ -8,7 +8,7 @@ Independent marketplace demo using **React, TypeScript, Vite, Tailwind CSS, Lara
 
 [Requirements checklist](docs/submission-checklist.md) · [Architecture and interview guide](docs/architecture-explained.md) · [Project summary](docs/project-summary.md) · [Security and transcript export](docs/submission-security.md) · [Changed files](docs/submission-changed-files.json).
 
-**GitHub repository:** [Farid1324/Project_clone](https://github.com/Farid1324/Project_clone). Verified to exist but empty on November 20, 2026; configured as local origin. The local source has not been committed or pushed. [Publishing and transcript instructions](docs/submission-security.md).
+**GitHub repository:** [Farid1324/Project_clone](https://github.com/Farid1324/Project_clone), published on **main**. Source, artwork, tests, configuration, documentation and the available original AI prose transcript are included. [Publication verification](docs/github-publication.json) · [GitHub Actions](https://github.com/Farid1324/Project_clone/actions) · [Transcript instructions](docs/submission-security.md).
 
 ## Features and demo data
 
@@ -18,9 +18,11 @@ The seed supplies **45 product variants, 135 offers, three sellers, nine categor
 
 ## Install and run
 
-Portable Windows requires Node.js 24, PowerShell 7 and the Microsoft Visual C++ runtime. From the repository root:
+Portable Windows requires Node.js 24, PowerShell 7 and the Microsoft Visual C++ runtime. For a fresh checkout, clone first; existing checkouts can start with setup-local.ps1 from the repository root:
 
 ```powershell
+git clone https://github.com/Farid1324/Project_clone.git
+Set-Location Project_clone
 .\scripts\setup-local.ps1
 npm.cmd ci --prefix frontend
 .\scripts\build-single-origin.ps1
