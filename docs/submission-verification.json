@@ -97,5 +97,6 @@
     "Execute Linux Docker image and hosted Actions workflow",
     "Deploy and verify actual public HTTPS origin plus authenticated purchase/history",
     "Confirm final transcript tail after assistant response is persisted"
-  ]
+  ],
+  "publication_follow_up": "docs/github-publication.json"
 }

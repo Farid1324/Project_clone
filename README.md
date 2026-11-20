@@ -136,11 +136,13 @@ Latest submission rerun: **111 Laravel tests / 1,320 assertions, 78 browser test
 
 The [artwork follow-up](docs/artwork-milestone.md) passes **85 browser tests**, including seven new cover checks. Every one of the 45 seeded product covers decodes in catalog/detail views, and all 47 referenced cover/banner/promotion image URLs work. Shared image failure handling now covers cards, details, search, cart and hero artwork. TypeScript, lint and build passed again. [Artwork verification](docs/artwork-verification.json).
 
+**Hosted CI:** both jobs in [this GitHub Actions run](https://github.com/Farid1324/Project_clone/actions/runs/44714423834) passed, including 85 browser tests and the Linux production Docker build/startup/API checks. [CI fixes and verification notes](docs/publication-ci-fixes.md) distinguish the hosted result, PHP test warnings, local HTTPS checks and public deployment.
+
 ## Deployment and limitations
 
 [Deployment guide](docs/deployment.md): current Render Free + Neon Free availability, environment/secrets, migrations/seeding, verification and quotas. render.yaml passes Render's official JSON schema. Production uses the root Dockerfile with Nginx/PHP-FPM and compiled React.
 
-- No verified public demo exists yet. Hosting setup, a connected Git repository and successful public verification are required. Docker/hosted CI were not run on this Windows host.
+- No verified public demo exists yet. The source is published and Linux Docker/Actions checks passed; hosting setup and successful public HTTPS verification remain required.
 - Only simulated money and nonredeemable keys. Seller administration, real payments/refunds, account recovery and email verification are outside this slice.
 - Requirements are sourced Windows snapshots; region/edition eligibility is illustrative. [Data provenance](docs/product-data-provenance.md).
 - Artwork is original demo material, not official Eneba/game cover art. [Artwork provenance](docs/artwork-provenance.md).

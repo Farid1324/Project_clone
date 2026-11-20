@@ -4,3 +4,5 @@ Dockerfile text eol=lf
 *.yml text eol=lf
 *.conf text eol=lf
 *.template text eol=lf
+docs/ai-chat-history.md -text
+docs/ai-chat-history.integrity.json text eol=lf

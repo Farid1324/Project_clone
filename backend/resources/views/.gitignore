@@ -1,2 +1,1 @@
-*
-!.gitignore
+# Retain Laravel's empty view path in Git; future Blade templates stay trackable.

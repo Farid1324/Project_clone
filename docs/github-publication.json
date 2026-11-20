@@ -26,12 +26,38 @@
   "initial_actions_run": {
     "url": "https://github.com/Farid1324/Project_clone/actions/runs/44712941898",
     "source_commit": "da28788fd24434bc3b78b37b8ac564ea3c3e3a11",
-    "status_when_checked": "in_progress",
-    "passing_result_verified": false
+    "status_when_checked": "completed",
+    "passing_result_verified": false,
+    "conclusion": "failure",
+    "issues": [
+      "Untracked empty Laravel view directory prevented container startup",
+      "Two browser assertions assumed a PC game despite a platform-neutral fixture query"
+    ]
   },
   "live_deployment": {
     "verified_url": null,
     "status": "not deployed"
   },
-  "later_commits": "Publication status documentation and subsequent verbatim chat-tail updates may follow this initial source commit. Resolve main for the latest SHA."
+  "later_commits": "Publication status documentation and subsequent verbatim chat-tail updates may follow this initial source commit. Resolve main for the latest SHA.",
+  "verified_hosted_ci": {
+    "url": "https://github.com/Farid1324/Project_clone/actions/runs/44714423834",
+    "run_id": 44714423834,
+    "application_revision": "749f8dc64a92084833a6778c9720eebee1f56935",
+    "conclusion": "success",
+    "verified_at": "2026-11-20T10:02:53.357115+00:00",
+    "jobs": {
+      "test": "success",
+      "production-image": "success"
+    },
+    "browser_tests_passed": 85,
+    "utility_tests_passed": 7,
+    "backend": {
+      "command_exit": 0,
+      "assertions": 1320,
+      "compact_summary_warning_tests": 111,
+      "warning_details": "Not printed by the compact hosted test command; this is not claimed to be a warning-free run."
+    },
+    "production_image": "Linux build and startup/deep-link/API/missing-asset/guest-protection smoke checks passed",
+    "public_deployment": false
+  }
 }

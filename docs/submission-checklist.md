@@ -102,7 +102,7 @@ The submission rerun passed **111 Laravel tests / 1,320 assertions, 78 browser t
 | No broken navigation/media/console/HTTP/mobile overflow | Implemented | Expanded route/media integration audit; out-of-range orders recovery | 40 route/viewport combinations and all referenced image URLs |
 | Local migrations, Laravel tests, TS and frontend build | Implemented | Commands and results recorded in verification files | Executed locally; see current submission evidence |
 | Single-origin production hosting configuration | Implemented | Compiled React with Laravel, Nginx/FPM Docker image, Render/Neon setup | Laravel deployment tests; schema/config checks |
-| Docker image and hosted CI execution | Partially implemented | Dockerfile/workflow published; initial hosted Actions run started | Check the linked Actions result in github-publication.json; no passing hosted result is claimed here |
+| Docker image and hosted CI execution | Implemented | Production image builds/starts on Linux; both hosted Actions jobs pass | Passing run 44714423834, including 85 browser tests; PHP warning details noted in publication-ci-fixes.md |
 | Production environment/migration/seed instructions | Implemented | Examples with blank secrets; guarded startup migration/first-boot seed | DeploymentTest; fresh local migration/seed commands |
 | README with setup, architecture, API, tests and limitations | Implemented | Root README and linked guides | Documentation/code comparison and link checks |
 | GitHub repository containing final source | Implemented | Complete project published to Farid1324/Project_clone on main | Remote commit matches local source commit; see github-publication.json |
@@ -114,7 +114,7 @@ The submission rerun passed **111 Laravel tests / 1,320 assertions, 78 browser t
 
 Source publication is complete: [main](https://github.com/Farid1324/Project_clone/tree/main), with remote verification in [github-publication.json](github-publication.json).
 
-1. Confirm the hosted Docker/CI job results, fix any platform-specific failures, and deploy the existing single-origin configuration. No PHP-to-Worker rewrite is required or appropriate for this assignment.
+1. Deploy the existing single-origin configuration. Hosted Docker/CI jobs now pass; the first-run clean-checkout/platform-assumption fixes are documented in publication-ci-fixes.md. No PHP-to-Worker rewrite is required or appropriate for this assignment.
 2. Verify the resulting public HTTPS URL using the read-only verifier **and** an authenticated end-to-end purchase/history journey. Record the actual URL and checks in README. See [deployment.md](deployment.md).
 3. Refresh the direct conversation export after later replies. Keep source hashes and any explicit credential-redaction notice; use a private native export if an unredacted original is requested.
 

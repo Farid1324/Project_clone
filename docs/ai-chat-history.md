@@ -1283,3 +1283,38 @@ The prepared project contains 383 files, about 17.5 MB, and the secret check fou
 The push succeeded, and I verified that GitHub’s `main` points to the uploaded commit. GitHub Actions has started. I’m updating the README and checklist to reflect publication; the live deployment is still unverified.
 
 ````
+
+## 117 Assistant progress update
+
+````text
+The complete project is on GitHub. The first hosted CI run found failures in the production-image smoke check and browser regression job. I’ll inspect the logs and fix those before finishing.
+
+````
+
+## 118 Assistant progress update
+
+````text
+GitHub’s public API confirms the failures but requires authentication for the detailed logs. I’m using the plugin-management skill to check for GitHub log access. I’ll also improve the CI diagnostics so failures are easier to inspect.
+
+````
+
+## 119 Assistant progress update
+
+````text
+I’ve retrieved the logs directly; no GitHub plugin connection is needed. Docker startup failed because Git hadn’t preserved an empty Laravel views directory. Two browser tests also assumed the first seeded game was a PC game. I’m fixing the directory and making those assertions match the product’s platform data.
+
+````
+
+## 120 Assistant progress update
+
+````text
+The fixes are pushed. The production Docker job now passes on GitHub, and the eight affected browser tests pass locally. The hosted browser suite is still finishing; I’ll verify its result before calling CI green.
+
+````
+
+## 121 Assistant progress update
+
+````text
+Both GitHub Actions jobs now pass, including the production Docker check and browser suite. I’ll record the passing run in the submission docs, push that update, and verify the final remote state.
+
+````
