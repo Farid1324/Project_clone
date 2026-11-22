@@ -1,0 +1,413 @@
+{
+  "milestone": "Downloaded game covers and shared image rendering",
+  "comparison": "Explicit task scope compared with pre-artwork per-file baseline. Files may contain earlier wishlist/deployment work or subsequent card-form changes; no ownership of those unrelated edits is implied. Current file hashes; self hash excluded.",
+  "files": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "sha256": "3d739cde2d6e36e2de46ee02e3d3c4cf5d56bb85fcf3dbce483922b86df57688"
+    },
+    {
+      "path": "backend/database/seeders/DemoMarketplaceSeeder.php",
+      "change": "modified",
+      "sha256": "b8cea9e945b7f9434287ba4c9927668eab29e76e65a45abd2e5b7c3499c1784c"
+    },
+    {
+      "path": "backend/database/seeders/ProductArtworkSeeder.php",
+      "change": "added",
+      "sha256": "c52c1e6400b0349cf994eb8fb8cf1bd7aeffaf8791be6493f9e876c54600ea2a"
+    },
+    {
+      "path": "backend/database/seeders/data/cover-artwork.json",
+      "change": "added",
+      "sha256": "cc1bcd227ce665a7f37c225814d6594255e809857d9c9aefde5a35b6bda5a7bb"
+    },
+    {
+      "path": "backend/database/seeders/data/products.json",
+      "change": "modified",
+      "sha256": "d9a663f90ae4a6fdab746a14a61512c6f2d5b856725604b333ea2c897386e0ff"
+    },
+    {
+      "path": "backend/public/demo/cover-unavailable.svg",
+      "change": "modified",
+      "sha256": "1d43401ea0884739c2156f06de006b975c748d98366d43cab806b47ccbc7a70a"
+    },
+    {
+      "path": "backend/public/demo/covers/animal-crossing-new-horizons-nintendo-eu-83345fab05.webp",
+      "change": "added",
+      "sha256": "83345fab05b5cf9f3268f7b45e811fefe72f1198450559719af0f4e15f81a7b1"
+    },
+    {
+      "path": "backend/public/demo/covers/baldur-s-gate-3-steam-global-1c50a8920c.webp",
+      "change": "added",
+      "sha256": "1c50a8920c33402a2c0f35e10fa3b8bbafed19c061608ef4c11f8deefdb29e5a"
+    },
+    {
+      "path": "backend/public/demo/covers/celeste-steam-global-1d921325ae.webp",
+      "change": "added",
+      "sha256": "1d921325ae51b759e635b37a5a0ebff3d734c00ef9a3ec60272a96ee014314c2"
+    },
+    {
+      "path": "backend/public/demo/covers/cities-skylines-steam-global-d042d34c17.webp",
+      "change": "added",
+      "sha256": "d042d34c1705364f044694df15b5a2c8f3bf00dfa25f6cb99aac56af2fb5874f"
+    },
+    {
+      "path": "backend/public/demo/covers/cyberpunk-2077-steam-global-df78821d7d.webp",
+      "change": "added",
+      "sha256": "df78821d7d9087b07ec1c7f7729ffe7d536c6f92188f0e2118ddbf24eb4adfd4"
+    },
+    {
+      "path": "backend/public/demo/covers/dark-souls-iii-steam-global-6219fc44bf.webp",
+      "change": "added",
+      "sha256": "6219fc44bf0b96f0aed42dc455e3c6de10079a599df0b1b4078a72ec8a07ce05"
+    },
+    {
+      "path": "backend/public/demo/covers/dead-cells-steam-global-8a6830f692.webp",
+      "change": "added",
+      "sha256": "8a6830f6921bf34e0e7ff8b7bc9cc8194b843dc6f2a47a70e4b2d51e7bc3aed2"
+    },
+    {
+      "path": "backend/public/demo/covers/diablo-iv-xbox-global-2fbbe2d238.webp",
+      "change": "added",
+      "sha256": "2fbbe2d2388d250f70a821ea8951fe008b10279f203c2650d5fa86e03574d2ae"
+    },
+    {
+      "path": "backend/public/demo/covers/disco-elysium-the-final-cut-steam-global-4c6ea04982.webp",
+      "change": "added",
+      "sha256": "4c6ea049820427b8e1f048a35a9c10e4566d0059261825d8c2d61b22b65589e1"
+    },
+    {
+      "path": "backend/public/demo/covers/doom-eternal-steam-global-15f6094763.webp",
+      "change": "added",
+      "sha256": "15f60947630f70e7e4ea1edf5d34a52ae7d9e9b24db00c0a3cb83f479386fbbb"
+    },
+    {
+      "path": "backend/public/demo/covers/elden-ring-steam-global-13ddf9439d.webp",
+      "change": "added",
+      "sha256": "13ddf9439d3b5ff88ed71b87d9cb93f045f19fda7bbbe1133a5739895ea4b7bc"
+    },
+    {
+      "path": "backend/public/demo/covers/euro-truck-simulator-2-steam-global-a2bd3b87a9.webp",
+      "change": "added",
+      "sha256": "a2bd3b87a9ff364daf94e5d0383e2f7ecf7d48c75a795c06b5e34caf93a402f6"
+    },
+    {
+      "path": "backend/public/demo/covers/forza-horizon-5-xbox-global-f8ffcf1891.webp",
+      "change": "added",
+      "sha256": "f8ffcf189134fa44f4b6a2cdec1c3a08bd33ed72e80fbfc7a1823a238385bbcc"
+    },
+    {
+      "path": "backend/public/demo/covers/gears-5-xbox-global-e9f3521f48.webp",
+      "change": "added",
+      "sha256": "e9f3521f48fdb479be56119c2f1e068f25e9c799aa766b0f6eb91e99b429ab88"
+    },
+    {
+      "path": "backend/public/demo/covers/hades-steam-global-f71e9a5e6c.webp",
+      "change": "added",
+      "sha256": "f71e9a5e6caa7591ac4dd4dc84598133bb7eeac030eb0a77e52ce4529c606697"
+    },
+    {
+      "path": "backend/public/demo/covers/halo-infinite-campaign-xbox-global-b5538251c3.webp",
+      "change": "added",
+      "sha256": "b5538251c3045a73bc2b06cbad03470614b5bf0c1b0c256dbc1fcb1d5c98dec0"
+    },
+    {
+      "path": "backend/public/demo/covers/hogwarts-legacy-steam-global-ab914f2490.webp",
+      "change": "added",
+      "sha256": "ab914f2490bbd1af3726ed894cc8da83e25e709bcc7a39af26ab4ea1e366835c"
+    },
+    {
+      "path": "backend/public/demo/covers/hollow-knight-steam-global-0b7f2c1f4b.webp",
+      "change": "added",
+      "sha256": "0b7f2c1f4bea20367cfc1c700480d268dabf31d6d5cf114fd6c69e26940bc488"
+    },
+    {
+      "path": "backend/public/demo/covers/mario-kart-8-deluxe-nintendo-eu-f9b2051ba4.webp",
+      "change": "added",
+      "sha256": "f9b2051ba4634d6e67f8587a2072fc8882429663da211979adce05d8c09c9489"
+    },
+    {
+      "path": "backend/public/demo/covers/microsoft-flight-simulator-standard-edition-xbox-global-a97cd563ed.webp",
+      "change": "added",
+      "sha256": "a97cd563ed6017a044ed0d2e2cc5450454cbdf4942c00ee6a8130e07140cec18"
+    },
+    {
+      "path": "backend/public/demo/covers/minecraft-xbox-one-edition-xbox-global-f9beae52b3.webp",
+      "change": "added",
+      "sha256": "f9beae52b394efc2320c21f9a0e121c3ee37f5508bcec534bebbc181deffc781"
+    },
+    {
+      "path": "backend/public/demo/covers/nintendo-eshop-eur-15-nintendo-eu-0dbc108965.webp",
+      "change": "added",
+      "sha256": "0dbc10896521fe3b6c3056bf86386f9ac03f9892f518883d7364659162b660b6"
+    },
+    {
+      "path": "backend/public/demo/covers/nintendo-eshop-eur-25-nintendo-eu-d4825a0101.webp",
+      "change": "added",
+      "sha256": "d4825a01019c526dc4578657f2b5b8fa6860d138161b96c40dbe981e2ceb3095"
+    },
+    {
+      "path": "backend/public/demo/covers/no-man-s-sky-steam-global-f495273f09.webp",
+      "change": "added",
+      "sha256": "f495273f096691f35fc149353f663209eb618f3dd7bbcd853d023873786000e4"
+    },
+    {
+      "path": "backend/public/demo/covers/ori-and-the-will-of-the-wisps-xbox-global-2606a67af4.webp",
+      "change": "added",
+      "sha256": "2606a67af4c18c54b83968fdcb92972d0a5551cce7ecac2b488422d31de2ce94"
+    },
+    {
+      "path": "backend/public/demo/covers/playstation-store-eur-10-playstation-eu-9820f8da44.webp",
+      "change": "added",
+      "sha256": "9820f8da440410c55b18f49a34c75ee5d4c499f644091307dc23f9eae81b05d5"
+    },
+    {
+      "path": "backend/public/demo/covers/playstation-store-eur-20-playstation-eu-c0ff8ed35a.webp",
+      "change": "added",
+      "sha256": "c0ff8ed35aec2eef5225edd1fe60553b071d5de41853d3c4176a229549f67342"
+    },
+    {
+      "path": "backend/public/demo/covers/portal-2-steam-global-9166f23b1b.webp",
+      "change": "added",
+      "sha256": "9166f23b1b330decc14dd1da20b363b6ea8b1c4b865030acf3193ae89519765e"
+    },
+    {
+      "path": "backend/public/demo/covers/red-dead-redemption-2-steam-global-4607583644.webp",
+      "change": "added",
+      "sha256": "46075836443179b95c2cb50b9c0cf3cadc17277038a773336c77dc4cfde2ff64"
+    },
+    {
+      "path": "backend/public/demo/covers/resident-evil-4-steam-global-55e4005199.webp",
+      "change": "added",
+      "sha256": "55e400519910b1b0551a8e63caff6486afa3249f8ed96fbba136b797b59ac8c1"
+    },
+    {
+      "path": "backend/public/demo/covers/sea-of-thieves-xbox-global-9d2c9ac13a.webp",
+      "change": "added",
+      "sha256": "9d2c9ac13a3034024de610a7abc6e60a8af824c017558af71413e50e100b0478"
+    },
+    {
+      "path": "backend/public/demo/covers/sekiro-shadows-die-twice-steam-global-5a6a48fd84.webp",
+      "change": "added",
+      "sha256": "5a6a48fd8424b5e76c0532181a20a00a158da5f5a9bee8e1893d8964ff1e01d3"
+    },
+    {
+      "path": "backend/public/demo/covers/sid-meier-s-civilization-vi-steam-global-9199baa0de.webp",
+      "change": "added",
+      "sha256": "9199baa0decbae3e72118f3cb4e53a1545020af82f8929c6661dd664bae4c5e8"
+    },
+    {
+      "path": "backend/public/demo/covers/slay-the-spire-steam-global-d505310f69.webp",
+      "change": "added",
+      "sha256": "d505310f69757f317afa06315a2b640635fae9f75ff57952bcddde3e44d192b5"
+    },
+    {
+      "path": "backend/public/demo/covers/stardew-valley-steam-global-c93a3a2e0b.webp",
+      "change": "added",
+      "sha256": "c93a3a2e0b1261a012c7889fccb22d3f3607a1320a0ee224632c30cbed685243"
+    },
+    {
+      "path": "backend/public/demo/covers/steam-wallet-eur-10-steam-eu-ef0124333f.webp",
+      "change": "added",
+      "sha256": "ef0124333f5d50e60ca58761a42acd8d301f341fca148f83ea130420b76e0e96"
+    },
+    {
+      "path": "backend/public/demo/covers/steam-wallet-eur-20-steam-eu-09a05d013c.webp",
+      "change": "added",
+      "sha256": "09a05d013c5f2b6d1374b879e4c7ea470e3f96d78e689c12ad064f31c9c9b6f3"
+    },
+    {
+      "path": "backend/public/demo/covers/subnautica-steam-global-72aca2953b.webp",
+      "change": "added",
+      "sha256": "72aca2953b5e91673823b8f4d5e9e47412be73638bef03ee052e2b5ed87f2f4d"
+    },
+    {
+      "path": "backend/public/demo/covers/super-mario-odyssey-nintendo-eu-f8f81eb2ed.webp",
+      "change": "added",
+      "sha256": "f8f81eb2edc338300055306c995285c5be4b62a9371c6f9d5b0b0a25447e1210"
+    },
+    {
+      "path": "backend/public/demo/covers/terraria-steam-global-ff17db569b.webp",
+      "change": "added",
+      "sha256": "ff17db569b573c8a3b3df366359d006f7d93700a120229bf5ea76059bbbf4942"
+    },
+    {
+      "path": "backend/public/demo/covers/the-legend-of-zelda-breath-of-the-wild-nintendo-eu-d1b79571ba.webp",
+      "change": "added",
+      "sha256": "d1b79571ba80566c077a16afcd9b7b33c4de1af66616358f24204dba8a5b112b"
+    },
+    {
+      "path": "backend/public/demo/covers/the-witcher-3-wild-hunt-steam-global-251c288a33.webp",
+      "change": "added",
+      "sha256": "251c288a33864bc299801b92eaf874eebca1ee424b0be5fe57d524ac0393eb0d"
+    },
+    {
+      "path": "backend/public/demo/covers/xbox-gift-card-eur-10-xbox-eu-5c32c479e9.webp",
+      "change": "added",
+      "sha256": "5c32c479e97b801e79249005cb9aeac3c5873800dfe2ef5d9507ba3e299beceb"
+    },
+    {
+      "path": "backend/public/demo/covers/xbox-gift-card-eur-25-xbox-eu-2bb1a500d4.webp",
+      "change": "added",
+      "sha256": "2bb1a500d4cce7019fd3d3105c7457e45909fcd9675895c330617371323c58ab"
+    },
+    {
+      "path": "backend/tests/Feature/ProductArtworkTest.php",
+      "change": "added",
+      "sha256": "105bcdf8b20c898378c0e3a059ccfa2c64ae5b5bd789f5d90cabe645fa9ca335"
+    },
+    {
+      "path": "docs/ai-chat-history.integrity.json",
+      "change": "modified",
+      "sha256": null,
+      "note": "Dynamic verbatim export refreshed after the final response; original message hashes are in its integrity file."
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "change": "modified",
+      "sha256": null,
+      "note": "Dynamic verbatim export refreshed after the final response; original message hashes are in its integrity file."
+    },
+    {
+      "path": "docs/architecture-explained.md",
+      "change": "modified",
+      "sha256": "221b3253333c02383242795d4a312f8429c28f07546fcf43dacd368c6acbb293"
+    },
+    {
+      "path": "docs/artwork-milestone.md",
+      "change": "modified",
+      "sha256": "1bbd839f25b2fb65cdc3f7d5bc968c4f3dd4983d1c2364354c1591f5bd2af844"
+    },
+    {
+      "path": "docs/artwork-provenance.md",
+      "change": "modified",
+      "sha256": "6fc50d1c16885f1e149a5cc156d00e05e9a1ea6d4dd48c6d70e9a459426c035a"
+    },
+    {
+      "path": "docs/backend-setup.md",
+      "change": "modified",
+      "sha256": "3f23cd91ebfabe6f6a163ed476b072a7738357077536d169366da3bb379a4de7"
+    },
+    {
+      "path": "docs/cover-artwork-verification.json",
+      "change": "added",
+      "sha256": "d3c1b68207c8374b5f70058d0573082d334cecca7f935ab843cffd9c450ff924"
+    },
+    {
+      "path": "docs/database-schema.md",
+      "change": "modified",
+      "sha256": "0072138331f117441aa3b82bb353ae455b2c9c7a016efdd16dbfb25322c88ddb"
+    },
+    {
+      "path": "docs/product-data-provenance.md",
+      "change": "modified",
+      "sha256": "92d85b7f8f7a51ed8f0137494772e60e4c616dabef1bf570bcfb837122bf908b"
+    },
+    {
+      "path": "docs/project-summary.md",
+      "change": "modified",
+      "sha256": "4b69a9d8004c05bf81d7982745b34b133ef648c36119b1cb7922b9c752207e60"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-real-covers-contact.jpg",
+      "change": "added",
+      "sha256": "506ba2f01f653cfa6c6bc09b353ba6733b59c6745b3253e4c61e7ef1fc45f5aa"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-real-covers-home-1440.png",
+      "change": "added",
+      "sha256": "c35564117ed6ddf6a4442e4632fce0c6aea38ea571f05b0e3356dcab3d0b02ba"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-real-covers-home-390.png",
+      "change": "added",
+      "sha256": "e4c7226c434680f26a1e56280d1e762a43d6a41518141b0f3ce4b3d5ca6b7715"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-real-covers-store-1440-crop.png",
+      "change": "added",
+      "sha256": "ba6b52319387152908d1f3870e2522a6727f910bc8b9ff7a6c602202785a3bd1"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-real-covers-store-1440.png",
+      "change": "added",
+      "sha256": "40c88b7f0387873d951f721d7ebfd0e25749d963beca2a8d3c756f6798579a8a"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-real-covers-store-390-crop.png",
+      "change": "added",
+      "sha256": "765dac54c42c25e3a90681aea6e43a03e39a64db285165c83dc9fd51b11641f1"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-real-covers-store-390.png",
+      "change": "added",
+      "sha256": "bd470653b1755395878cb05f6320811952805ffab282b62013d6f1c3a6e8edd6"
+    },
+    {
+      "path": "frontend/src/components/Footer.tsx",
+      "change": "modified",
+      "sha256": "2e6ef831decf44d423f40189df2b9c56de1a6c96bcdf678ba99ef0671fadcb1d"
+    },
+    {
+      "path": "frontend/src/components/MarketplaceImage.tsx",
+      "change": "modified",
+      "sha256": "12dafd5aac70e64d6e94614944735f5644731ac5af008cc5622d54dcdb1fdbcb"
+    },
+    {
+      "path": "frontend/src/components/ProductCard.tsx",
+      "change": "modified",
+      "sha256": "0f082e5631050d6fc626e28723f23e30239ce5c70c4530d6c77f844672572777"
+    },
+    {
+      "path": "frontend/src/components/SearchBar.tsx",
+      "change": "modified",
+      "sha256": "f5bd1b56fba870accc77810ffbbaceabe1e633eda9f45c3937de6319490bdc61"
+    },
+    {
+      "path": "frontend/src/pages/AboutPage.tsx",
+      "change": "modified",
+      "sha256": "d4247a6a078f1134264f3b518a67d58860247ff9c96f4bd732fc508f8b06f062"
+    },
+    {
+      "path": "frontend/src/pages/CartPage.tsx",
+      "change": "modified",
+      "sha256": "1fd70dee0f450f39c653668a2a4e2deed57fad973a9cdf659d0f424df603b38a"
+    },
+    {
+      "path": "frontend/src/pages/ProductPage.tsx",
+      "change": "modified",
+      "sha256": "da027ee3e9b54fe3efe9346c1486300ee34bea96f7a4e55b21f22025bd52d98e"
+    },
+    {
+      "path": "frontend/src/styles/catalog.css",
+      "change": "modified",
+      "sha256": "2727c2bcf2736a95aa61ecb280bc6fe7eecbfbb2b1dd3f5b55136db28f7377ef"
+    },
+    {
+      "path": "frontend/src/styles/layout.css",
+      "change": "modified",
+      "sha256": "94e70ca5af8a3411dcd69282720cd8b1350b6341b4a8883b0b5b918097a104ce"
+    },
+    {
+      "path": "frontend/src/styles/marketplace.css",
+      "change": "modified",
+      "sha256": "b2c6cb75f44b188fadacc8a2bd43118dcc2ed579559403f0d9cbfcb7184cc947"
+    },
+    {
+      "path": "frontend/src/styles/product-cart.css",
+      "change": "modified",
+      "sha256": "e9bfedf1fd95eb6ac341dd3c58473bf07eb8a01e8c50eaca98e3af6657c433ab"
+    },
+    {
+      "path": "frontend/src/styles/responsive.css",
+      "change": "modified",
+      "sha256": "d96ca6b69f5bf867f015d1df499f2552bd909d37336f38cf9970806d1054d0fd"
+    },
+    {
+      "path": "frontend/tests/artwork.spec.ts",
+      "change": "modified",
+      "sha256": "2a8ee188fc568a33b5ffef6af2756511a38d022d10f2c787ec80fc2587910104"
+    }
+  ]
+}

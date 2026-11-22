@@ -13,7 +13,7 @@ The submission rerun passed **111 Laravel tests / 1,320 assertions, 78 browser t
 | React, TypeScript and Vite | Implemented | Typed SPA in frontend/src, locked npm dependencies | TypeScript, lint and production build pass |
 | Tailwind CSS and central theme | Implemented | Tailwind Vite integration and shared CSS theme tokens; feature CSS uses those tokens | Build; browser responsive and accessibility checks |
 | PHP Laravel REST API | Implemented | Versioned controllers, Form Requests and API Resources | Laravel feature suite |
-| PostgreSQL | Implemented | Seven migrations, native constraints, generated totals and pg_trgm | PostgreSQL suite; all migrations applied |
+| PostgreSQL | Implemented | Eight migrations, native constraints, generated totals and pg_trgm | PostgreSQL suite; all migrations applied |
 | Laravel Sanctum authentication | Implemented | Cookie/session SPA authentication with auth:sanctum protection | AuthenticationTest; real HTTP browser authentication |
 | Clean architecture, folder structure and milestones | Implemented | Modular monolith; HTTP, query, service and model responsibilities; incremental milestone docs | Code inspection; integration tests, not a separate architecture certification |
 | Validation, pagination, relationships and safe errors | Implemented | Bounded Form Requests, UUIDs, envelopes, request IDs, generic internal errors | CatalogApiTest, ProductCartTest, CheckoutTest |
@@ -109,6 +109,17 @@ The submission rerun passed **111 Laravel tests / 1,320 assertions, 78 browser t
 | Verified public deployment URL | Missing | No public application URL provided or verified | None; localhost is not deployment proof |
 | Repository/conversation credentials removed | Implemented for submission files | No shared login; generated local/CI secrets; sanitized prose export; secret gate | Secret-gate tests and working-tree scan; scan is not proof about every possible secret |
 | Interview explanation and concise project summary | Implemented | Architecture walkthrough and project-summary.md | Code review; not an automated competency assessment |
+
+## Product wishlist extension
+
+| Requirement | Status | Actual implementation | Verified by tests |
+| --- | --- | --- | --- |
+| Persistent authenticated product wishlist | Implemented | Owner-scoped PostgreSQL wishlist_items, unique user/product, idempotent API, current catalog resources | WishlistTest; wishlist browser suite |
+| Home/store/detail hearts and responsive saved page | Implemented | Shared WishlistButton, header count, /wishlist, independent navigation, loading/error/retry/empty states | Keyboard and layout/axe checks at 1440/768/390/320 |
+| Guest intent, account isolation and private cache cleanup | Implemented | Existing Sanctum/CSRF return flow, user-scoped query keys, cancelled writes, cleared query/mutation caches | Account-switch, revoked-session, delayed-response and failed-auth reconciliation browser regressions |
+| Unavailable products remain saved | Implemented | Current null-price/zero-offer state; unpublished saved listings stay removable without broken links | Actual PostgreSQL availability/publication tests; isolated UI response-state test |
+
+See [wishlist milestone](wishlist-milestone.md) and [current verification](wishlist-verification.json). Earlier numeric results above remain the dated submission baseline.
 
 ## Remaining critical submission work
 

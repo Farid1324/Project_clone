@@ -14,6 +14,6 @@ export function Footer() {
       <nav aria-label="Browse platforms"><h2>Platforms</h2>{filters.data?.data.platforms.map(platform => <Link key={platform.id} to={storeUrl({ 'platforms[]': [platform.slug] })}>{platform.name}</Link>)}</nav>
       <nav aria-label="Demo information"><h2>Good to know</h2><Link to="/about">About this demo</Link><Link to="/about#activation">Activation explained</Link><Link to="/about#privacy">Privacy in this demo</Link><a href="https://www.eneba.com/" target="_blank" rel="noreferrer">Visit official Eneba<span className="sr-only"> (opens in a new tab)</span></a></nav>
     </div>
-    <div className="market-container footer-bottom"><p>Keymarket is an independent internship demo. Not affiliated with or endorsed by Eneba. Original demo artwork; no real purchases or redeemable keys.</p><span>English EU · EUR</span></div>
+    <div className="market-container footer-bottom"><p>Keymarket is an independent internship demo. Not affiliated with or endorsed by Eneba. Game artwork belongs to its respective owners; no real purchases or redeemable keys.</p><span>English EU · EUR</span></div>
   </footer>
 }

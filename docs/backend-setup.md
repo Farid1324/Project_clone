@@ -119,7 +119,15 @@ All 45 product listings have three seller offers with independent prices, stock,
 
 Product descriptions, requirements, compatibility notices, delivery information and activation steps are now seeded too. The checked-in `database/seeders/data/product-details.json` contains original summaries and Windows requirement snapshots with source links; console/gift-card account/device requirements are authored in the seeder. Seeding is offline and the application never fetches external requirements at runtime. See [product provenance](product-data-provenance.md) and [product milestone commands/tests](product-milestone.md).
 
-All 48 images are original SVG demo artwork under `backend/public/demo/`; titles identify the illustrated catalog item. They are not official game covers. Prices are illustrative EUR values rather than live market quotes.
+All 45 seeded listings now reference 44 locally bundled 600×900 WebP covers under `backend/public/demo/covers/`. Game artwork comes from attributed storefront sources; gift cards are demo compositions. Original promotional banners remain. See [artwork provenance](artwork-provenance.md). Prices are illustrative EUR values rather than live market quotes.
+
+For an existing catalog, deploy the new assets and run only the image backfill (no migration or full reseed is needed):
+
+```powershell
+& ..\.tools\php\php.exe artisan db:seed --class=ProductArtworkSeeder --no-interaction
+```
+
+The transaction updates cover_image_path on matching seeded slugs only. It never creates users, resets prices, changes publication state or replaces stock/orders/allocated keys. Repeat runs leave unchanged rows untouched. With global PHP use php artisan; in production add --force after deploying the assets. Preserve existing secrets and avoid migrate:fresh on persistent installations.
 
 ## Tests and troubleshooting
 

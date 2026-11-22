@@ -1,6 +1,6 @@
 # Implemented REST API
 
-Current milestone: Laravel catalog/homepage API, session-owned seller-offer cart, Sanctum cookie authentication, simulated checkout and private order/key history at `/api/v1`. No real payment provider or bearer-token issuance is exposed.
+Current implementation: Laravel catalog/homepage API, session-owned seller-offer cart, Sanctum cookie authentication, simulated checkout, private order/key history and persistent product wishlists at `/api/v1`. No real payment provider or bearer-token issuance is exposed.
 
 ## Endpoints
 
@@ -35,6 +35,20 @@ Current milestone: Laravel catalog/homepage API, session-owned seller-offer cart
 | POST /api/v1/checkout | Requires auth:sanctum; quote_token, idempotency_key UUID, scenario approve/decline |
 | GET /api/v1/orders | Requires auth:sanctum; owner-only history, page/per_page (1–24, default 12) |
 | GET /api/v1/orders/{uuid} | Requires auth:sanctum; owner-only order snapshots and fulfilled demo keys |
+| GET /api/v1/wishlist | Requires auth:sanctum; current-user saved products, page 1–100000, per_page 1–48 (default 24) |
+| GET /api/v1/wishlist/summary | Requires auth:sanctum; current-user count and all saved product UUIDs |
+| POST /api/v1/wishlist | Requires auth:sanctum; body product_id UUID, save a published product or retain an existing save |
+| DELETE /api/v1/wishlist/{product UUID} | Requires auth:sanctum; remove only the current user's save, including unavailable products |
+
+## Wishlist contract
+
+List results reuse ProductResource and the normal paginated data/meta/links envelope, ordered newest save first with a stable UUID tie-breaker. Prices and availability come from current eligible seller offers, not copied wishlist columns. Wishlist cards additionally expose is_published. Sold-out products have is_available=false, price_minor=null and zero eligible offers. Previously saved unpublished products remain in the private list with is_published=false and no available offers; public catalog/detail routes still exclude them. The frontend retains their artwork/title and removal control, with no link to an unpublished detail.
+
+Summary and successful mutations return `{ data: { count: number, product_ids: string[] } }`. The summary covers all pages, including unavailable saves. Adds/removals always return 200 on success: repeated saves create one row; removing an absent valid UUID is a safe no-op. A previously saved product remains idempotently saved if unpublished later. A new save of an unknown/unpublished product returns 404. A published product can be saved even without stock. Invalid product IDs, unsupported owner/offer fields, and invalid list parameters return the existing 422 error envelope. The server derives user_id from Sanctum and never trusts a supplied owner.
+
+All four endpoints require cookie authentication and return no-store/private responses. Writes use the existing CSRF/session middleware and session blocking. Wishlist rate limiting is 120 requests/minute per authenticated account. Database user-row locks serialize mutations across sessions and the unique user/product constraint independently prevents duplicate rows. Wishlist writes allocate no inventory and alter no cart/order data. No private wishlist fixture is seeded for shoppers; new accounts start empty.
+
+## Homepage selection
 
 The six displayed homepage sections each have their own service and endpoint. The legacy promotions endpoint remains available for collection clients but is no longer a displayed homepage section. Each endpoint executes its own query; none delegates to a static frontend product array or substitute section. Banners targeting unpublished products are excluded. Time windows include their start and exclude their end. Best sellers require current stock and count only fulfilled orders within the UTC time window. Deals choose one winning offer per product using a SQL window function; its price/comparison/discount are kept together.
 

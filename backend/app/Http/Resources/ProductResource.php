@@ -23,6 +23,7 @@ class ProductResource extends JsonResource
             'price_minor' => $offer?->price_minor, 'comparison_price_minor' => $comparison,
             'discount_percent' => $discount, 'currency' => 'EUR',
             'available_offer_count' => $available->count(), 'is_available' => $offer !== null,
+            'is_published' => $this->when($request->routeIs('api.v1.wishlist.*'), $this->is_active),
             'description' => $this->when($request->routeIs('api.v1.products.show'), $this->description),
             'requirements' => $this->when($request->routeIs('api.v1.products.show'), $this->requirements),
             'delivery_information' => $this->when($request->routeIs('api.v1.products.show'), $this->delivery_information),

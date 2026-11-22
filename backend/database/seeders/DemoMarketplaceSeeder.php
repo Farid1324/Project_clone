@@ -77,7 +77,7 @@ class DemoMarketplaceSeeder extends Seeder
                     ]), 'activation_steps' => $row['type'] === 'gift_card' && $row['platform'] === 'steam' ? $steamWalletSteps : $activationSteps[$row['platform']]],
                     'compatibility_notice' => 'This listing activates on '.$platforms[$row['platform']]->name.' only. A key for another platform is not interchangeable. '.($row['type'] === 'gift_card' ? 'Wallet currency and account country must also match the card restrictions.' : 'Your device must meet the requirements for this game and the current platform client.'),
                     'delivery_information' => 'Digital key format; no physical shipment. Adding an offer to your cart does not reserve its stock. A successful simulated payment delivers unique nonredeemable demo keys to your account and order history. No real money or credit cards are processed.',
-                    'cover_image_path' => '/demo/'.($row['artwork_slug'] ?? $row['slug']).'.svg', 'is_active' => true,
+                    'cover_image_path' => $row['cover_image_path'] ?? ('/demo/'.($row['artwork_slug'] ?? $row['slug']).'.svg'), 'is_active' => true,
                 ]);
                 $product->categories()->sync(array_map(fn (string $slug): string => $categories[$slug]->id, $row['categories']));
                 foreach ($sellers as $sellerIndex => $seller) {

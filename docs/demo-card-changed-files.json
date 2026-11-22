@@ -1,0 +1,108 @@
+{
+  "milestone": "Advanced demo card checkout",
+  "comparison": "Explicit scope relative to the current-task baseline, which already contained partial DemoCardPayment, CheckoutPage, purchasing CSS and purchasing test edits. These files are completed here. Existing wishlist/artwork/deployment work is preserved. Current file hashes exclude this manifest itself.",
+  "files": [
+    {
+      "path": "README.md",
+      "change_from_task_start": "modified",
+      "sha256": "3d739cde2d6e36e2de46ee02e3d3c4cf5d56bb85fcf3dbce483922b86df57688"
+    },
+    {
+      "path": "docs/ai-chat-history.integrity.json",
+      "change_from_task_start": "modified",
+      "sha256": null,
+      "note": "Original source-log export continues through the final response; see its per-message integrity hashes."
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "change_from_task_start": "modified",
+      "sha256": null,
+      "note": "Original source-log export continues through the final response; see its per-message integrity hashes."
+    },
+    {
+      "path": "docs/architecture-explained.md",
+      "change_from_task_start": "modified",
+      "sha256": "221b3253333c02383242795d4a312f8429c28f07546fcf43dacd368c6acbb293"
+    },
+    {
+      "path": "docs/demo-card-verification.json",
+      "change_from_task_start": "added",
+      "sha256": "77c5086eca0f2e50875abe374b9986c423568b7c9bf66ca566c7bb5e8e8d0a53"
+    },
+    {
+      "path": "docs/project-summary.md",
+      "change_from_task_start": "modified",
+      "sha256": "4b69a9d8004c05bf81d7982745b34b133ef648c36119b1cb7922b9c752207e60"
+    },
+    {
+      "path": "docs/purchasing-milestone.md",
+      "change_from_task_start": "modified",
+      "sha256": "1d34671c209461d27c558ca2396f0103f04513ceaad6f2b001357c2b27bf440e"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-demo-card-1440.png",
+      "change_from_task_start": "added",
+      "sha256": "9e3b8c957194f33f44030601a8f40b00f8d77fabdc5b91db87e143977ab4805a"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-demo-card-320.png",
+      "change_from_task_start": "added",
+      "sha256": "606d1ac0e8a84ecdca387d4f718f32618e153cf6cd299db7365d143070e08c64"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-demo-card-390.png",
+      "change_from_task_start": "added",
+      "sha256": "120c25635b424fbd9b3485f5ce93ac42f3e3a77d142a1bf7d6bc1f4a8eaa5beb"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-demo-verification-1440.png",
+      "change_from_task_start": "added",
+      "sha256": "a04d831166990c3e13107027efedb40ee708cb4f88457405cd53e128ee914d33"
+    },
+    {
+      "path": "frontend/src/components/CheckoutProgress.tsx",
+      "change_from_task_start": "added",
+      "sha256": "852360e1210f0aa75b12ec082a3042c332acfa42c5b15410658429a748d5d15c"
+    },
+    {
+      "path": "frontend/src/components/DemoCardPayment.tsx",
+      "change_from_task_start": "modified",
+      "sha256": "db83b0d7e3fbffa6ae9afbf7f4b0b6b35d7e1ecaf7744a2e15fcfebd8fdc79e0"
+    },
+    {
+      "path": "frontend/src/pages/CartPage.tsx",
+      "change_from_task_start": "modified",
+      "sha256": "1fd70dee0f450f39c653668a2a4e2deed57fad973a9cdf659d0f424df603b38a"
+    },
+    {
+      "path": "frontend/src/pages/CheckoutPage.tsx",
+      "change_from_task_start": "modified",
+      "sha256": "39707f21277b6c41a4b33054d8efb2ac4d7982fc0a2f275f08815cd9b50db930"
+    },
+    {
+      "path": "frontend/src/pages/OrdersPage.tsx",
+      "change_from_task_start": "modified",
+      "sha256": "19bc72d8d31f6c36c0754e4abf5f0c514ff3d8d8484beb0808d8bb79f44a9d5e"
+    },
+    {
+      "path": "frontend/src/styles/purchasing.css",
+      "change_from_task_start": "modified",
+      "sha256": "46c6ea1d3c77fbabea127baac7317dff1cb5bba90ed028c4497cc506d2c55c0f"
+    },
+    {
+      "path": "frontend/tests/assignment-audit.spec.ts",
+      "change_from_task_start": "modified",
+      "sha256": "08d42151d7234bb5b97a34b8230ca7960770f984f410b46eb324c2de2e86f646"
+    },
+    {
+      "path": "frontend/tests/demo-card-payment.spec.ts",
+      "change_from_task_start": "added",
+      "sha256": "355dad7747eb12c18bc7723199b31dd3f8c48fa6171752102404f0e07c59e770"
+    },
+    {
+      "path": "frontend/tests/purchasing.spec.ts",
+      "change_from_task_start": "modified",
+      "sha256": "10a74ec9f8162fc01a2bfe8f6ffe8548496dabc4cf79a22df4e1acee50fb5b1c"
+    }
+  ]
+}

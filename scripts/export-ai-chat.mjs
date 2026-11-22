@@ -5,10 +5,11 @@ import { resolve } from 'node:path'
 
 const source = process.argv[2]
 if (!source) {
-  console.error('Usage: node scripts/export-ai-chat.mjs PRIVATE_ROLLOUT_JSONL [OUTPUT_MARKDOWN]')
+  console.error('Usage: node scripts/export-ai-chat.mjs PRIVATE_ROLLOUT_JSONL [OUTPUT_MARKDOWN] [--prefix-source=OLDER_JSONL] [--after-final]')
   process.exit(1)
 }
 const output = resolve(process.argv[3] ?? 'docs/ai-chat-history.md')
+const sources = [...process.argv.slice(4).filter(argument => argument.startsWith('--prefix-source=')).map(argument => argument.slice('--prefix-source='.length)), source]
 if (process.argv.includes('--after-final')) {
   let offset = statSync(source).size
   let partial = ''
@@ -67,44 +68,52 @@ function sanitize(original) {
 
 const entries = []
 const integrity = []
+const seenIds = new Set()
+let duplicateRecords = 0
 const counts = { user_prompts_and_replies: 0, assistant_prose: 0, assistant_questions: 0, excluded_environment_messages: 0 }
-for await (const line of createInterface({ input: createReadStream(source), crlfDelay: Infinity })) {
-  if (!line.trim()) continue
-  const event = JSON.parse(line)
-  const item = event.payload ?? {}
-  if (event.type !== 'response_item') continue
-  let messages = []
-  let role
-  if (item.type === 'message' && ['user', 'assistant'].includes(item.role)) {
-    if (item.role === 'assistant' && !['commentary', 'final_answer', 'final'].includes(item.phase)) continue
-    if ((item.content ?? []).some(block => !['input_text', 'output_text', 'text'].includes(block.type))) {
-      throw new Error('A conversation message has unsupported blocks; inspect the source before exporting.')
+for (const input of sources) {
+  for await (const line of createInterface({ input: createReadStream(input), crlfDelay: Infinity })) {
+    if (!line.trim()) continue
+    const event = JSON.parse(line)
+    const item = event.payload ?? {}
+    if (event.type !== 'response_item') continue
+    if (!(item.type === 'message' && ['user', 'assistant'].includes(item.role)) && item.name !== 'request_user_input_async') continue
+    const recordId = item.id ?? item.call_id
+    if (recordId && seenIds.has(recordId)) { duplicateRecords++; continue }
+    if (recordId) seenIds.add(recordId)
+    let messages = []
+    let role
+    if (item.type === 'message' && ['user', 'assistant'].includes(item.role)) {
+      if (item.role === 'assistant' && !['commentary', 'final_answer', 'final'].includes(item.phase)) continue
+      if ((item.content ?? []).some(block => !['input_text', 'output_text', 'text'].includes(block.type))) {
+        throw new Error('A conversation message has unsupported blocks; inspect the source before exporting.')
+      }
+      const blocks = item.content ?? []
+      if (!blocks.length) throw new Error('A conversation message has no supported text blocks; inspect the source before exporting.')
+      messages = blocks.map(block => block.text)
+      if (item.role === 'user' && messages[0].startsWith('<environment_context>')) { counts.excluded_environment_messages++; continue }
+      role = item.role === 'user' ? 'User' : 'Assistant ' + (item.phase === 'commentary' ? 'progress update' : 'final response')
+      counts[item.role === 'user' ? 'user_prompts_and_replies' : 'assistant_prose']++
+    } else if (['function_call', 'custom_tool_call'].includes(item.type) && item.name === 'request_user_input_async') {
+      const argumentsValue = JSON.parse(item.arguments ?? item.input)
+      messages = argumentsValue.questions.map(question => question.title)
+      role = 'Assistant question'
+      counts.assistant_questions += messages.length
+    } else continue
+    for (const original of messages) {
+      const text = sanitize(original)
+      const fence = '`'.repeat(Math.max(4, ...[...text.matchAll(/`+/g)].map(match => match[0].length + 1)))
+      entries.push(`## ${entries.length + 1} ${role}\n\n${fence}text\n${text}\n${fence}\n`)
+      integrity.push({ ordinal: entries.length, role, source_timestamp: event.timestamp, source_id: item.id ?? item.call_id ?? null,
+        original_sha256: createHash('sha256').update(original).digest('hex'), exported_sha256: createHash('sha256').update(text).digest('hex'), credential_redacted: text !== original })
     }
-    const blocks = item.content ?? []
-    if (!blocks.length) throw new Error('A conversation message has no supported text blocks; inspect the source before exporting.')
-    messages = blocks.map(block => block.text)
-    if (item.role === 'user' && messages[0].startsWith('<environment_context>')) { counts.excluded_environment_messages++; continue }
-    role = item.role === 'user' ? 'User' : 'Assistant ' + (item.phase === 'commentary' ? 'progress update' : 'final response')
-    counts[item.role === 'user' ? 'user_prompts_and_replies' : 'assistant_prose']++
-  } else if (['function_call', 'custom_tool_call'].includes(item.type) && item.name === 'request_user_input_async') {
-    const argumentsValue = JSON.parse(item.arguments ?? item.input)
-    messages = argumentsValue.questions.map(question => question.title)
-    role = 'Assistant question'
-    counts.assistant_questions += messages.length
-  } else continue
-  for (const original of messages) {
-    const text = sanitize(original)
-    const fence = '`'.repeat(Math.max(4, ...[...text.matchAll(/`+/g)].map(match => match[0].length + 1)))
-    entries.push(`## ${entries.length + 1} ${role}\n\n${fence}text\n${text}\n${fence}\n`)
-    integrity.push({ ordinal: entries.length, role, source_timestamp: event.timestamp, source_id: item.id ?? item.call_id ?? null,
-      original_sha256: createHash('sha256').update(original).digest('hex'), exported_sha256: createHash('sha256').update(text).digest('hex'), credential_redacted: text !== original })
   }
 }
 
 const fidelity = redactions
   ? `Credential-only redactions are explicitly marked. This submission copy is **not byte-identical** to the unredacted original. ${redactions} credential occurrence(s) were removed; no conversation entries were omitted for that reason.`
   : 'No credential redactions were required for this export. Every included message body matches its original text exactly.'
-const header = `# AI conversation history\n\nExported directly from this project's local Codex session log. All original user-authored prompts and replies, assistant progress messages, final responses and tool-presented clarification questions available in that log are retained in source order. Message bodies are not summarized or reconstructed.\n\n${fidelity} Message hashes and coverage are in [ai-chat-history.integrity.json](ai-chat-history.integrity.json).\n\nAutomatically supplied environment metadata, private system/developer instructions, internal reasoning and tool execution transport/results are excluded. This is a complete export of human conversation prose available at export time, not a raw execution log. The source session log remains private outside the repository. See [export and security instructions](submission-security.md). The active turn can be refreshed after its final response using the export command there.\n\n`
+const header = `# AI conversation history\n\nExported directly from this project's local Codex session log segments. All original user-authored prompts and replies, assistant progress messages, final responses and tool-presented clarification questions available in that log are retained in source order. Message bodies are not summarized or reconstructed.\n\n${fidelity} Message hashes and coverage are in [ai-chat-history.integrity.json](ai-chat-history.integrity.json).\n\nAutomatically supplied environment metadata, private system/developer instructions, internal reasoning and tool execution transport/results are excluded. This is a complete export of human conversation prose available at export time, not a raw execution log. The source session log remains private outside the repository. See [export and security instructions](submission-security.md). The active turn can be refreshed after its final response using the export command there.\n\n`
 writeFileSync(output, header + entries.join('\n'), 'utf8')
-writeFileSync(output.replace(/\.md$/, '.integrity.json'), JSON.stringify({ source: 'Local project Codex session JSONL; source path intentionally private', exported_at: new Date().toISOString(), counts, exported_entries: entries.length, credential_redaction_occurrences: redactions, entries: integrity }, null, 2) + '\n')
-console.log(JSON.stringify({ output, counts, exported_entries: entries.length, credential_redaction_occurrences: redactions }))
+writeFileSync(output.replace(/\.md$/, '.integrity.json'), JSON.stringify({ source: 'Local project Codex session JSONL; source path intentionally private', exported_at: new Date().toISOString(), source_segments: sources.length, duplicate_records_skipped: duplicateRecords, counts, exported_entries: entries.length, credential_redaction_occurrences: redactions, entries: integrity }, null, 2) + '\n')
+console.log(JSON.stringify({ output, source_segments: sources.length, duplicate_records_skipped: duplicateRecords, counts, exported_entries: entries.length, credential_redaction_occurrences: redactions }))

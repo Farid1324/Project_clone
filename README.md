@@ -1,8 +1,8 @@
 Eneba Intern Assignment 2027
 
-Independent marketplace demo using **React, TypeScript, Vite, Tailwind CSS, Laravel REST, PostgreSQL and Sanctum**. The interface is inspired by Eneba, with original demo artwork and a clear internship identity. No real money or redeemable keys are used.
+Independent marketplace demo using **React, TypeScript, Vite, Tailwind CSS, Laravel REST, PostgreSQL and Sanctum**. The interface is inspired by Eneba, with locally served game covers, original promotional artwork and a clear internship identity. No real money or redeemable keys are used.
 
-**Live demo URL: not deployed; no public URL verified.** The [Render + Neon deployment configuration](docs/deployment.md) is prepared. A localhost preview is not a public deployment.
+**Live demo:** [keymarket-demo.vercel.app](https://keymarket-demo.vercel.app). Vercel hosts the frontend and Laravel API together, with a Neon PostgreSQL database. [Public HTTPS verification](docs/public-verification.json).
 
 ## Submission package
 
@@ -12,7 +12,39 @@ Independent marketplace demo using **React, TypeScript, Vite, Tailwind CSS, Lara
 
 ## Features and demo data
 
-Six independently queried homepage sections; searchable/filterable/sortable store with pagination and URL state; global partial/typo autocomplete; detailed activation/requirements information; multiple independently priced/rated sellers; seller-offer carts; registration/login/logout; authenticated quote review; successful/declined payment simulations; unique encrypted demo-key allocation and private order/key history. Loading, empty, error and responsive states are implemented. React has no hardcoded product fixtures.
+Six independently queried homepage sections; searchable/filterable/sortable store with pagination and URL state; global partial/typo autocomplete; detailed activation/requirements information; multiple independently priced/rated sellers; seller-offer carts; registration/login/logout; authenticated quote review; memory-only sample-card entry and simulated verification; successful/declined payment simulations; unique encrypted demo-key allocation and private order/key history. A persistent account wishlist saves products across reloads and logins, with shared heart controls and a header count. Loading, empty, error and responsive states are implemented. React has no hardcoded product fixtures.
+
+### Wishlist
+
+Sign in and select a heart on a homepage/catalog card or product detail. Visit /wishlist from the header to open a product, compare sellers or remove it. Guest heart actions return through sign-in and then save the selected product. Products stay saved when stock disappears; unpublished listings remain removable without a broken detail link. Wishlist actions use current backend data and do not reserve keys. See [wishlist implementation and verification](docs/wishlist-milestone.md).
+
+For an existing installation, apply the additive migration and rebuild React; no reseeding or data reset is required:
+
+```powershell
+Set-Location backend
+& ..\.tools\php\php.exe artisan migrate --no-interaction
+Set-Location ..
+.\scripts\build-single-origin.ps1
+```
+
+### Demo card checkout
+
+Choose a sample card on checkout: 4242 4242 4242 4242 approves, 4000 0000 0000 0002 declines, and 4000 0025 0000 3155 opens simulated verification with code **123456**. Samples fill fictitious details; manual entry requires a later expiry month and three-digit demo CVC. Confirm the seller prices, stock, platform and region, then use the one server-priced Pay button. Card/billing/code fields remain temporary component state and are cleared on submission/cancellation; only the existing quote/idempotency/scenario metadata reaches the API or pending-attempt storage. No provider or real charges are involved. [Try it, architecture, tests and screenshots](docs/purchasing-milestone.md#advanced-demo-card-checkout--november-23-2026). This local update has not been deployed.
+
+### Local game covers
+
+All seeded listings now use locally served game covers or appropriate gift-card demo designs. React obtains image URLs from the existing Laravel resources. Sources, edition checks and image ownership are recorded in [artwork provenance](docs/artwork-provenance.md).
+
+For an existing catalog, deploy the bundled assets, update cover paths only, then rebuild the storefront:
+
+```powershell
+Set-Location backend
+& ..\.tools\php\php.exe artisan db:seed --class=ProductArtworkSeeder --no-interaction
+Set-Location ..
+.\scripts\build-single-origin.ps1
+```
+
+No new migration or full reseed is needed. The image-only backfill preserves accounts, prices, orders, wishlists and allocated inventory. Fresh installations obtain the cover paths through the normal demo seeder. [Artwork verification, screenshots and limits](docs/artwork-milestone.md).
 
 The seed supplies **45 product variants, 135 offers, three sellers, nine categories, four platforms and three regions**: 25 PC variants, 12 console games and eight gift cards. Sixteen historical fixture orders and subsequent demo purchases drive actual sales aggregates. Prices, ratings and entitlements are illustrative. All keys are nonredeemable.
 
@@ -57,7 +89,7 @@ Register your own demo account. The seeded historical-sales fixture has an undis
 ```mermaid
 flowchart LR
     Browser[React SPA] --> Origin[One HTTPS origin: Nginx]
-    Origin --> Static[Compiled assets and original artwork]
+    Origin --> Static[Compiled assets and local artwork]
     Origin --> Laravel[Laravel REST and Sanctum sessions]
     Laravel --> PG[(PostgreSQL: Neon)]
 ```
@@ -70,7 +102,7 @@ React Router owns navigation/query parameters. TanStack Query owns API state. Se
 | --- | --- |
 | frontend/src | Components, route pages, query hooks, typed API contracts and Tailwind tokens |
 | backend/app | HTTP layer, models, queries, section/auth/cart/checkout services and deploy command |
-| backend/database | Seven migrations, factories and connected demo seed data |
+| backend/database | Eight migrations, factories and connected demo seed data |
 | backend/docker | Nginx, FPM, PHP, supervisor and production startup |
 | scripts | Local runtime/database setup and single-origin build |
 | docs | API/schema, provenance, milestones, audit/deployment evidence and available verbatim AI history |
@@ -89,13 +121,15 @@ Marketplace paths use **/api/v1**. Resources use data envelopes, paginated lists
 | GET /home/deals, /home/gift-cards, /home/recommendations | Independent section providers |
 | GET /home/promotions | Promotion collections |
 | GET /cart | Session/account cart with current backend totals |
+| GET /wishlist; GET /wishlist/summary | Protected paginated saved products and account-wide saved IDs/count |
+| POST /wishlist; DELETE /wishlist/{product UUID} | Idempotent product saves/removals for the current user |
 | POST /cart/items; PATCH/DELETE /cart/items/{uuid} | Specific-offer mutations |
 | GET /auth/session; POST /auth/register, /auth/login, /auth/logout | Cookie authentication/session lifecycle |
 | GET /checkout/quote; POST /checkout | Protected quote and idempotent simulated purchase |
 | GET /orders, /orders/{uuid} | Owner history and delivered keys |
 | GET /health | Database readiness; process liveness is /up outside the API prefix |
 
-CSRF initializes at /sanctum/csrf-cookie. Catalog reads are stateless; cart/auth/checkout/history use session middleware. [Complete API contract](docs/api-design.md).
+CSRF initializes at /sanctum/csrf-cookie. Catalog reads are stateless; cart/auth/checkout/history/wishlist use session middleware. [Complete API contract](docs/api-design.md).
 
 ## Tests
 
@@ -132,20 +166,27 @@ These QA-only process settings prevent bulk browser sweeps from exhausting norma
 
 Current results and limits: [assignment audit](docs/assignment-audit.md), [structured verification](docs/audit-verification.json). [CI](.github/workflows/backend.yml) prepares frontend/backend checks, browser regression and production-image startup smoke checks. Local checks and hosted CI execution are reported separately.
 
-Latest submission rerun: **111 Laravel tests / 1,320 assertions, 78 browser tests over compiled single-origin HTTP**, TypeScript, lint and production build. All seven migrations and seed rerun passed. The prior integration audit also passed the 78-browser suite over local Nginx HTTPS with fourteen accessibility scans. Production dependency scans in that audit reported no known advisories. [Submission verification](docs/submission-verification.json) distinguishes the two executed environments.
+Latest card/artwork integration: **119 browser tests, 23 automated axe scans, 125 Laravel tests / 1,825 assertions** passed. The checkout/auth/cart/concurrency subset was also rerun: **33 tests / 509 assertions**. TypeScript, lint, production build, Pint and the secret scan passed. [Card verification](docs/demo-card-verification.json) · [Card changed files](docs/demo-card-changed-files.json) · [Artwork verification](docs/cover-artwork-verification.json). The latest card/artwork changes are local and have not been deployed.
 
-The [artwork follow-up](docs/artwork-milestone.md) passes **85 browser tests**, including seven new cover checks. Every one of the 45 seeded product covers decodes in catalog/detail views, and all 47 referenced cover/banner/promotion image URLs work. Shared image failure handling now covers cards, details, search, cart and hero artwork. TypeScript, lint and build passed again. [Artwork verification](docs/artwork-verification.json).
+Latest wishlist regression: **122 Laravel tests / 1,442 assertions, 99 browser tests (14 new wishlist tests), eighteen accessibility scans**, TypeScript, lint and production build passed. Eight migrations are applied. Eight secret-check/exporter tests passed. [Wishlist verification and limitations](docs/wishlist-verification.json).
+
+Downloaded-cover verification: **125 Laravel tests / 1,825 assertions, 108 browser regression cases plus two focused real-cover surface cases**, TypeScript, lint and production build passed. Every seeded listing has matching local artwork; each cover passed HTTP status, MIME, byte-hash and browser-decode checks. The detail sweep is split into five bounded cases. [Artwork results](docs/cover-artwork-verification.json) · [Screenshots and safe update instructions](docs/artwork-milestone.md).
+
+Historical submission rerun: **111 Laravel tests / 1,320 assertions, 78 browser tests over compiled single-origin HTTP**, TypeScript, lint and production build. All seven migrations and seed rerun passed. The prior integration audit also passed the 78-browser suite over local Nginx HTTPS with fourteen accessibility scans. Production dependency scans in that audit reported no known advisories. [Submission verification](docs/submission-verification.json) distinguishes the two executed environments.
+
+The historical symbolic-cover follow-up passed **85 browser tests**, including seven cover checks. Every one of the 45 seeded product covers decodes in catalog/detail views, and all 47 referenced cover/banner/promotion image URLs work. Shared image failure handling now covers cards, details, search, cart and hero artwork. TypeScript, lint and build passed again. [Artwork verification](docs/artwork-verification.json).
 
 **Hosted CI:** both jobs in [this GitHub Actions run](https://github.com/Farid1324/Project_clone/actions/runs/44714423834) passed, including 85 browser tests and the Linux production Docker build/startup/API checks. [CI fixes and verification notes](docs/publication-ci-fixes.md) distinguish the hosted result, PHP test warnings, local HTTPS checks and public deployment.
 
 ## Deployment and limitations
 
-[Deployment guide](docs/deployment.md): current Render Free + Neon Free availability, environment/secrets, migrations/seeding, verification and quotas. render.yaml passes Render's official JSON schema. Production uses the root Dockerfile with Nginx/PHP-FPM and compiled React.
+Production runs on Vercel Container Runtime using the root Dockerfile, Nginx/PHP-FPM and compiled React; the free Neon integration provides PostgreSQL. `vercel.json` selects the container preset. The [existing Render deployment guide](docs/deployment.md) describes the alternative Render configuration.
 
-- No verified public demo exists yet. The source is published and Linux Docker/Actions checks passed; hosting setup and successful public HTTPS verification remain required.
+- Public verification passed 73 HTTPS checks on 2026-11-23 (Asia/Baku), including catalog, search, images, deep links and secure cookies. Live browser checks also passed mobile registration/cart merging/purchase/key history at 390px and persistent wishlist behavior at 768px.
+- Deployments currently use the authenticated Vercel CLI. vercel.json disables automatic Git deployments so publishing source does not deploy the pending updates. See [Vercel Git configuration](https://vercel.com/docs/project-configuration/git-configuration#turning-off-all-automatic-deployments).
 - Only simulated money and nonredeemable keys. Seller administration, real payments/refunds, account recovery and email verification are outside this slice.
 - Requirements are sourced Windows snapshots; region/edition eligibility is illustrative. [Data provenance](docs/product-data-provenance.md).
-- Artwork is original demo material, not official Eneba/game cover art. [Artwork provenance](docs/artwork-provenance.md).
+- Game covers use attributed third-party storefront artwork; gift cards are demo compositions and hero art is original. Attribution is not an open redistribution licence. [Artwork provenance](docs/artwork-provenance.md).
 - EUR/English only; recommendations are public discovery rankings. Carts do not reserve inventory; checkout rejects stale quotes.
 - Free services can sleep, hit quotas or restart. Durable database state and stable secrets must be retained together; there is no uptime guarantee.
 

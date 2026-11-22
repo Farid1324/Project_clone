@@ -23,7 +23,7 @@ npm.cmd run dev --prefix frontend
 
 For a fresh installation, run `.\scripts\setup-local.ps1` first. Global PHP users can substitute `php` for the portable executable. [Full native and Docker setup](backend-setup.md).
 
-Open `http://127.0.0.1:5173/store`, select a product and specific seller, add it to your cart, then sign in or register. Local seeded login is `demo@keymarket.test` / `[retired shared password removed; register a new account]`; creating your own demo account gives an initially empty history. Registration/login bring your guest cart into the account. Review checkout, check the confirmation box, and choose the successful or failed simulation. Successful simulation shows your nonredeemable keys; failed simulation retains your cart and offers another attempt. The account icon opens sign-out and order history.
+Open `http://127.0.0.1:5173/store`, select a product and specific seller, add it to your cart, then sign in or register. Register your own demo account for an initially empty order history; there is no published shared login. Registration/login bring your guest cart into the account. Review checkout, choose a sample test card to fill the demo form, check the seller/platform/region confirmation, and press the single Pay total · demo button. The card scenarios below also include simulated verification. Successful simulation shows your nonredeemable keys; failed simulation retains your cart and offers another attempt. The account icon opens sign-out and order history.
 
 No new migration was necessary: the seven existing migrations already define the user/session, offer/cart, order/payment and encrypted-key relationships. Running migrations reported nothing pending. Seeding updates the delivery explanation and retains existing allocations, orders and secrets. Do not reset a populated database or regenerate its encryption/fingerprint secrets. Browser purchase tests and captures create demo accounts/orders and consume demo stock; they belong on local demo fixtures.
 
@@ -127,3 +127,58 @@ The complete baseline-relative file manifest is [purchasing-changed-files.json](
 | Documentation | This guide, structured verification/file manifest, API/schema/setup/architecture/plan/readmes and available verbatim chat history |
 
 Account recovery, email verification, refunds, real payments, seller administration and scheduled cart cleanup remain outside this simulated purchase milestone. Ordinary cart quantity updates still use absolute quantities; cross-tab checkout safety comes from quote/version checks and database locks.
+
+
+## Advanced demo card checkout — November 23, 2026
+
+The existing partial DemoCardPayment form has been completed and integrated with the unchanged Laravel checkout protocol. No payment provider is contacted, no real charges are processed, and no backend migration, credentials or seeding are needed for the card form. Wishlist and downloaded game artwork remain intact.
+
+| Sample card | Outcome |
+| --- | --- |
+| 4242 4242 4242 4242 | Approves the simulated payment and delivers the existing nonredeemable demo keys |
+| 4000 0000 0000 0002 | Records a declined attempt, retains the cart and allows a new attempt |
+| 4000 0025 0000 3155 | Opens simulated verification; code 123456 approves, a different code shows feedback, Cancel or Escape returns without sending a payment |
+
+Clicking a sample fills a demo holder, an automatically generated future expiry, three-digit CVC, Lithuania and postal code 01100. These can be edited. Only the three exact card numbers are accepted, including when manually formatted. Longer numbers beginning with an approved sample remain invalid. Expiry must be a valid MM/YY **in a later month than the current month**; the current month is deliberately rejected for this exercise. Cardholder and postal code are required, and the CVC must have exactly three digits. Billing country is a small demo selection with an Other option; this is not a real billing/address verification service.
+
+DemoCardPayment owns all entered card/billing data and verification code in temporary React component state. It formats the number/expiry and masks CVC, with a preview that reveals only the last four digits. Inputs have labels, required/invalid/described-by semantics and first-error focus. Moving to Pay defers blur validation until submission so an inserted error cannot move the button between pointer-down and pointer-up. A visible status message and inline errors explain the correction.
+
+The verification dialog uses native modal/inert behavior plus an explicit forward/reverse Tab boundary, initial code focus, wrong-code feedback and Escape cancellation. Cancellation clears all card/billing/code state, unchecks confirmation and restores focus to the holder field. Confirmation clears card data before calling the checkout callback. Successful or failed submission, leaving the route and reloading also discard card input. Validation failures keep the form editable so the shopper can correct it. No card form values enter API requests, analytics, logs, URLs, localStorage or sessionStorage.
+
+CheckoutPage receives **only approve or decline** from the form; the verification code and verify choice never become new backend payment fields. The only POST properties remain quote_token, idempotency_key and scenario. The total and compatibility summary come from the existing server quote, and seller prices, stock, platforms and regions require confirmation. CheckoutProgress is reused across cart, payment and order confirmation. Processing disables payment, samples and fields; a synchronous ref prevents repeated events in the same render from sending two requests.
+
+The existing account-scoped pending-attempt sessionStorage contains only those three protocol properties, which are explicitly selected again when read. It never includes card/billing data. A lost response, server failure, rate limit or unresolved CSRF response keeps that same attempt for Check payment result. A 401 shows the sign-in gate while retaining the original account's metadata; signing in again can recover the committed order even if its cart is already empty. A definitive quote/validation conflict clears the attempt, refreshes server data, resets confirmation and requires another review. Backend owner checks, quote matching, locks, idempotency and unique key allocation are unchanged.
+
+### Reproduce and verify the card form
+
+With the existing local PostgreSQL and Laravel server running, from the repository root:
+
+```powershell
+npm.cmd ci --prefix frontend
+npm.cmd run typecheck --prefix frontend
+npm.cmd run lint --prefix frontend
+.\scripts\build-single-origin.ps1
+```
+
+Open http://127.0.0.1:8000 or start Vite on 5173. Add a specific seller offer, sign in/register, choose a test card, review the summary and check confirmation. For verification try 000000 to see the error, 123456 to approve, or Cancel/Escape to retain the cart. The current server total appears on one Pay button. Decline offers Try another demo payment on the existing failed-order page.
+
+Run the focused real-API purchasing/card cases against a separate QA server as described in README (development-only fixtures and process-only array cache / low hashing cost):
+
+```powershell
+$env:PLAYWRIGHT_EXTERNAL_SERVER='1'
+$env:PLAYWRIGHT_BASE_URL='http://127.0.0.1:8000'
+Set-Location frontend
+npx.cmd playwright test tests/demo-card-payment.spec.ts tests/purchasing.spec.ts
+Set-Location ..\backend
+& ..\.tools\php\php.exe artisan test --compact --filter='CheckoutTest|CheckoutConcurrencyTest|AuthenticationTest|CartTest'
+```
+
+The new browser cases cover invalid fields/unsupported and overlong card numbers, date boundaries, masking, exact server total, duplicate events, immediate clearing while a response is held, metadata-only network/storage, verification wrong/success/cancel/Escape, focus containment/restoration, lost-result recovery across session expiry, and keyboard/axe/layout checks at 1440/768/390/320px. Existing purchasing tests cover decline/retry, ownership, unique keys, stock/price conflicts and lost-response recovery across a 429 and reload using the identical request. Browser test data is deliberately fictitious. No real card details should be entered.
+
+[Actual card verification](demo-card-verification.json) · [Card changed-file manifest](demo-card-changed-files.json) · [Desktop checkout](ui-screenshots/keymarket-demo-card-1440.png) · [390px checkout](ui-screenshots/keymarket-demo-card-390.png) · [320px checkout](ui-screenshots/keymarket-demo-card-320.png) · [Verification dialog](ui-screenshots/keymarket-demo-verification-1440.png).
+
+Final regression passed **119 browser cases with zero failures/skips/flaky results**, including nine new card cases, eighteen artwork cases and fourteen wishlist cases. Twenty-three axe scans passed. TypeScript, lint, production build and Pint passed. The guarded PostgreSQL checkout/auth/cart/concurrency subset passed 33 tests / 509 assertions; the full backend suite passed 125 tests / 1,825 assertions. The secret scan found no credentials.
+
+The ordinary local preview was also checked after restoring its normal server configuration: two additional smoke cases passed on Vite at http://127.0.0.1:5173 (all cover HTTP/hash checks and the authenticated card form at 390px).
+
+This update is local and has not been deployed. It is a UI simulation, not bank authentication or a real payment integration. Historical verification above belongs to the earlier milestone; current results are in the linked JSON. Browser coverage uses Chromium, not physical devices or Safari/Firefox.

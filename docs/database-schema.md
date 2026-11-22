@@ -1,11 +1,13 @@
 # Implemented relational database
 
-Status: implemented in seven migrations under `backend/database/migrations/` and exercised against PostgreSQL. Business fields are NOT NULL unless marked nullable; Laravel-managed created/updated timestamp columns are nullable bookkeeping fields. Use PostgreSQL 18 with `pg_trgm`. All domain primary keys are UUIDs, serialized as strings. Domain timestamps use `timestamptz` in UTC. Monetary values use integer minor units; currency is fixed to `EUR` in this version. All mutable entities have `created_at` and `updated_at`; pivot tables use composite primary keys. Indexes target listing, price, availability, and history access paths.
+Status: implemented in eight migrations under `backend/database/migrations/` and exercised against PostgreSQL. Business fields are NOT NULL unless marked nullable; Laravel-managed created/updated timestamp columns are nullable bookkeeping fields. Use PostgreSQL 18 with `pg_trgm`. All domain primary keys are UUIDs, serialized as strings. Domain timestamps use `timestamptz` in UTC. Monetary values use integer minor units; currency is fixed to `EUR` in this version. All mutable entities have `created_at` and `updated_at`; pivot tables use composite primary keys. Indexes target listing, price, availability, and history access paths.
 
 ## Relationships
 
 ```mermaid
 erDiagram
+    USERS ||--o{ WISHLIST_ITEMS : saves
+    PRODUCTS ||--o{ WISHLIST_ITEMS : appears_in
     USERS ||--o| CARTS : owns
     CARTS ||--o{ CART_ITEMS : contains
     OFFERS ||--o{ CART_ITEMS : selected
@@ -32,6 +34,7 @@ Guest carts have a nullable user FK; cart endpoints resolve ownership through a 
 | Table | Principal columns | Constraints and meaning |
 | --- | --- | --- |
 | `users` | `id`, `name varchar(120)`, `email varchar(254)`, `password varchar(255)`, nullable `remember_token` | Unique index on `lower(email)`; normalize email on input. Password uses Laravel hashing. |
+| `wishlist_items` | `id UUID`, `user_id FK`, `product_id FK`, timestamps | Unique `(user_id, product_id)`. Both FKs cascade on hard deletion. Index `(user_id, created_at, id)` supports saved ordering; product FK has an index. Saves represent products, never seller offers or cached prices. |
 | `sellers` | `id`, `name varchar(120)`, `slug varchar(160)`, `status varchar(20)`, `rating numeric(3,2)`, `rating_count integer` | Unique slug; status `active` or `suspended`. Rating is between 0 and 5; count is nonnegative. Each offer exposes the rating of its seller; ratings are not duplicated per offer. Sellers are seeded businesses, not user roles. |
 | `platforms` | `id`, `name varchar(80)`, `slug varchar(100)`, `activation_instructions text` | Unique slug. |
 | `regions` | `id`, `code varchar(20)`, `name varchar(100)`, `activation_notice text` | Unique code such as `GLOBAL`, `EU` or `US`; region is an activation restriction, not a currency. |
@@ -85,7 +88,7 @@ All existing PK/UNIQUE indexes also apply. Benchmark actual query plans before a
 
 ## Seed strategy and current scope
 
-The transactional, repeatable DemoMarketplaceSeeder supplies 45 product listings: 25 PC game variants, 12 console games, and eight gift cards. Each has three independent seller offers, for 135 total offers. There are nine categories, four platforms, three activation regions (Global, Europe and US), three fictional rated sellers, two campaigns, three banners, and original local SVG artwork. Prices and ratings are illustrative demo fixtures, and all inventory is nonredeemable.
+The transactional, repeatable DemoMarketplaceSeeder supplies 45 product listings: 25 PC game variants, 12 console games, and eight gift cards. Each has three independent seller offers, for 135 total offers. There are nine categories, four platforms, three activation regions (Global, Europe and US), three fictional rated sellers, two campaigns, three banners, and locally served game-cover WebP artwork (plus original promotional artwork). Prices and ratings are illustrative demo fixtures, and all inventory is nonredeemable.
 
 Stable key-slot fingerprints and historical-order UUIDs prevent duplicate inventory or sales on reruns. Allocated slots are never replaced with fresh stock. Sixteen historical fulfilled demo orders (twelve game orders and four gift-card orders) have matching item totals, approved simulated payment records, and exactly the requested number of assigned keys. A demo user/account cart is also seeded. Production demo seeding is refused by default; the hosted internship demo can explicitly opt in through ALLOW_DEMO_SEEDING. Startup seeds only an empty catalog when SEED_DEMO_ON_FIRST_BOOT is enabled. See deployment.md for stable-secret and migration requirements.
 
@@ -94,3 +97,9 @@ Public catalog/homepage queries, session-owned cart mutations, Sanctum cookie au
 The seventh migration adds nullable product detail fields: `requirements jsonb`, `delivery_information text`, and `compatibility_notice text`. Requirements contain `kind` (`pc` or `activation`), `minimum`/`recommended` arrays of `{label, value}`, notes, optional source URL/capture timestamp, and product-specific `activation_steps`. The API joins activation steps into the existing newline-delimited activation instructions field, with platform instructions as a fallback. No HTML is rendered from requirement data. These fields are detail-only API content, leaving catalog cards compact. All seeded listings receive metadata; unseeded rows can honestly report missing requirements. See [metadata provenance](product-data-provenance.md).
 
 See [setup commands](backend-setup.md), [implemented API](api-design.md), and [milestone report](backend-milestone.md).
+
+## Persistent product wishlist
+
+The eighth migration adds wishlist_items and WishlistItem belongsTo relationships to User and Product; both parents expose wishlistItems. Each account starts empty. The catalog seeder deliberately does not populate private wishlists. No environment variables or new secrets are required. Run additive migrations on an existing database; do not reset or reseed to enable this feature.
+
+Authenticated service methods derive the owner from Sanctum, lock that user row for add/remove, and enforce one row per product/account. Saving a published sold-out product is allowed. Reads reuse ProductQuery and ProductResource, using current eligible seller offers. A private owner-filtered query includes previously saved unpublished products with null price/unavailable status; public catalog queries remain published-only. Archive/unpublish keeps a save visible; hard deletion cascades the association to prevent an orphan. See [wishlist milestone](wishlist-milestone.md).

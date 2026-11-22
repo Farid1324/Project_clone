@@ -1,0 +1,104 @@
+{
+  "milestone": "Advanced local demo card checkout",
+  "verified_at": "2026-11-22T21:37:26.438271+00:00",
+  "scope": "Completed the existing uncommitted DemoCardPayment/CheckoutPage/purchasing CSS and test edits; preserved unrelated wishlist, artwork and deployment work.",
+  "implementation": {
+    "ui": "Temporary component card/billing state, exact three-number allowlist, future-month MM/YY expiry, three-digit masked CVC, required holder/country/postal fields, masked preview, sample buttons, reviewed server summary, one total-priced Pay action, progress and processing state.",
+    "verification": "Local modal with public code 123456, wrong-code feedback, trapped Tab/Shift+Tab focus, Cancel/Escape and focus restoration. No provider connection.",
+    "api": "Unchanged POST /api/v1/checkout contract: quote_token, idempotency_key, scenario approve/decline only.",
+    "retry": "Synchronous duplicate-event guard; account-scoped metadata survives unknown outcome, 429/419 and session expiry; definitive quote conflicts require fresh confirmation.",
+    "card_storage": "None. Card/billing/code values exist only in component memory and clear on accepted submission/cancellation/unmount/reload. Pending sessionStorage contains only the three existing protocol fields.",
+    "new_migrations": 0,
+    "new_dependencies": 0,
+    "deployment_performed": false
+  },
+  "focused_browser": {
+    "origin": "http://127.0.0.1:8000",
+    "stats": {
+      "startTime": "2026-11-22T21:18:00.727Z",
+      "duration": 231517.683,
+      "expected": 17,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "new_card_tests": 9,
+    "existing_purchasing_tests": 8,
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "coverage": [
+      "Required and invalid fields, unsupported/overlong card numbers, formatting, current/past/invalid month and short CVC rejection",
+      "Exact server-priced Pay label, preview/masking, immediate field clearing during held request",
+      "Two synchronous submit events yield one network request/order; metadata-only network/storage and no card values in logs/URLs",
+      "Verification wrong code then success; zero purchase requests before confirmation",
+      "Cancellation by Escape and button at 320px; no order, retained cart, focus restoration and another successful attempt",
+      "Lost approved result recovered after logout/session-expiry and reauthentication with identical idempotency payload",
+      "Keyboard/axe/responsive layout at four viewports",
+      "Existing approval/key history, decline/cart retention/retry, owner isolation, CSRF/session revocation, stale quote conflicts",
+      "Interrupted response, reload, transient 429 and another reload recover one order using identical payloads"
+    ]
+  },
+  "backend": {
+    "full_tests": 125,
+    "full_assertions": 1825,
+    "focused_checkout_auth_cart_concurrency_tests": 33,
+    "focused_assertions": 509,
+    "focused_duration_ms": 16314,
+    "pint": "passed",
+    "note": "Backend business logic is unchanged by the card form. Full suite also covers the preceding artwork backfill."
+  },
+  "frontend": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "production_build": "passed"
+  },
+  "preservation": {
+    "protected_code_and_artwork_files_checked": 60,
+    "baseline_hashes_unchanged": true,
+    "business_logic": "Owner scoping, quote/version checks, stock/price checks, transactional allocation, idempotency and order history retained."
+  },
+  "screenshots": [
+    "docs/ui-screenshots/keymarket-demo-card-1440.png",
+    "docs/ui-screenshots/keymarket-demo-card-390.png",
+    "docs/ui-screenshots/keymarket-demo-card-320.png",
+    "docs/ui-screenshots/keymarket-demo-verification-1440.png"
+  ],
+  "full_browser_regression": {
+    "origin": "http://127.0.0.1:8000",
+    "delivery": "Compiled production React and Laravel native HTTP, development PostgreSQL; process-only QA cache/hash settings.",
+    "stats": {
+      "startTime": "2026-11-22T21:22:32.321Z",
+      "duration": 679551.6989999999,
+      "expected": 119,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "axe_scans": 23,
+    "artwork_cases": 18,
+    "new_card_cases": 9,
+    "wishlist_cases": 14,
+    "note": "All current browser cases ran after final application changes. Full sweep includes card input clearing across reload at 320px."
+  },
+  "limits": [
+    "Chromium automation and visual desktop/mobile review; no physical-device, Safari, Firefox or screen-reader session.",
+    "Billing validation is demonstration-only; no address verification, payment provider or bank authentication.",
+    "If sessionStorage is blocked, the existing fallback retains retry metadata only in current-page memory; order history remains available.",
+    "Only development fixtures were purchased. No public deployment performed."
+  ],
+  "normal_preview_smoke": {
+    "origin": "http://127.0.0.1:5173",
+    "runtime": "Vite plus Laravel restarted without the QA cache/hash overrides; existing database/session configuration retained.",
+    "passed": 2,
+    "failed": 0,
+    "duration_seconds": 10.4,
+    "cases": [
+      "Every cover HTTP/MIME/same-origin/byte-hash check",
+      "Authenticated sample-card form, keyboard and axe at 390px"
+    ]
+  }
+}

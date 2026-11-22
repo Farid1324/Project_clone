@@ -8,6 +8,7 @@ import { formatMoney } from '../lib/format'
 import type { CartItem } from '../types/api'
 import { useSession } from '../hooks/useSession'
 import { MarketplaceImage } from '../components/MarketplaceImage'
+import { CheckoutProgress } from '../components/CheckoutProgress'
 
 function CartLine({ item, limit }: { item: CartItem; limit: number }) {
   const update = useUpdateCartItem()
@@ -17,7 +18,7 @@ function CartLine({ item, limit }: { item: CartItem; limit: number }) {
   function quantity(value: number) { remove.reset(); update.reset(); update.mutate({ id: item.id, quantity: value }) }
   const error = update.error ?? remove.error
   return <article className="cart-line" data-offer-id={item.offer_id} aria-label={label}>
-    <Link className="cart-line-art" to={'/products/' + item.product.slug}><MarketplaceImage src={item.product.cover_image_url} alt={item.product.title} width={75} height={100} /></Link>
+    <Link className="cart-line-art" to={'/products/' + item.product.slug}><MarketplaceImage src={item.product.cover_image_url} alt={item.product.title} width={72} height={108} /></Link>
     <div className="cart-line-copy"><Link className="cart-product-title" to={'/products/' + item.product.slug}>{item.product.title}</Link>
       <p>{item.product.platform.name} · {item.product.region.name}</p><p>Seller: <strong>{item.seller.name}</strong></p>
       <p>{formatMoney(item.unit_price_minor)} each · {item.stock_available} demo keys available</p>
@@ -44,6 +45,7 @@ export function CartPage() {
   return <div className="market-container cart-page">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span>Cart</span></nav>
     <div className="section-heading"><div><p className="eyebrow">YOUR CHOICE OF SELLER</p><h1>Your cart</h1></div><Link to="/store" className="text-link">Continue browsing</Link></div>
+    <CheckoutProgress step={1} />
     {location.state?.notices?.map((notice: string) => <p role="status" className="checkout-notice" key={notice}>{notice}</p>)}
     {cart.isPending ? <LoadingSkeleton variant="line" count={4} />
       : cart.isError ? <AsyncState title="Your cart could not load" message={cart.error.message} onRetry={() => void cart.refetch()} />

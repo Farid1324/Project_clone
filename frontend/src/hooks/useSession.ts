@@ -1,7 +1,8 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { api } from '../lib/api'
+import { api, cancelWishlistWrites } from '../lib/api'
 import { useCart } from './useCart'
 import type { Envelope, Session } from '../types/api'
+import { clearWishlistCache } from '../lib/wishlistPrivacy'
 
 export function useSession() {
   const cart = useCart()
@@ -12,12 +13,14 @@ export function useSessionMutation<T>(operation: (input: T) => Promise<Envelope<
   const cache = useQueryClient()
   return useMutation({
     mutationKey: ['session', 'write'], mutationFn: operation, retry: false,
-    onMutate: async () => { await cache.cancelQueries() },
+    onMutate: async () => { cancelWishlistWrites(); await cache.cancelQueries() },
     onSuccess: async response => {
       cache.removeQueries({ predicate: query => ['order', 'orders', 'checkout'].includes(String(query.queryKey[0])) })
+      clearWishlistCache(cache)
       cache.setQueryData(['session'], response)
       cache.setQueryData(['cart'], { data: { id: null, version: 0, currency: 'EUR', items: [], items_count: 0, total_minor: 0, has_unavailable_items: false, limits: { quantity_per_offer: 9, distinct_offers: 20 } } })
       await cache.invalidateQueries({ queryKey: ['cart'] })
     },
+    onError: () => { void cache.invalidateQueries({ queryKey: ['wishlist'] }) },
   })
 }

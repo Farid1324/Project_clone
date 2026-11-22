@@ -7,6 +7,7 @@ import { useSession } from '../hooks/useSession'
 import { usePageTitle } from '../hooks/usePageTitle'
 import { api } from '../lib/api'
 import { formatMoney } from '../lib/format'
+import { CheckoutProgress } from '../components/CheckoutProgress'
 
 function History() {
   const session = useSession()
@@ -35,6 +36,7 @@ function Detail() {
   return <div className="market-container orders-page"><Link className="text-link" to="/orders">Back to order history</Link>
     {query.isPending ? <LoadingSkeleton variant="line" count={4} /> : query.isError ? <AsyncState title="Order unavailable" message={query.error.message} onRetry={() => void query.refetch()} /> : order && <>
       <p className="eyebrow">SIMULATED PAYMENT · {order.payment.status.toUpperCase()}</p><h1>{order.status === 'fulfilled' ? 'Your demo keys are ready' : 'Demo payment declined'}</h1><p>Order <span className="order-reference">{order.id}</span></p><p>{new Date(order.created_at).toLocaleString()} · Total {formatMoney(order.total_minor)}</p>
+      <CheckoutProgress step={order.status === 'fulfilled' ? 3 : 2} />
       {order.status === 'payment_failed' && <div role="status" className="checkout-notice"><p>No keys were allocated. Your cart was kept. Try another simulated payment when you are ready.</p><Link className="button button-primary" to="/checkout">Try another demo payment</Link></div>}
       {order.items.map(item => <article className="delivered-item" key={item.id}><h2>{item.product_title}</h2><p>{item.platform_name} · {item.region_name} · Seller: {item.seller_name}</p><p>{item.quantity} × {formatMoney(item.unit_price_minor)} = {formatMoney(item.line_total_minor)}</p>
         {item.keys && <div className="delivered-keys"><h3>Your nonredeemable demo {item.keys.length === 1 ? 'key' : 'keys'}</h3>{item.keys.map((key, index) => <div className="demo-key" key={key}><span>Key {index + 1}</span><code>{key}</code></div>)}<p>For assignment demonstration only. Do not attempt to redeem these strings.</p></div>}

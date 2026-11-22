@@ -41,6 +41,11 @@ class Product extends Model
         return $this->hasMany(Offer::class);
     }
 
+    public function wishlistItems(): HasMany
+    {
+        return $this->hasMany(WishlistItem::class);
+    }
+
     public function scopePublished(Builder $query): Builder
     {
         return $query->where('products.is_active', true);

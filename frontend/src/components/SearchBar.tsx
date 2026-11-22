@@ -83,7 +83,7 @@ function SearchInput({ initialTerm, autoFocus, onNavigate }: { initialTerm: stri
               {results.map((product, index) => <li key={product.id} id={listId + '-' + index} role="option" aria-selected={index === active}
                 className={index === active ? 'is-active' : ''} onPointerMove={() => setActive(index)}
                 onMouseDown={event => event.preventDefault()} onClick={() => go('/products/' + product.slug)}>
-                <MarketplaceImage src={product.cover_image_url} alt="" width={36} height={48} />
+                <MarketplaceImage src={product.cover_image_url} alt="" width={36} height={54} />
                 <span className="suggestion-title"><strong>{product.title}</strong><small>{product.platform.name} · {product.region.name}</small></span>
                 <strong className="suggestion-price">{product.price_minor === null ? 'Unavailable' : formatMoney(product.price_minor)}</strong>
               </li>)}

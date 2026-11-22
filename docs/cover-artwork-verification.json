@@ -1,0 +1,109 @@
+{
+  "milestone": "Downloaded catalog artwork and image resilience",
+  "verified_at": "2026-11-22T21:11:08.413606+00:00",
+  "products": 45,
+  "game_variants": 37,
+  "gift_card_variants": 8,
+  "distinct_assets": 44,
+  "distinct_game_covers": 36,
+  "assets": {
+    "format": "WebP",
+    "width": 600,
+    "height": 900,
+    "bytes": 3871910,
+    "source_bytes_per_asset": 8628611,
+    "provenance": "backend/database/seeders/data/cover-artwork.json",
+    "missing": []
+  },
+  "diagnosis": {
+    "baseline": "45 listings referenced 44 symbolic SVG title cards; all HTTP 200 image/svg+xml and decoded. No local CSS visibility, lazy loading, MIME or 404 defect reproduced.",
+    "corrected": "Replaced seeded placeholder imagery, normalized 2:3 geometry including compact mobile rows; terminal HTML fallback prevents an error loop if the fallback SVG also fails.",
+    "csp": "Native preview has no CSP header. Nginx config reviewed: img-src self/data. No deployed CSP execution claimed for this update."
+  },
+  "backfill": {
+    "executed": "ProductArtworkSeeder on existing local PostgreSQL database",
+    "unchanged_tables": [
+      "users",
+      "offers",
+      "digital_keys",
+      "carts",
+      "cart_items",
+      "orders",
+      "order_items",
+      "payment_attempts",
+      "wishlist_items"
+    ],
+    "product_metadata_except_image_and_updated_at_unchanged": true,
+    "method": "Full ordered content fingerprints and counts immediately before/after update; repeatability and allocated-key preservation also tested in guarded test database.",
+    "full_demo_reseed_executed_on_live_data": false,
+    "new_migrations": 0
+  },
+  "backend": {
+    "full_tests": 125,
+    "assertions": 1825,
+    "passed": 125,
+    "duration_ms": 51797,
+    "focused_artwork_and_demo_tests": 4,
+    "focused_assertions": 672,
+    "pint": "passed"
+  },
+  "browser_regression": {
+    "origin": "http://127.0.0.1:8000",
+    "delivery": "Compiled React + Laravel native HTTP; process-only array QA cache and BCRYPT_ROUNDS=4",
+    "stats": {
+      "startTime": "2026-11-22T20:55:36.553Z",
+      "duration": 496824.609,
+      "expected": 108,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "artwork_tests": 16,
+    "scope": "All cover HTTP/MIME/hash checks, 45 detail decodes in five batches, all 45 catalog images after scrolling at 1440/390, home providers, missing URL/recovery, double-failure terminal fallback, wishlist, shared surfaces, hero navigation, existing marketplace and account regressions."
+  },
+  "additional_surface_cases": {
+    "origin": "http://127.0.0.1:5173",
+    "delivery": "Vite with existing /demo and API proxy",
+    "stats": {
+      "startTime": "2026-11-22T21:04:02.119Z",
+      "duration": 9610.353,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "scope": "Actual matching cover source, decode and 2:3 geometry in detail/autocomplete/populated cart at 1440/390."
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "production_build": "passed"
+  },
+  "screenshots": [
+    "docs/ui-screenshots/keymarket-real-covers-store-1440.png",
+    "docs/ui-screenshots/keymarket-real-covers-store-390.png",
+    "docs/ui-screenshots/keymarket-real-covers-home-1440.png",
+    "docs/ui-screenshots/keymarket-real-covers-home-390.png"
+  ],
+  "visual_review": "All 44 final cover assets reviewed on a contact sheet; desktop/mobile browser screenshots reviewed. Source/edition mismatches were rejected and replaced before publication to the local asset directory.",
+  "limits": [
+    "These regression results precede the subsequently requested card-form upgrade; its final regression is recorded separately.",
+    "No new public deployment performed.",
+    "Chromium only; no Safari/Firefox or physical-device run.",
+    "Third-party artwork retains its owners' rights; attribution does not imply an open commercial redistribution licence.",
+    "Browser purchasing tests create disposable accounts/orders and consume development-only stock."
+  ],
+  "integrated_after_card_upgrade": {
+    "origin": "http://127.0.0.1:8000",
+    "stats": {
+      "startTime": "2026-11-22T21:22:32.321Z",
+      "duration": 679551.6989999999,
+      "expected": 119,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "artwork_cases": 18,
+    "scope": "Full final marketplace regression including the two real-cover shared-surface cases, advanced card checkout and existing wishlist."
+  }
+}

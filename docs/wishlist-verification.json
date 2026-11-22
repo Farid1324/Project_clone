@@ -1,0 +1,107 @@
+{
+  "milestone": "Persistent authenticated product wishlist",
+  "checked_at": "2026-11-22T20:16:02.022774+00:00",
+  "baseline_commit": "339a09bbc5de6fe59dbc4d4a2dd6aa4b525fdf0b",
+  "backend": {
+    "status": "passed",
+    "tests": 122,
+    "assertions": 1442,
+    "duration_ms": 68980,
+    "wishlist_tests": 11,
+    "wishlist_assertions": 122,
+    "database": "PostgreSQL marketplace_testing",
+    "command": "php -d zend_extension=opcache -d opcache.enable_cli=1 artisan test --compact",
+    "formatter": "Pint passed"
+  },
+  "database": {
+    "new_migration": "2026_11_22_194138_create_wishlist_items_table",
+    "migrations_applied": 8,
+    "migration_status": "passed",
+    "reset_or_reseed_required": false
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "lint": "passed; no warnings",
+    "build": "passed",
+    "compiled_js_kb": 437.49,
+    "compiled_js_gzip_kb": 133.26,
+    "compiled_css_kb": 49.78
+  },
+  "browser": {
+    "status": "passed",
+    "total": 99,
+    "wishlist_tests": 14,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "duration_ms": 439573.275,
+    "origin": "http://127.0.0.1:8000",
+    "server": "Compiled React and native Laravel/PHP HTTP server; no Vite",
+    "browser": "Playwright Chromium",
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "wishlist_axe_scans": 4,
+    "total_axe_scans": 18,
+    "qa_process_settings": {
+      "CACHE_STORE": "array",
+      "BCRYPT_ROUNDS": 4
+    },
+    "scope": [
+      "Existing marketplace/artwork/catalog/cart/authentication/checkout regression",
+      "Keyboard heart save/remove independent of product link",
+      "Persistent saves across page navigation, reload, logout and login",
+      "Guest selected-product return through registration",
+      "Account ownership isolation and private-cache cleanup",
+      "Failed write and read retry/loading/empty states",
+      "Header membership/count consistency, 25-item pagination and recovery",
+      "Unavailable/unpublished saved-product UI with removal",
+      "Auth-change cancellation of delayed responses and committed-save persistence",
+      "Actual revoked session and failed-logout reconciliation"
+    ],
+    "unpublished_ui_test": "Uses an isolated serialized-response simulation. Backend tests change actual PostgreSQL stock/publication state."
+  },
+  "submission_tools": {
+    "status": "passed",
+    "tests": 8,
+    "covers": "Secret scanning and verbatim export including ordered resumed segments, duplicate record IDs and after-final capture"
+  },
+  "security": {
+    "secret_scan": "passed; no findings in Git candidates",
+    "csrf": "Existing shared API client and Laravel web/Sanctum middleware; real HTTP rejection tested",
+    "wishlist_query_and_mutation_cache": "Cleared on auth changes and relevant 401s",
+    "optimistic_updates": false,
+    "idempotency": "User-row transaction locks and unique user/product constraint; no-op repeated removal",
+    "no_inventory_reservation": true
+  },
+  "visual_review": {
+    "inspected": [
+      "docs/ui-screenshots/keymarket-wishlist-1440.png",
+      "docs/ui-screenshots/keymarket-wishlist-390.png"
+    ],
+    "overflow_checks": "Passed at all four widths"
+  },
+  "conversation": {
+    "source": "Both original local session log segments, chronological, with source hashes; no reconstruction",
+    "redactions_at_check": 0,
+    "export": "docs/ai-chat-history.md",
+    "final_response": "Temporary after-final exporter plus documented manual refresh"
+  },
+  "not_executed": [
+    "Public cloud deployment",
+    "Production HTTPS/container/hosted CI run for this change",
+    "Firefox/WebKit browser runs"
+  ],
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "deployment_claimed": false
+  },
+  "artifacts": {
+    "changed_files": "docs/wishlist-changed-files.json",
+    "explanation_and_commands": "docs/wishlist-milestone.md"
+  }
+}

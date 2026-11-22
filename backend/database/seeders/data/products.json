@@ -10,7 +10,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 5599,
-    "slug": "elden-ring-steam-global"
+    "slug": "elden-ring-steam-global",
+    "cover_image_path": "/demo/covers/elden-ring-steam-global-13ddf9439d.webp"
   },
   {
     "title": "Cyberpunk 2077",
@@ -23,7 +24,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 3999,
-    "slug": "cyberpunk-2077-steam-global"
+    "slug": "cyberpunk-2077-steam-global",
+    "cover_image_path": "/demo/covers/cyberpunk-2077-steam-global-df78821d7d.webp"
   },
   {
     "title": "Baldur's Gate 3",
@@ -36,7 +38,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 7199,
-    "slug": "baldur-s-gate-3-steam-global"
+    "slug": "baldur-s-gate-3-steam-global",
+    "cover_image_path": "/demo/covers/baldur-s-gate-3-steam-global-1c50a8920c.webp"
   },
   {
     "title": "Hogwarts Legacy",
@@ -49,7 +52,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 3199,
-    "slug": "hogwarts-legacy-steam-global"
+    "slug": "hogwarts-legacy-steam-global",
+    "cover_image_path": "/demo/covers/hogwarts-legacy-steam-global-ab914f2490.webp"
   },
   {
     "title": "Red Dead Redemption 2",
@@ -62,7 +66,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 3099,
-    "slug": "red-dead-redemption-2-steam-global"
+    "slug": "red-dead-redemption-2-steam-global",
+    "cover_image_path": "/demo/covers/red-dead-redemption-2-steam-global-4607583644.webp"
   },
   {
     "title": "The Witcher 3: Wild Hunt",
@@ -75,7 +80,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1499,
-    "slug": "the-witcher-3-wild-hunt-steam-global"
+    "slug": "the-witcher-3-wild-hunt-steam-global",
+    "cover_image_path": "/demo/covers/the-witcher-3-wild-hunt-steam-global-251c288a33.webp"
   },
   {
     "title": "Stardew Valley",
@@ -88,7 +94,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1799,
-    "slug": "stardew-valley-steam-global"
+    "slug": "stardew-valley-steam-global",
+    "cover_image_path": "/demo/covers/stardew-valley-steam-global-c93a3a2e0b.webp"
   },
   {
     "title": "Hollow Knight",
@@ -101,7 +108,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1299,
-    "slug": "hollow-knight-steam-global"
+    "slug": "hollow-knight-steam-global",
+    "cover_image_path": "/demo/covers/hollow-knight-steam-global-0b7f2c1f4b.webp"
   },
   {
     "title": "Hades",
@@ -114,7 +122,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 2099,
-    "slug": "hades-steam-global"
+    "slug": "hades-steam-global",
+    "cover_image_path": "/demo/covers/hades-steam-global-f71e9a5e6c.webp"
   },
   {
     "title": "Disco Elysium: The Final Cut",
@@ -127,7 +136,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1599,
-    "slug": "disco-elysium-the-final-cut-steam-global"
+    "slug": "disco-elysium-the-final-cut-steam-global",
+    "cover_image_path": "/demo/covers/disco-elysium-the-final-cut-steam-global-4c6ea04982.webp"
   },
   {
     "title": "Terraria",
@@ -140,7 +150,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 999,
-    "slug": "terraria-steam-global"
+    "slug": "terraria-steam-global",
+    "cover_image_path": "/demo/covers/terraria-steam-global-ff17db569b.webp"
   },
   {
     "title": "No Man's Sky",
@@ -153,7 +164,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 3599,
-    "slug": "no-man-s-sky-steam-global"
+    "slug": "no-man-s-sky-steam-global",
+    "cover_image_path": "/demo/covers/no-man-s-sky-steam-global-f495273f09.webp"
   },
   {
     "title": "Sid Meier's Civilization VI",
@@ -165,7 +177,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1299,
-    "slug": "sid-meier-s-civilization-vi-steam-global"
+    "slug": "sid-meier-s-civilization-vi-steam-global",
+    "cover_image_path": "/demo/covers/sid-meier-s-civilization-vi-steam-global-9199baa0de.webp"
   },
   {
     "title": "Cities: Skylines",
@@ -178,7 +191,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1599,
-    "slug": "cities-skylines-steam-global"
+    "slug": "cities-skylines-steam-global",
+    "cover_image_path": "/demo/covers/cities-skylines-steam-global-d042d34c17.webp"
   },
   {
     "title": "Euro Truck Simulator 2",
@@ -190,7 +204,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1199,
-    "slug": "euro-truck-simulator-2-steam-global"
+    "slug": "euro-truck-simulator-2-steam-global",
+    "cover_image_path": "/demo/covers/euro-truck-simulator-2-steam-global-a2bd3b87a9.webp"
   },
   {
     "title": "Celeste",
@@ -203,7 +218,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 999,
-    "slug": "celeste-steam-global"
+    "slug": "celeste-steam-global",
+    "cover_image_path": "/demo/covers/celeste-steam-global-1d921325ae.webp"
   },
   {
     "title": "Dead Cells",
@@ -216,7 +232,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 2399,
-    "slug": "dead-cells-steam-global"
+    "slug": "dead-cells-steam-global",
+    "cover_image_path": "/demo/covers/dead-cells-steam-global-8a6830f692.webp"
   },
   {
     "title": "Slay the Spire",
@@ -229,7 +246,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1799,
-    "slug": "slay-the-spire-steam-global"
+    "slug": "slay-the-spire-steam-global",
+    "cover_image_path": "/demo/covers/slay-the-spire-steam-global-d505310f69.webp"
   },
   {
     "title": "Subnautica",
@@ -242,7 +260,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 2099,
-    "slug": "subnautica-steam-global"
+    "slug": "subnautica-steam-global",
+    "cover_image_path": "/demo/covers/subnautica-steam-global-72aca2953b.webp"
   },
   {
     "title": "Portal 2",
@@ -254,7 +273,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 499,
-    "slug": "portal-2-steam-global"
+    "slug": "portal-2-steam-global",
+    "cover_image_path": "/demo/covers/portal-2-steam-global-9166f23b1b.webp"
   },
   {
     "title": "Sekiro: Shadows Die Twice",
@@ -267,7 +287,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 4799,
-    "slug": "sekiro-shadows-die-twice-steam-global"
+    "slug": "sekiro-shadows-die-twice-steam-global",
+    "cover_image_path": "/demo/covers/sekiro-shadows-die-twice-steam-global-5a6a48fd84.webp"
   },
   {
     "title": "Dark Souls III",
@@ -280,7 +301,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 3999,
-    "slug": "dark-souls-iii-steam-global"
+    "slug": "dark-souls-iii-steam-global",
+    "cover_image_path": "/demo/covers/dark-souls-iii-steam-global-6219fc44bf.webp"
   },
   {
     "title": "Resident Evil 4",
@@ -293,7 +315,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 4799,
-    "slug": "resident-evil-4-steam-global"
+    "slug": "resident-evil-4-steam-global",
+    "cover_image_path": "/demo/covers/resident-evil-4-steam-global-55e4005199.webp"
   },
   {
     "title": "DOOM Eternal",
@@ -306,7 +329,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 2099,
-    "slug": "doom-eternal-steam-global"
+    "slug": "doom-eternal-steam-global",
+    "cover_image_path": "/demo/covers/doom-eternal-steam-global-15f6094763.webp"
   },
   {
     "title": "Forza Horizon 5",
@@ -318,7 +342,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 4799,
-    "slug": "forza-horizon-5-xbox-global"
+    "slug": "forza-horizon-5-xbox-global",
+    "cover_image_path": "/demo/covers/forza-horizon-5-xbox-global-f8ffcf1891.webp"
   },
   {
     "title": "Halo Infinite: Campaign",
@@ -330,7 +355,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 3999,
-    "slug": "halo-infinite-campaign-xbox-global"
+    "slug": "halo-infinite-campaign-xbox-global",
+    "cover_image_path": "/demo/covers/halo-infinite-campaign-xbox-global-b5538251c3.webp"
   },
   {
     "title": "Sea of Thieves",
@@ -342,7 +368,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 3199,
-    "slug": "sea-of-thieves-xbox-global"
+    "slug": "sea-of-thieves-xbox-global",
+    "cover_image_path": "/demo/covers/sea-of-thieves-xbox-global-9d2c9ac13a.webp"
   },
   {
     "title": "Microsoft Flight Simulator: Standard Edition",
@@ -354,7 +381,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 5599,
-    "slug": "microsoft-flight-simulator-standard-edition-xbox-global"
+    "slug": "microsoft-flight-simulator-standard-edition-xbox-global",
+    "cover_image_path": "/demo/covers/microsoft-flight-simulator-standard-edition-xbox-global-a97cd563ed.webp"
   },
   {
     "title": "Gears 5",
@@ -366,7 +394,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 1799,
-    "slug": "gears-5-xbox-global"
+    "slug": "gears-5-xbox-global",
+    "cover_image_path": "/demo/covers/gears-5-xbox-global-e9f3521f48.webp"
   },
   {
     "title": "Ori and the Will of the Wisps",
@@ -378,7 +407,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 2099,
-    "slug": "ori-and-the-will-of-the-wisps-xbox-global"
+    "slug": "ori-and-the-will-of-the-wisps-xbox-global",
+    "cover_image_path": "/demo/covers/ori-and-the-will-of-the-wisps-xbox-global-2606a67af4.webp"
   },
   {
     "title": "Minecraft: Xbox One Edition",
@@ -390,7 +420,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 2899,
-    "slug": "minecraft-xbox-one-edition-xbox-global"
+    "slug": "minecraft-xbox-one-edition-xbox-global",
+    "cover_image_path": "/demo/covers/minecraft-xbox-one-edition-xbox-global-f9beae52b3.webp"
   },
   {
     "title": "Diablo IV",
@@ -403,7 +434,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 5599,
-    "slug": "diablo-iv-xbox-global"
+    "slug": "diablo-iv-xbox-global",
+    "cover_image_path": "/demo/covers/diablo-iv-xbox-global-2fbbe2d238.webp"
   },
   {
     "title": "The Legend of Zelda: Breath of the Wild",
@@ -415,7 +447,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 7199,
-    "slug": "the-legend-of-zelda-breath-of-the-wild-nintendo-eu"
+    "slug": "the-legend-of-zelda-breath-of-the-wild-nintendo-eu",
+    "cover_image_path": "/demo/covers/the-legend-of-zelda-breath-of-the-wild-nintendo-eu-d1b79571ba.webp"
   },
   {
     "title": "Mario Kart 8 Deluxe",
@@ -427,7 +460,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 7199,
-    "slug": "mario-kart-8-deluxe-nintendo-eu"
+    "slug": "mario-kart-8-deluxe-nintendo-eu",
+    "cover_image_path": "/demo/covers/mario-kart-8-deluxe-nintendo-eu-f9b2051ba4.webp"
   },
   {
     "title": "Animal Crossing: New Horizons",
@@ -439,7 +473,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 6899,
-    "slug": "animal-crossing-new-horizons-nintendo-eu"
+    "slug": "animal-crossing-new-horizons-nintendo-eu",
+    "cover_image_path": "/demo/covers/animal-crossing-new-horizons-nintendo-eu-83345fab05.webp"
   },
   {
     "title": "Super Mario Odyssey",
@@ -451,7 +486,8 @@
     ],
     "type": "game",
     "comparison_price_minor": 6899,
-    "slug": "super-mario-odyssey-nintendo-eu"
+    "slug": "super-mario-odyssey-nintendo-eu",
+    "cover_image_path": "/demo/covers/super-mario-odyssey-nintendo-eu-f8f81eb2ed.webp"
   },
   {
     "title": "Steam Wallet €10",
@@ -464,7 +500,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 1000,
-    "slug": "steam-wallet-eur-10-steam-eu"
+    "slug": "steam-wallet-eur-10-steam-eu",
+    "cover_image_path": "/demo/covers/steam-wallet-eur-10-steam-eu-ef0124333f.webp"
   },
   {
     "title": "Steam Wallet €20",
@@ -477,7 +514,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 2000,
-    "slug": "steam-wallet-eur-20-steam-eu"
+    "slug": "steam-wallet-eur-20-steam-eu",
+    "cover_image_path": "/demo/covers/steam-wallet-eur-20-steam-eu-09a05d013c.webp"
   },
   {
     "title": "PlayStation Store €10",
@@ -490,7 +528,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 1000,
-    "slug": "playstation-store-eur-10-playstation-eu"
+    "slug": "playstation-store-eur-10-playstation-eu",
+    "cover_image_path": "/demo/covers/playstation-store-eur-10-playstation-eu-9820f8da44.webp"
   },
   {
     "title": "PlayStation Store €20",
@@ -503,7 +542,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 2000,
-    "slug": "playstation-store-eur-20-playstation-eu"
+    "slug": "playstation-store-eur-20-playstation-eu",
+    "cover_image_path": "/demo/covers/playstation-store-eur-20-playstation-eu-c0ff8ed35a.webp"
   },
   {
     "title": "Xbox Gift Card €10",
@@ -516,7 +556,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 1000,
-    "slug": "xbox-gift-card-eur-10-xbox-eu"
+    "slug": "xbox-gift-card-eur-10-xbox-eu",
+    "cover_image_path": "/demo/covers/xbox-gift-card-eur-10-xbox-eu-5c32c479e9.webp"
   },
   {
     "title": "Xbox Gift Card €25",
@@ -529,7 +570,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 2500,
-    "slug": "xbox-gift-card-eur-25-xbox-eu"
+    "slug": "xbox-gift-card-eur-25-xbox-eu",
+    "cover_image_path": "/demo/covers/xbox-gift-card-eur-25-xbox-eu-2bb1a500d4.webp"
   },
   {
     "title": "Nintendo eShop €15",
@@ -542,7 +584,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 1500,
-    "slug": "nintendo-eshop-eur-15-nintendo-eu"
+    "slug": "nintendo-eshop-eur-15-nintendo-eu",
+    "cover_image_path": "/demo/covers/nintendo-eshop-eur-15-nintendo-eu-0dbc108965.webp"
   },
   {
     "title": "Nintendo eShop €25",
@@ -555,7 +598,8 @@
     "type": "gift_card",
     "comparison_price_minor": null,
     "face_value_minor": 2500,
-    "slug": "nintendo-eshop-eur-25-nintendo-eu"
+    "slug": "nintendo-eshop-eur-25-nintendo-eu",
+    "cover_image_path": "/demo/covers/nintendo-eshop-eur-25-nintendo-eu-d4825a0101.webp"
   },
   {
     "title": "Stardew Valley",
@@ -569,6 +613,7 @@
     "type": "game",
     "comparison_price_minor": 1799,
     "slug": "stardew-valley-steam-us",
-    "artwork_slug": "stardew-valley-steam-global"
+    "artwork_slug": "stardew-valley-steam-global",
+    "cover_image_path": "/demo/covers/stardew-valley-steam-global-c93a3a2e0b.webp"
   }
 ]

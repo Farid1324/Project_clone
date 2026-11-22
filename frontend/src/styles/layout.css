@@ -60,7 +60,7 @@ fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
 .search-dropdown ul { padding: 0; margin: 0; list-style: none; }
 .search-dropdown [role=option] { @apply flex items-center; gap: 12px; min-height: 74px; padding: 12px; cursor: pointer; border-bottom: 1px solid rgb(255 255 255 / .1); }
 .search-dropdown [role=option]:hover,.search-dropdown .is-active { background: var(--color-surface-hover); }
-.search-dropdown img { flex-shrink: 0; width: 36px; height: 48px; object-fit: cover; }
+.search-dropdown :is(img,.marketplace-image-terminal) { flex-shrink: 0; width: 36px; height: 54px; object-fit: contain; }
 .suggestion-title { min-width: 0; flex: 1; }
 .suggestion-title strong { display: block; font-size: .875rem; font-weight: 600; }
 .suggestion-title small { display: block; margin-top: 4px; font-size: .75rem; color: var(--color-muted); }

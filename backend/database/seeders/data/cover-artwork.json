@@ -1,0 +1,1288 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+  "rights": "Third-party game/platform artwork remains the property of its respective rights holders. Source attribution is not an open redistribution licence. Demo identity, prices and nonredeemable keys are separate from the artwork.",
+  "assets": [
+    {
+      "path": "/demo/covers/elden-ring-steam-global-13ddf9439d.webp",
+      "product_slugs": [
+        "elden-ring-steam-global"
+      ],
+      "product_title": "Elden Ring",
+      "type": "game",
+      "source_title": "ELDEN RING",
+      "source_pages": [
+        "https://store.steampowered.com/app/1245620/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 175061,
+      "source_sha256": "972acf771c64d094a6c5da3fcee9cfb18c7699bff2cc16adbdb0f0736836865c",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 91660,
+      "sha256": "13ddf9439d3b5ff88ed71b87d9cb93f045f19fda7bbbe1133a5739895ea4b7bc",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/cyberpunk-2077-steam-global-df78821d7d.webp",
+      "product_slugs": [
+        "cyberpunk-2077-steam-global"
+      ],
+      "product_title": "Cyberpunk 2077",
+      "type": "game",
+      "source_title": "Cyberpunk 2077",
+      "source_pages": [
+        "https://store.steampowered.com/app/1091500/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 187627,
+      "source_sha256": "7927e006bf7aaee4b96a5bd85890488b9d28f15e9f422522d98354a9b1a1a3a7",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 89788,
+      "sha256": "df78821d7d9087b07ec1c7f7729ffe7d536c6f92188f0e2118ddbf24eb4adfd4",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/baldur-s-gate-3-steam-global-1c50a8920c.webp",
+      "product_slugs": [
+        "baldur-s-gate-3-steam-global"
+      ],
+      "product_title": "Baldur's Gate 3",
+      "type": "game",
+      "source_title": "Baldur's Gate 3",
+      "source_pages": [
+        "https://store.steampowered.com/app/1086940/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 197886,
+      "source_sha256": "a6b1bb4467f77607d363a7d37220c7b5d818ecfb01fc250317f552c7914ef6f7",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 114196,
+      "sha256": "1c50a8920c33402a2c0f35e10fa3b8bbafed19c061608ef4c11f8deefdb29e5a",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/hogwarts-legacy-steam-global-ab914f2490.webp",
+      "product_slugs": [
+        "hogwarts-legacy-steam-global"
+      ],
+      "product_title": "Hogwarts Legacy",
+      "type": "game",
+      "source_title": "Hogwarts Legacy",
+      "source_pages": [
+        "https://store.steampowered.com/app/990080/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 173890,
+      "source_sha256": "fd7616735e5195435f3ca23e995cd7db8fb6b9116447c9a019d975e6cb36a8e1",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 99908,
+      "sha256": "ab914f2490bbd1af3726ed894cc8da83e25e709bcc7a39af26ab4ea1e366835c",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/red-dead-redemption-2-steam-global-4607583644.webp",
+      "product_slugs": [
+        "red-dead-redemption-2-steam-global"
+      ],
+      "product_title": "Red Dead Redemption 2",
+      "type": "game",
+      "source_title": "Red Dead Redemption 2",
+      "source_pages": [
+        "https://store.steampowered.com/app/1174180/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 240179,
+      "source_sha256": "c09c7d4e2042be7bea7f729f30653c2a923b0d985297991a4498d5ac2dc1e166",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 110858,
+      "sha256": "46075836443179b95c2cb50b9c0cf3cadc17277038a773336c77dc4cfde2ff64",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/the-witcher-3-wild-hunt-steam-global-251c288a33.webp",
+      "product_slugs": [
+        "the-witcher-3-wild-hunt-steam-global"
+      ],
+      "product_title": "The Witcher 3: Wild Hunt",
+      "type": "game",
+      "source_title": "The Witcher 3: Wild Hunt — Remastered",
+      "source_pages": [
+        "https://store.steampowered.com/app/292030/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 179793,
+      "source_sha256": "9af26166470ba7f8701e56b4e7692824a308110304c75292c976478f1632bcff",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Same base-game Steam app 292030; current API title says Remastered but the capsule carries Wild Hunt, without Complete Edition/DLC branding.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 100844,
+      "sha256": "251c288a33864bc299801b92eaf874eebca1ee424b0be5fe57d524ac0393eb0d",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/stardew-valley-steam-global-c93a3a2e0b.webp",
+      "product_slugs": [
+        "stardew-valley-steam-global",
+        "stardew-valley-steam-us"
+      ],
+      "product_title": "Stardew Valley",
+      "type": "game",
+      "source_title": "Stardew Valley",
+      "source_pages": [
+        "https://store.steampowered.com/app/413150/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 237088,
+      "source_sha256": "69a9212d13438eaad8b2a8a35e1e875c56592c2fb6fcd86f6d03d9179d3a45ab",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 103100,
+      "sha256": "c93a3a2e0b1261a012c7889fccb22d3f3607a1320a0ee224632c30cbed685243",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/hollow-knight-steam-global-0b7f2c1f4b.webp",
+      "product_slugs": [
+        "hollow-knight-steam-global"
+      ],
+      "product_title": "Hollow Knight",
+      "type": "game",
+      "source_title": "Hollow Knight",
+      "source_pages": [
+        "https://store.steampowered.com/app/367520/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 132929,
+      "source_sha256": "d0042eff965155da14fbf222b908ae2cdce28dcc6f14c96ae0a0cf8b918e53cf",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 64390,
+      "sha256": "0b7f2c1f4bea20367cfc1c700480d268dabf31d6d5cf114fd6c69e26940bc488",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/hades-steam-global-f71e9a5e6c.webp",
+      "product_slugs": [
+        "hades-steam-global"
+      ],
+      "product_title": "Hades",
+      "type": "game",
+      "source_title": "Hades",
+      "source_pages": [
+        "https://store.steampowered.com/app/1145360/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145360/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 225791,
+      "source_sha256": "a8baefce0773d701fef42f03223f1247de4aabe33fcf892a15f7f83c86f7e749",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 110080,
+      "sha256": "f71e9a5e6caa7591ac4dd4dc84598133bb7eeac030eb0a77e52ce4529c606697",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/disco-elysium-the-final-cut-steam-global-4c6ea04982.webp",
+      "product_slugs": [
+        "disco-elysium-the-final-cut-steam-global"
+      ],
+      "product_title": "Disco Elysium: The Final Cut",
+      "type": "game",
+      "source_title": "Disco Elysium - The Final Cut",
+      "source_pages": [
+        "https://store.steampowered.com/app/632470/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632470/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 244347,
+      "source_sha256": "71041ce81990bee43c0cddf18988adbfe19d576c4c886b92e334b1aac5b6cb35",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "The Final Cut edition explicitly appears on the downloaded cover and app title.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 135316,
+      "sha256": "4c6ea049820427b8e1f048a35a9c10e4566d0059261825d8c2d61b22b65589e1",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/terraria-steam-global-ff17db569b.webp",
+      "product_slugs": [
+        "terraria-steam-global"
+      ],
+      "product_title": "Terraria",
+      "type": "game",
+      "source_title": "Terraria",
+      "source_pages": [
+        "https://store.steampowered.com/app/105600/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 207780,
+      "source_sha256": "901fc067006e1bf21f6273f527ca0d7d53fafd8f5b4ccf39e6bd7d62e68f6796",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 109402,
+      "sha256": "ff17db569b573c8a3b3df366359d006f7d93700a120229bf5ea76059bbbf4942",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/no-man-s-sky-steam-global-f495273f09.webp",
+      "product_slugs": [
+        "no-man-s-sky-steam-global"
+      ],
+      "product_title": "No Man's Sky",
+      "type": "game",
+      "source_title": "No Man's Sky",
+      "source_pages": [
+        "https://store.steampowered.com/app/275850/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/275850/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 227111,
+      "source_sha256": "e4979fca29c4f79f24c22e71909dd61a11d86ad19d367ce4e0a1962988196c6b",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 117252,
+      "sha256": "f495273f096691f35fc149353f663209eb618f3dd7bbcd853d023873786000e4",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/sid-meier-s-civilization-vi-steam-global-9199baa0de.webp",
+      "product_slugs": [
+        "sid-meier-s-civilization-vi-steam-global"
+      ],
+      "product_title": "Sid Meier's Civilization VI",
+      "type": "game",
+      "source_title": "Sid Meier’s Civilization® VI",
+      "source_pages": [
+        "https://store.steampowered.com/app/289070/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289070/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 259535,
+      "source_sha256": "af937ab60833df2d6e9b9588fc5d592404885dc60483c0f5a99394d9280fe6f8",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 173166,
+      "sha256": "9199baa0decbae3e72118f3cb4e53a1545020af82f8929c6661dd664bae4c5e8",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/cities-skylines-steam-global-d042d34c17.webp",
+      "product_slugs": [
+        "cities-skylines-steam-global"
+      ],
+      "product_title": "Cities: Skylines",
+      "type": "game",
+      "source_title": "Cities: Skylines",
+      "source_pages": [
+        "https://store.steampowered.com/app/255710/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 218248,
+      "source_sha256": "104ee0455a003c7bef4cf0856c62b96bfb0c83b40030eacaf32df9d74de998d7",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 121564,
+      "sha256": "d042d34c1705364f044694df15b5a2c8f3bf00dfa25f6cb99aac56af2fb5874f",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/euro-truck-simulator-2-steam-global-a2bd3b87a9.webp",
+      "product_slugs": [
+        "euro-truck-simulator-2-steam-global"
+      ],
+      "product_title": "Euro Truck Simulator 2",
+      "type": "game",
+      "source_title": "Euro Truck Simulator 2",
+      "source_pages": [
+        "https://store.steampowered.com/app/227300/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 165825,
+      "source_sha256": "31cd8d77823589241cbc18c45e265b294cf28d52d62ba31ea2c137b9e693305f",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 90208,
+      "sha256": "a2bd3b87a9ff364daf94e5d0383e2f7ecf7d48c75a795c06b5e34caf93a402f6",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/celeste-steam-global-1d921325ae.webp",
+      "product_slugs": [
+        "celeste-steam-global"
+      ],
+      "product_title": "Celeste",
+      "type": "game",
+      "source_title": "Celeste",
+      "source_pages": [
+        "https://store.steampowered.com/app/504230/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504230/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 211113,
+      "source_sha256": "83ab5702c1e1babff92ed23859c8ea9490e959dd03d9c476da4592f6483534a1",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 116022,
+      "sha256": "1d921325ae51b759e635b37a5a0ebff3d734c00ef9a3ec60272a96ee014314c2",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/dead-cells-steam-global-8a6830f692.webp",
+      "product_slugs": [
+        "dead-cells-steam-global"
+      ],
+      "product_title": "Dead Cells",
+      "type": "game",
+      "source_title": "Dead Cells",
+      "source_pages": [
+        "https://store.steampowered.com/app/588650/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/588650/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 154758,
+      "source_sha256": "df35d1d19adf22b94343fbfe8ba9f7ae48551e15b5f139fc932e42819ffc6895",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 61660,
+      "sha256": "8a6830f6921bf34e0e7ff8b7bc9cc8194b843dc6f2a47a70e4b2d51e7bc3aed2",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/slay-the-spire-steam-global-d505310f69.webp",
+      "product_slugs": [
+        "slay-the-spire-steam-global"
+      ],
+      "product_title": "Slay the Spire",
+      "type": "game",
+      "source_title": "Slay the Spire",
+      "source_pages": [
+        "https://store.steampowered.com/app/646570/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 252574,
+      "source_sha256": "246b6888f98cd1c7b46ab50be06b44a5da82d907269ef8f1259872bd06523a0c",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 130940,
+      "sha256": "d505310f69757f317afa06315a2b640635fae9f75ff57952bcddde3e44d192b5",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/subnautica-steam-global-72aca2953b.webp",
+      "product_slugs": [
+        "subnautica-steam-global"
+      ],
+      "product_title": "Subnautica",
+      "type": "game",
+      "source_title": "Subnautica",
+      "source_pages": [
+        "https://store.steampowered.com/app/264710/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 167512,
+      "source_sha256": "baf83b8261ab5895b257e3b648991634e4ac9e80639b6b72f3e178f2a305c3c7",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 99270,
+      "sha256": "72aca2953b5e91673823b8f4d5e9e47412be73638bef03ee052e2b5ed87f2f4d",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/portal-2-steam-global-9166f23b1b.webp",
+      "product_slugs": [
+        "portal-2-steam-global"
+      ],
+      "product_title": "Portal 2",
+      "type": "game",
+      "source_title": "Portal 2",
+      "source_pages": [
+        "https://store.steampowered.com/app/620/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/620/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 145080,
+      "source_sha256": "716b26a850c5d9dff6645ffd1934fcb458dac262e4b9e2c9725054c0b057bea5",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 67066,
+      "sha256": "9166f23b1b330decc14dd1da20b363b6ea8b1c4b865030acf3193ae89519765e",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/sekiro-shadows-die-twice-steam-global-5a6a48fd84.webp",
+      "product_slugs": [
+        "sekiro-shadows-die-twice-steam-global"
+      ],
+      "product_title": "Sekiro: Shadows Die Twice",
+      "type": "game",
+      "source_title": "Sekiro™: Shadows Die Twice - GOTY Edition",
+      "source_pages": [
+        "https://store.steampowered.com/app/814380/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 125140,
+      "source_sha256": "54738e03141983b47a8f7d3c27993e1fcc78ee62bfe478f3599b3a259222ddd0",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Same complete game Steam app; current app title has GOTY update branding, while the capsule shows the base title without a paid-edition promise.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 60172,
+      "sha256": "5a6a48fd8424b5e76c0532181a20a00a158da5f5a9bee8e1893d8964ff1e01d3",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/dark-souls-iii-steam-global-6219fc44bf.webp",
+      "product_slugs": [
+        "dark-souls-iii-steam-global"
+      ],
+      "product_title": "Dark Souls III",
+      "type": "game",
+      "source_title": "DARK SOULS™ III",
+      "source_pages": [
+        "https://store.steampowered.com/app/374320/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 179676,
+      "source_sha256": "6c357ac61447c98cd64f7edca7f8f3a457a01b11ad3e82efbf5537f193094346",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 94978,
+      "sha256": "6219fc44bf0b96f0aed42dc455e3c6de10079a599df0b1b4078a72ec8a07ce05",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/resident-evil-4-steam-global-55e4005199.webp",
+      "product_slugs": [
+        "resident-evil-4-steam-global"
+      ],
+      "product_title": "Resident Evil 4",
+      "type": "game",
+      "source_title": "Resident Evil 4",
+      "source_pages": [
+        "https://store.steampowered.com/app/2050650/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 124078,
+      "source_sha256": "bd80237ee658ab4d91e27a13c7cb17c396887c1ce2fc13d86399b88b1dda3bdb",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "2023 remake (Steam app 2050650), matching the seeded requirements; not the 2005 release.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 67846,
+      "sha256": "55e400519910b1b0551a8e63caff6486afa3249f8ed96fbba136b797b59ac8c1",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/doom-eternal-steam-global-15f6094763.webp",
+      "product_slugs": [
+        "doom-eternal-steam-global"
+      ],
+      "product_title": "DOOM Eternal",
+      "type": "game",
+      "source_title": "DOOM Eternal",
+      "source_pages": [
+        "https://store.steampowered.com/app/782330/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/782330/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 290827,
+      "source_sha256": "32be46381b984ab1a1e99815f5f74032a06d676ed0bdf46214c334d7c80f7f6b",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 156486,
+      "sha256": "15f60947630f70e7e4ea1edf5d34a52ae7d9e9b24db00c0a3cb83f479386fbbb",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/forza-horizon-5-xbox-global-f8ffcf1891.webp",
+      "product_slugs": [
+        "forza-horizon-5-xbox-global"
+      ],
+      "product_title": "Forza Horizon 5",
+      "type": "game",
+      "source_title": "Forza Horizon 5",
+      "source_pages": [
+        "https://store.steampowered.com/app/1551360/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/library_600x900.jpg"
+      ],
+      "source_dimensions": [
+        300,
+        450
+      ],
+      "source_bytes": 61398,
+      "source_sha256": "af757aa1eef45d5ddd84c5d0ad7c6e0765a043c7ae06f2e2b743120f973f51e1",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 75394,
+      "sha256": "f8ffcf189134fa44f4b6a2cdec1c3a08bd33ed72e80fbfc7a1823a238385bbcc",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/sea-of-thieves-xbox-global-9d2c9ac13a.webp",
+      "product_slugs": [
+        "sea-of-thieves-xbox-global"
+      ],
+      "product_title": "Sea of Thieves",
+      "type": "game",
+      "source_title": "Sea of Thieves: 2026 Edition",
+      "source_pages": [
+        "https://store.steampowered.com/app/1172620/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172620/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 151196,
+      "source_sha256": "5dfab56fdef65ac1354625915c8517d4bac36de35f08b0d7483841bb2ad55506",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 73466,
+      "sha256": "9d2c9ac13a3034024de610a7abc6e60a8af824c017558af71413e50e100b0478",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/microsoft-flight-simulator-standard-edition-xbox-global-a97cd563ed.webp",
+      "product_slugs": [
+        "microsoft-flight-simulator-standard-edition-xbox-global"
+      ],
+      "product_title": "Microsoft Flight Simulator: Standard Edition",
+      "type": "game",
+      "source_title": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+      "source_pages": [
+        "https://store.steampowered.com/app/1250410/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1250410/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 208604,
+      "source_sha256": "a469824591d329384a2f06ee664c021f1d1af81369433241f1c085d918791950",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "2020 base simulator with the free 40th Anniversary update branding, not Microsoft Flight Simulator 2024 or a Deluxe/Premium upgrade.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 110442,
+      "sha256": "a97cd563ed6017a044ed0d2e2cc5450454cbdf4942c00ee6a8130e07140cec18",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/gears-5-xbox-global-e9f3521f48.webp",
+      "product_slugs": [
+        "gears-5-xbox-global"
+      ],
+      "product_title": "Gears 5",
+      "type": "game",
+      "source_title": "Gears 5",
+      "source_pages": [
+        "https://store.steampowered.com/app/1097840/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1097840/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 311734,
+      "source_sha256": "0e422ad88f862d7a45b009299929c9f8b78f2340b7eafc4594d3ae014862c7e3",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 195972,
+      "sha256": "e9f3521f48fdb479be56119c2f1e068f25e9c799aa766b0f6eb91e99b429ab88",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/ori-and-the-will-of-the-wisps-xbox-global-2606a67af4.webp",
+      "product_slugs": [
+        "ori-and-the-will-of-the-wisps-xbox-global"
+      ],
+      "product_title": "Ori and the Will of the Wisps",
+      "type": "game",
+      "source_title": "Ori and the Will of the Wisps",
+      "source_pages": [
+        "https://store.steampowered.com/app/1057090/"
+      ],
+      "source_image_urls": [
+        "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1057090/library_600x900_2x.jpg"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 200296,
+      "source_sha256": "616c4166112166dda87522969fe5daddd29a93775a761fead50c8ea870191e43",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Publisher-supplied library capsule for the same full-game Steam app; no Deluxe/Ultimate bundle branding. Platform and region are separately stated by the listing.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 97072,
+      "sha256": "2606a67af4c18c54b83968fdcb92972d0a5551cce7ecac2b488422d31de2ce94",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/halo-infinite-campaign-xbox-global-b5538251c3.webp",
+      "product_slugs": [
+        "halo-infinite-campaign-xbox-global"
+      ],
+      "product_title": "Halo Infinite: Campaign",
+      "type": "game",
+      "source_title": "Halo Infinite",
+      "source_pages": [
+        "https://www.xbox.com/en-us/games/store/halo-infinite/9NP1P1WFS0LB",
+        "https://store.steampowered.com/sub/611537/"
+      ],
+      "source_image_urls": [
+        "https://store-images.s-microsoft.com/image/apps.21536.13727851868390641.c9cc5f66-aff8-406c-af6b-440838730be0.68796bde-cbf5-4eaa-a299-011417041da6?w=600&h=900"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 139903,
+      "source_sha256": "2ed6c0905daaec96e66db7cb523757db87a15e24eb148ef5e3460c515337f878",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Xbox Master Chief/key-art poster, without the incorrect Multiplayer label. Campaign entitlement verified separately by the official campaign package.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 97534,
+      "sha256": "b5538251c3045a73bc2b06cbad03470614b5bf0c1b0c256dbc1fcb1d5c98dec0",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/diablo-iv-xbox-global-2fbbe2d238.webp",
+      "product_slugs": [
+        "diablo-iv-xbox-global"
+      ],
+      "product_title": "Diablo IV",
+      "type": "game",
+      "source_title": "Diablo IV - Standard Edition",
+      "source_pages": [
+        "https://www.xbox.com/en-US/games/store/diablo-iv---standard-edition/9N8117TM8JL3"
+      ],
+      "source_image_urls": [
+        "https://store-images.s-microsoft.com/image/apps.27418.14058691289303304.7aeef6ea-ac74-41c2-a37d-5c5c1e0eb55d.e73f1084-51de-4266-8084-2f8787ae9c3f?w=600&h=900"
+      ],
+      "source_dimensions": [
+        600,
+        900
+      ],
+      "source_bytes": 79790,
+      "source_sha256": "be36047f02bfc866aee975e37d020baf86ed5b23f75acd173ddc6113b9ebaec9",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Standard Edition Xbox poster, not a seasonal, expansion, Deluxe or Ultimate cover.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 49030,
+      "sha256": "2fbbe2d2388d250f70a821ea8951fe008b10279f203c2650d5fa86e03574d2ae",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/minecraft-xbox-one-edition-xbox-global-f9beae52b3.webp",
+      "product_slugs": [
+        "minecraft-xbox-one-edition-xbox-global"
+      ],
+      "product_title": "Minecraft: Xbox One Edition",
+      "type": "game",
+      "source_title": "Minecraft: Xbox One Edition (2014)",
+      "source_pages": [
+        "https://www.walmart.com/ip/Minecraft-Xbox-One-Edition-Xbox-One/1775588147",
+        "https://news.xbox.com/en-us/2014/09/30/games-minecraft-xbox-one-edition-reaches-retail-stores-november-18/"
+      ],
+      "source_image_urls": [
+        "https://i5.walmartimages.com/seo/Minecraft-Xbox-One-Edition-Xbox-One_658e9da7-fc3a-4f51-9be4-75450638a239.39c48802bc680afc0da9a46eefda26e1.jpeg?odnBg=FFFFFF&odnHeight=900&odnWidth=600"
+      ],
+      "source_dimensions": [
+        1200,
+        1200
+      ],
+      "source_bytes": 169499,
+      "source_sha256": "cfbb1d2197290f055c6388b69a66f346d23aa24ee3e5ef8de88a636f495738ab",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Front explicitly says Xbox One Edition and carries Mojang/4J branding; not modern Bedrock, Java, Dungeons, Legends or Favorites Bundle.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 75132,
+      "sha256": "f9beae52b394efc2320c21f9a0e121c3ee37f5508bcec534bebbc181deffc781",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/the-legend-of-zelda-breath-of-the-wild-nintendo-eu-d1b79571ba.webp",
+      "product_slugs": [
+        "the-legend-of-zelda-breath-of-the-wild-nintendo-eu"
+      ],
+      "product_title": "The Legend of Zelda: Breath of the Wild",
+      "type": "game",
+      "source_title": "The Legend of Zelda: Breath of the Wild",
+      "source_pages": [
+        "https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/"
+      ],
+      "source_image_urls": [
+        "https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/boxart"
+      ],
+      "source_dimensions": [
+        158,
+        256
+      ],
+      "source_bytes": 91895,
+      "source_sha256": "4c7e13b262e2450bff47ca57afe811a1f34cf924ebe2283d3519eb55ca1918a5",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Original Nintendo Switch standard boxed edition, not Switch 2, expansion pass or special bundle. US box art/ratings illustrate the same game; the listing activation region remains EU.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 62882,
+      "sha256": "d1b79571ba80566c077a16afcd9b7b33c4de1af66616358f24204dba8a5b112b",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/mario-kart-8-deluxe-nintendo-eu-f9b2051ba4.webp",
+      "product_slugs": [
+        "mario-kart-8-deluxe-nintendo-eu"
+      ],
+      "product_title": "Mario Kart 8 Deluxe",
+      "type": "game",
+      "source_title": "Mario Kart 8 Deluxe",
+      "source_pages": [
+        "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/"
+      ],
+      "source_image_urls": [
+        "https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/m/mario-kart-8-deluxe-switch/boxart"
+      ],
+      "source_dimensions": [
+        158,
+        256
+      ],
+      "source_bytes": 107952,
+      "source_sha256": "6b53ea7cb3a56a18ef5f7c51e5ac27ab7df1a5dec9a04d909abae0d2c1e04e9d",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Original Nintendo Switch standard boxed edition, not Switch 2, expansion pass or special bundle. US box art/ratings illustrate the same game; the listing activation region remains EU.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 94522,
+      "sha256": "f9b2051ba4634d6e67f8587a2072fc8882429663da211979adce05d8c09c9489",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/animal-crossing-new-horizons-nintendo-eu-83345fab05.webp",
+      "product_slugs": [
+        "animal-crossing-new-horizons-nintendo-eu"
+      ],
+      "product_title": "Animal Crossing: New Horizons",
+      "type": "game",
+      "source_title": "Animal Crossing: New Horizons",
+      "source_pages": [
+        "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/"
+      ],
+      "source_image_urls": [
+        "https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/boxart"
+      ],
+      "source_dimensions": [
+        300,
+        486
+      ],
+      "source_bytes": 305081,
+      "source_sha256": "cac94a1bd7bf9ae5aeffe003c361d9d2e00932e3ce3e2b39029ac9101681994c",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Original Nintendo Switch standard boxed edition, not Switch 2, expansion pass or special bundle. US box art/ratings illustrate the same game; the listing activation region remains EU.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 96952,
+      "sha256": "83345fab05b5cf9f3268f7b45e811fefe72f1198450559719af0f4e15f81a7b1",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/super-mario-odyssey-nintendo-eu-f8f81eb2ed.webp",
+      "product_slugs": [
+        "super-mario-odyssey-nintendo-eu"
+      ],
+      "product_title": "Super Mario Odyssey",
+      "type": "game",
+      "source_title": "Super Mario Odyssey",
+      "source_pages": [
+        "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/"
+      ],
+      "source_image_urls": [
+        "https://assets.nintendo.com/image/upload/ncom/en_US/games/switch/s/super-mario-odyssey-switch/boxart"
+      ],
+      "source_dimensions": [
+        300,
+        486
+      ],
+      "source_bytes": 303849,
+      "source_sha256": "753a44d286a6ac52cdd673955abc7216776b77a86cf248f95a015025679ba22f",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Original Nintendo Switch standard boxed edition, not Switch 2, expansion pass or special bundle. US box art/ratings illustrate the same game; the listing activation region remains EU.",
+      "processing": "Contained/letterboxed to 600x900 without cropping artwork or title; WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 107138,
+      "sha256": "f8f81eb2edc338300055306c995285c5be4b62a9371c6f9d5b0b0a25447e1210",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/steam-wallet-eur-10-steam-eu-ef0124333f.webp",
+      "product_slugs": [
+        "steam-wallet-eur-10-steam-eu"
+      ],
+      "product_title": "Steam Wallet €10",
+      "type": "gift_card",
+      "source_title": "Steam Wallet €10",
+      "source_pages": [
+        "https://store.steampowered.com/digitalgiftcards/"
+      ],
+      "source_image_urls": [
+        "https://store.fastly.steamstatic.com/public/images/gift/steam_logo_piston.png"
+      ],
+      "source_dimensions": [
+        498,
+        124
+      ],
+      "source_bytes": 6070,
+      "source_sha256": "e750459fd6e633c57f744a5c6c82cc935347cd48f8f7698f4716918dc13c0d96",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 16330,
+      "sha256": "ef0124333f5d50e60ca58761a42acd8d301f341fca148f83ea130420b76e0e96",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/steam-wallet-eur-20-steam-eu-09a05d013c.webp",
+      "product_slugs": [
+        "steam-wallet-eur-20-steam-eu"
+      ],
+      "product_title": "Steam Wallet €20",
+      "type": "gift_card",
+      "source_title": "Steam Wallet €20",
+      "source_pages": [
+        "https://store.steampowered.com/digitalgiftcards/"
+      ],
+      "source_image_urls": [
+        "https://store.fastly.steamstatic.com/public/images/gift/steam_logo_piston.png"
+      ],
+      "source_dimensions": [
+        498,
+        124
+      ],
+      "source_bytes": 6070,
+      "source_sha256": "e750459fd6e633c57f744a5c6c82cc935347cd48f8f7698f4716918dc13c0d96",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 16782,
+      "sha256": "09a05d013c5f2b6d1374b879e4c7ea470e3f96d78e689c12ad064f31c9c9b6f3",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/playstation-store-eur-10-playstation-eu-9820f8da44.webp",
+      "product_slugs": [
+        "playstation-store-eur-10-playstation-eu"
+      ],
+      "product_title": "PlayStation Store €10",
+      "type": "gift_card",
+      "source_title": "PlayStation Store €10",
+      "source_pages": [
+        "https://www.playstation.com/de-de/playstation-gift-cards/"
+      ],
+      "source_image_urls": [
+        "https://gmedia.playstation.com/is/image/SIEPDC/gift-cards-digital-card-keyart-01-en-20oct22?wid=900&fmt=png-alpha"
+      ],
+      "source_dimensions": [
+        900,
+        507
+      ],
+      "source_bytes": 603634,
+      "source_sha256": "2f304b8be6c9c630541a5dce1dcd50462464a2a49decfd9c8614628f3424317a",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 43934,
+      "sha256": "9820f8da440410c55b18f49a34c75ee5d4c499f644091307dc23f9eae81b05d5",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/playstation-store-eur-20-playstation-eu-c0ff8ed35a.webp",
+      "product_slugs": [
+        "playstation-store-eur-20-playstation-eu"
+      ],
+      "product_title": "PlayStation Store €20",
+      "type": "gift_card",
+      "source_title": "PlayStation Store €20",
+      "source_pages": [
+        "https://www.playstation.com/de-de/playstation-gift-cards/"
+      ],
+      "source_image_urls": [
+        "https://gmedia.playstation.com/is/image/SIEPDC/gift-cards-digital-card-keyart-01-en-20oct22?wid=900&fmt=png-alpha"
+      ],
+      "source_dimensions": [
+        900,
+        507
+      ],
+      "source_bytes": 603634,
+      "source_sha256": "2f304b8be6c9c630541a5dce1dcd50462464a2a49decfd9c8614628f3424317a",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 44488,
+      "sha256": "c0ff8ed35aec2eef5225edd1fe60553b071d5de41853d3c4176a229549f67342",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/xbox-gift-card-eur-10-xbox-eu-5c32c479e9.webp",
+      "product_slugs": [
+        "xbox-gift-card-eur-10-xbox-eu"
+      ],
+      "product_title": "Xbox Gift Card €10",
+      "type": "gift_card",
+      "source_title": "Xbox Gift Card €10",
+      "source_pages": [
+        "https://rewards.bing.com/redeem/sku/000405000040",
+        "https://www.microsoft.com/en-ie/store/b/gift-cards"
+      ],
+      "source_image_urls": [
+        "https://bing.com/th?id=OMR.Redeem.Xbox.jpg&pid=Rewards&qlt=100&r=0"
+      ],
+      "source_dimensions": [
+        1200,
+        675
+      ],
+      "source_bytes": 59512,
+      "source_sha256": "ba500ca191a717915993cea04988fd89433201e8bb9470f4697cb4e08574f9bd",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 18418,
+      "sha256": "5c32c479e97b801e79249005cb9aeac3c5873800dfe2ef5d9507ba3e299beceb",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/xbox-gift-card-eur-25-xbox-eu-2bb1a500d4.webp",
+      "product_slugs": [
+        "xbox-gift-card-eur-25-xbox-eu"
+      ],
+      "product_title": "Xbox Gift Card €25",
+      "type": "gift_card",
+      "source_title": "Xbox Gift Card €25",
+      "source_pages": [
+        "https://rewards.bing.com/redeem/sku/000405000040",
+        "https://www.microsoft.com/en-ie/store/b/gift-cards"
+      ],
+      "source_image_urls": [
+        "https://bing.com/th?id=OMR.Redeem.Xbox.jpg&pid=Rewards&qlt=100&r=0"
+      ],
+      "source_dimensions": [
+        1200,
+        675
+      ],
+      "source_bytes": 59512,
+      "source_sha256": "ba500ca191a717915993cea04988fd89433201e8bb9470f4697cb4e08574f9bd",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 19136,
+      "sha256": "2bb1a500d4cce7019fd3d3105c7457e45909fcd9675895c330617371323c58ab",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/nintendo-eshop-eur-15-nintendo-eu-0dbc108965.webp",
+      "product_slugs": [
+        "nintendo-eshop-eur-15-nintendo-eu"
+      ],
+      "product_title": "Nintendo eShop €15",
+      "type": "gift_card",
+      "source_title": "Nintendo eShop €15",
+      "source_pages": [
+        "https://www.smythstoys.com/de/de-de/gaming/digitale-downloads-und-guthabenkarten/nintendo-eshop-card-download-code-15/p/605140"
+      ],
+      "source_image_urls": [
+        "https://image.smythstoys.com/zoom/605140.webp"
+      ],
+      "source_dimensions": [
+        1000,
+        1000
+      ],
+      "source_bytes": 246302,
+      "source_sha256": "7d3678033cdaefd3d3f6bf4209802b25365f3a1582f774f181c2d33222479dca",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 50880,
+      "sha256": "0dbc10896521fe3b6c3056bf86386f9ac03f9892f518883d7364659162b660b6",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    },
+    {
+      "path": "/demo/covers/nintendo-eshop-eur-25-nintendo-eu-d4825a0101.webp",
+      "product_slugs": [
+        "nintendo-eshop-eur-25-nintendo-eu"
+      ],
+      "product_title": "Nintendo eShop €25",
+      "type": "gift_card",
+      "source_title": "Nintendo eShop €25",
+      "source_pages": [
+        "https://www.smythstoys.com/de/de-de/gaming/digitale-downloads-und-guthabenkarten/nintendo-eshop-card-download-code-25/p/605142"
+      ],
+      "source_image_urls": [
+        "https://image.smythstoys.com/zoom/605142.webp"
+      ],
+      "source_dimensions": [
+        1000,
+        1000
+      ],
+      "source_bytes": 188832,
+      "source_sha256": "7ed099444874abdf475c01184cb6e75ae94cdf1825489a488cc0060ee8ecd05e",
+      "retrieved_at": "2026-11-22T20:39:27.528208+00:00",
+      "edition_match": "Correct platform and exact EUR face value. The Steam/PlayStation/Xbox source art is currency-neutral; Nintendo source faces explicitly show the matching €15 or €25. The portrait framing/value label is demo presentation, not an issued code.",
+      "processing": "Local portrait presentation combining downloaded platform/card artwork with the exact seeded EUR denomination. Source image kept intact (white surround trimmed where specified); not an official issued voucher. WebP quality 87, method 6.",
+      "width": 600,
+      "height": 900,
+      "bytes": 40234,
+      "sha256": "d4825a01019c526dc4578657f2b5b8fa6860d138161b96c40dbe981e2ceb3095",
+      "visual_review": "Matched title and edition/platform branding; source contact sheets reviewed before selection."
+    }
+  ]
+}

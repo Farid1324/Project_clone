@@ -25,6 +25,7 @@ RUN composer dump-autoload --no-dev --no-scripts --classmap-authoritative \
     && php artisan package:discover --no-interaction \
     && mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
     && chown -R www-data:www-data storage bootstrap/cache \
+    && chmod -R u=rwX,g=rX,o= storage bootstrap/cache \
     && rm -f /etc/nginx/sites-enabled/default \
     && chmod +x docker/production-entrypoint.sh
 ENV APP_ENV=production APP_DEBUG=false LOG_CHANNEL=stderr PORT=10000

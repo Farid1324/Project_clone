@@ -10,6 +10,7 @@ import { usePageTitle } from '../hooks/usePageTitle'
 import { ApiError } from '../lib/api'
 import { ProductRequirements } from '../components/ProductRequirements'
 import { MarketplaceImage } from '../components/MarketplaceImage'
+import { WishlistButton } from '../components/WishlistButton'
 
 export function ProductPage() {
   const { slug = '' } = useParams()
@@ -24,11 +25,12 @@ export function ProductPage() {
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><Link to="/store">Catalog</Link><span aria-hidden="true">/</span><span>{product.title}</span></nav>
     <nav className="product-sections" aria-label="Product information"><a href="#seller-offers-heading">Seller offers</a><a href="#requirements-heading">Requirements</a><a href="#delivery-heading">Delivery</a><a href="#activation-heading">Activation</a></nav>
     <div className="product-detail-grid">
-      <div className="detail-art"><MarketplaceImage src={product.cover_image_url} alt={'Original illustrative demo artwork for ' + product.title} width={600} height={800} /><PlatformBadge platform={product.platform} giftCard={product.type === 'gift_card'} /></div>
+      <div className="detail-art"><MarketplaceImage src={product.cover_image_url} alt={'Cover artwork for ' + product.title} width={600} height={900} fetchPriority="high" /><PlatformBadge platform={product.platform} giftCard={product.type === 'gift_card'} /></div>
       <div className="detail-copy"><p className="eyebrow">{product.type === 'gift_card' ? 'DIGITAL GIFT CARD' : 'DIGITAL GAME'} · {product.region.name}</p><h1>{product.title}</h1>
         <div className="detail-tags"><span><CircleCheck size={16} aria-hidden="true" />{product.platform.name}</span><span>{product.region.name}</span>{product.edition && <span>{product.edition} edition</span>}</div>
         <p className="detail-description">{product.description}</p>
         <div className="detail-price"><span>Available from</span><strong>{product.price_minor === null ? 'Currently unavailable' : formatMoney(product.price_minor)}</strong><span>{product.available_offer_count} independent seller offers</span></div>
+        <WishlistButton product={product} />
         <div className="activation-notice"><Info size={22} aria-hidden="true" /><div><h2>Check your activation region</h2><p>{product.activation_notice}</p></div></div>
         <div className="compatibility-notice"><h2>Platform compatibility</h2><p>{product.compatibility_notice ?? 'Confirm the exact platform and edition before a real purchase.'}</p></div>
         <div className="detail-category-links">{product.categories.map(category => <Link key={category.id} to={storeUrl({ 'categories[]': [category.slug] })}>{category.name}</Link>)}</div>

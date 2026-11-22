@@ -1,0 +1,300 @@
+{
+  "status": "passed",
+  "public_url": "https://keymarket-demo.vercel.app",
+  "checked_at": "2026-11-22T20:47:42.189Z",
+  "scope": "read-only public HTTPS smoke checks; purchasing still needs browser verification",
+  "checks": [
+    {
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-Bk5DFdQ3.js",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-BPrzGatD.css",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/products",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/products/nintendo-eshop-eur-25-nintendo-eu",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/home/banners",
+      "status": 200
+    },
+    {
+      "path": "/demo/nintendo-eshop-eur-25-nintendo-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/stardew-valley-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/playstation-store-eur-10-playstation-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/playstation-store-eur-20-playstation-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/xbox-gift-card-eur-10-xbox-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/xbox-gift-card-eur-25-xbox-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/nintendo-eshop-eur-15-nintendo-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/the-legend-of-zelda-breath-of-the-wild-nintendo-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/mario-kart-8-deluxe-nintendo-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/animal-crossing-new-horizons-nintendo-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/super-mario-odyssey-nintendo-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/steam-wallet-eur-10-steam-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/steam-wallet-eur-20-steam-eu.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/microsoft-flight-simulator-standard-edition-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/gears-5-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/ori-and-the-will-of-the-wisps-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/minecraft-xbox-one-edition-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/diablo-iv-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/resident-evil-4-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/doom-eternal-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/forza-horizon-5-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/halo-infinite-campaign-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/sea-of-thieves-xbox-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/subnautica-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/portal-2-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/sekiro-shadows-die-twice-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/dark-souls-iii-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/cities-skylines-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/euro-truck-simulator-2-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/celeste-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/dead-cells-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/slay-the-spire-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/hades-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/disco-elysium-the-final-cut-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/terraria-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/no-man-s-sky-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/sid-meier-s-civilization-vi-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/hogwarts-legacy-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/red-dead-redemption-2-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/the-witcher-3-wild-hunt-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/hollow-knight-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/elden-ring-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/cyberpunk-2077-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/baldur-s-gate-3-steam-global.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/banner-discover-v2.png",
+      "status": 200
+    },
+    {
+      "path": "/demo/banner-deals-v2.svg",
+      "status": 200
+    },
+    {
+      "path": "/demo/banner-gift-cards-v2.svg",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/home/categories",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/home/best-sellers",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/home/deals",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/home/gift-cards",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/home/recommendations",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/products",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/products",
+      "status": 200
+    },
+    {
+      "path": "/store",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/register",
+      "status": 200
+    },
+    {
+      "path": "/cart",
+      "status": 200
+    },
+    {
+      "path": "/checkout",
+      "status": 200
+    },
+    {
+      "path": "/orders",
+      "status": 200
+    },
+    {
+      "path": "/products/nintendo-eshop-eur-25-nintendo-eu",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/cart",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/checkout/quote",
+      "status": 401
+    },
+    {
+      "path": "/api/v1/orders",
+      "status": 401
+    },
+    {
+      "path": "/api/v1/public-verifier-missing",
+      "status": 404
+    },
+    {
+      "path": "/assets/public-verifier-missing.js",
+      "status": 404
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import { AuthPage } from './pages/AuthPage'
 import { AccountPage } from './pages/AccountPage'
 import { CheckoutPage } from './pages/CheckoutPage'
 import { OrderPage, OrdersPage } from './pages/OrdersPage'
+import { WishlistPage } from './pages/WishlistPage'
 
 function NavigationScroll() {
   const { pathname, hash } = useLocation()
@@ -39,6 +40,7 @@ const router = createBrowserRouter([{
     { path: '/products/:slug', element: <ProductPage /> },
     { path: '/about', element: <AboutPage /> },
     { path: '/cart', element: <CartPage /> },
+    { path: '/wishlist', element: <WishlistPage /> },
     { path: '/login', element: <AuthPage /> },
     { path: '/register', element: <AuthPage register /> },
     { path: '/account', element: <AccountPage /> },

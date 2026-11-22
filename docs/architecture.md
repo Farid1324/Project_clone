@@ -14,7 +14,7 @@ Use React with TypeScript and Vite, Tailwind CSS, Laravel 13 on PHP 8.4, Postgre
 
 The installed Node version is 24.14.0. Verify the selected Vite release's engine constraints during installation. Use the `react-ts` template and Tailwind's Vite integration. [Vite setup](https://vite.dev/guide/), [Tailwind Vite integration](https://tailwindcss.com/docs/installation/using-vite).
 
-Initial scope uses EUR integer minor units, English UI, simulated payment only, and seeded independent sellers. A product represents one game edition/platform/activation-region combination. Product details explain activation restrictions; this demo will not claim country-by-country eligibility verification. Keys are explicitly nonredeemable demo inventory. Defer seller onboarding, reviews, wishlists, personalized recommendations, coupons, real payment providers, refunds, currency conversion, and administration screens.
+Initial scope uses EUR integer minor units, English UI, simulated payment only, and seeded independent sellers. A product represents one game edition/platform/activation-region combination. Product details explain activation restrictions; this demo will not claim country-by-country eligibility verification. Keys are explicitly nonredeemable demo inventory. Wishlists were originally deferred and are now implemented in the [wishlist milestone](wishlist-milestone.md). Continue to defer seller onboarding, reviews, personalized recommendations, coupons, real payment providers, refunds, currency conversion, and administration screens.
 
 ## Application boundaries
 

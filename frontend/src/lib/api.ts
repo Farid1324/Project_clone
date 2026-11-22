@@ -1,4 +1,4 @@
-import type { Banner, Cart, CatalogFilters, Category, CheckoutQuote, Envelope, Order, Paginated, Product, Promotion, PurchaseRequest, Session } from '../types/api'
+import type { Banner, Cart, CatalogFilters, Category, CheckoutQuote, Envelope, Order, Paginated, Product, Promotion, PurchaseRequest, Session, WishlistSummary } from '../types/api'
 
 export class ApiError extends Error {
   status: number
@@ -30,10 +30,11 @@ async function initializeCsrf(force = false): Promise<void> {
   await csrfRequest
 }
 
-async function write<T>(path: string, method: 'POST' | 'PATCH' | 'DELETE', payload?: object): Promise<T> {
+async function write<T>(path: string, method: 'POST' | 'PATCH' | 'DELETE', payload?: object, signal?: AbortSignal): Promise<T> {
   await initializeCsrf()
+  signal?.throwIfAborted()
   const send = () => fetch('/api/v1' + path, {
-    method, credentials: 'same-origin',
+    method, signal, credentials: 'same-origin',
     headers: { Accept: 'application/json', 'Content-Type': 'application/json', 'X-XSRF-TOKEN': decodeURIComponent(csrfToken() ?? '') },
     body: payload ? JSON.stringify(payload) : undefined,
   })
@@ -41,12 +42,26 @@ async function write<T>(path: string, method: 'POST' | 'PATCH' | 'DELETE', paylo
   // A CSRF rejection happens before the mutation; refreshing this token is safe.
   if (response.status === 419) {
     await initializeCsrf(true)
+    signal?.throwIfAborted()
     response = await send()
   }
   const body = await response.json().catch(() => null)
+  signal?.throwIfAborted()
   if (!response.ok) throw new ApiError(body?.error?.message ?? 'The request could not be completed. Please retry.', response.status, body?.error?.fields)
   if (!body || !('data' in body)) throw new ApiError('The cart returned an unexpected response.', 502)
   return body as T
+}
+
+const wishlistWrites = new Set<AbortController>()
+export function cancelWishlistWrites() {
+  for (const controller of wishlistWrites) controller.abort()
+}
+
+async function wishlistWrite(path: string, method: 'POST' | 'DELETE', payload?: object): Promise<Envelope<WishlistSummary>> {
+  const controller = new AbortController()
+  wishlistWrites.add(controller)
+  try { return await write<Envelope<WishlistSummary>>(path, method, payload, controller.signal) }
+  finally { wishlistWrites.delete(controller) }
 }
 
 export const api = {
@@ -54,6 +69,10 @@ export const api = {
   login: (data: { email: string; password: string }) => write<Envelope<Session>>('/auth/login', 'POST', data),
   register: (data: { name: string; email: string; password: string; password_confirmation: string }) => write<Envelope<Session>>('/auth/register', 'POST', data),
   logout: () => write<Envelope<Session>>('/auth/logout', 'POST'),
+  wishlistSummary: (signal?: AbortSignal) => get<Envelope<WishlistSummary>>('/wishlist/summary', signal),
+  wishlist: (page: number, signal?: AbortSignal) => get<Paginated<Product>>('/wishlist?' + new URLSearchParams({ page: String(page), per_page: '24' }), signal),
+  saveWishlistProduct: (productId: string) => wishlistWrite('/wishlist', 'POST', { product_id: productId }),
+  removeWishlistProduct: (productId: string) => wishlistWrite('/wishlist/' + encodeURIComponent(productId), 'DELETE'),
   quote: (signal?: AbortSignal) => get<Envelope<CheckoutQuote>>('/checkout/quote', signal),
   purchase: (data: PurchaseRequest) => write<Envelope<Order>>('/checkout', 'POST', data),
   orders: (page: number, signal?: AbortSignal) => get<Paginated<Order>>('/orders?' + new URLSearchParams({ page: String(page), per_page: '12' }), signal),

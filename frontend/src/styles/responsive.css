@@ -116,8 +116,8 @@
    in the mobile reference; the store/deals retain a two-column cover grid. */
 @media (max-width: 47.99rem) {
   .product-grid-recommended { grid-template-columns: 1fr; gap: 14px; }
-  .product-grid-recommended .product-card-link { display: grid; grid-template-columns: 76px minmax(0,1fr); grid-template-rows: 101px 22px; column-gap: 12px; padding: 10px; }
-  .product-grid-recommended .product-cover { grid-column: 1; grid-row: 1; height: 101px; }
+  .product-grid-recommended .product-card-link { display: grid; grid-template-columns: 76px minmax(0,1fr); grid-template-rows: 114px 22px; column-gap: 12px; padding: 10px; }
+  .product-grid-recommended .product-cover { grid-column: 1; grid-row: 1; height: 114px; }
   .product-grid-recommended .platform-badge { grid-column: 1; grid-row: 2; min-height: 22px; font-size: .625rem; gap: 3px; padding: 2px; }
   .product-grid-recommended .platform-badge svg { width: 12px; height: 12px; }
   .product-grid-recommended .product-card-body { grid-column: 2; grid-row: 1/3; min-height: 0; padding: 0; }
@@ -128,6 +128,6 @@
   .product-grid-recommended .offer-count { margin-top: 2px; }
   .product-grid-recommended .discount-badge { padding: 2px 4px; }
   .product-grid-recommended .skeleton-card { display: grid; grid-template-columns: 76px minmax(0,1fr); gap: 12px; padding: 10px; min-height: 145px; }
-  .product-grid-recommended .skeleton-cover { height: 101px; }
+  .product-grid-recommended .skeleton-cover { height: 114px; }
   .product-grid-recommended .skeleton-copy { min-height: 0; padding: 0; }
 }

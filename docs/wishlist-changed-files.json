@@ -1,0 +1,250 @@
+{
+  "milestone": "Persistent product wishlist",
+  "baseline_commit": "339a09bbc5de6fe59dbc4d4a2dd6aa4b525fdf0b",
+  "generated_at": "2026-11-22T20:16:59.827132+00:00",
+  "scope": "Wishlist implementation and corresponding docs/tests/conversation export, relative to the initial clean baseline. Concurrent Vercel configuration edits are outside this pass and remain untouched. This manifest excludes its own recursive hash; transcript hashes are dynamic.",
+  "files": [
+    {
+      "path": "README.md",
+      "change": "M",
+      "sha256": "460d8a2db132e4e32a6a0defe14ea32b3b20666c94d5dd1c862af3ca07f4e3fd"
+    },
+    {
+      "path": "backend/app/Http/Controllers/Api/V1/WishlistController.php",
+      "change": "A",
+      "sha256": "eb239a76167844faa339a2a3c267db015024be1325c66e3e65eb9a0b684fef59"
+    },
+    {
+      "path": "backend/app/Http/Requests/WishlistIndexRequest.php",
+      "change": "A",
+      "sha256": "862ad61e6a6fc461d53f8d803ee9288ac7ce911f24de673c616b879b388375e6"
+    },
+    {
+      "path": "backend/app/Http/Requests/WishlistStoreRequest.php",
+      "change": "A",
+      "sha256": "a938b1643ff092ff865ea5bf9be74b6df97595b02cdf729c7e5f7c4e332d8b61"
+    },
+    {
+      "path": "backend/app/Http/Resources/ProductResource.php",
+      "change": "M",
+      "sha256": "bda3d30f35ff0e4f46f74dc60c1b6902ef2521edad443d51a5f184402ae8540a"
+    },
+    {
+      "path": "backend/app/Models/Product.php",
+      "change": "M",
+      "sha256": "f486eb16859e0ea37da463b8318bbc46152d037bfe82e20c50495d914966cbe2"
+    },
+    {
+      "path": "backend/app/Models/User.php",
+      "change": "M",
+      "sha256": "0bbfeef98f6576f7929f8d1cc5a57e0ecae70384fca58e46fb5a4321a6d28219"
+    },
+    {
+      "path": "backend/app/Models/WishlistItem.php",
+      "change": "A",
+      "sha256": "5a6833c8aec352370a77ee267b95246f92bb4b46803f48d3f430f3bd65d8343e"
+    },
+    {
+      "path": "backend/app/Providers/AppServiceProvider.php",
+      "change": "M",
+      "sha256": "d1a19f1bdca61eaa07be7b4499c61baabe342acefaad45f5db459190fa1e4eea"
+    },
+    {
+      "path": "backend/app/Queries/Catalog/ProductQuery.php",
+      "change": "M",
+      "sha256": "94ab02da05c13d6d9d825035c3b11981270a9a07d1a7ab0d9c6b316384b16936"
+    },
+    {
+      "path": "backend/app/Services/Wishlist/WishlistService.php",
+      "change": "A",
+      "sha256": "26d73e2513e94a6949d696c265a4f8ce8ac72500f81fb624605fb8b2b1c29821"
+    },
+    {
+      "path": "backend/database/factories/WishlistItemFactory.php",
+      "change": "A",
+      "sha256": "53e019efcff4dd7ffa3ab7b0659f578f24bb86e7bb9bec87d096e3641482de00"
+    },
+    {
+      "path": "backend/database/migrations/2026_11_22_194138_create_wishlist_items_table.php",
+      "change": "A",
+      "sha256": "fd60ae733e265ecc59c14502a7a7f7213603e4cb931887fba828594fc15ff9e4"
+    },
+    {
+      "path": "backend/routes/api.php",
+      "change": "M",
+      "sha256": "b7c56a68b6137001ea811cf9af0c8fd29cf6dc26afa11ebabae00494bc2fb923"
+    },
+    {
+      "path": "backend/tests/Feature/WishlistTest.php",
+      "change": "A",
+      "sha256": "ae1d79edaf514be2f57c96fac3c42fcb1221e81ee7031aebf3f0105dca5f3469"
+    },
+    {
+      "path": "docs/ai-chat-history.integrity.json",
+      "change": "M",
+      "sha256": null,
+      "note": "Regenerated from original segments after final response; integrity manifest holds per-message hashes."
+    },
+    {
+      "path": "docs/ai-chat-history.md",
+      "change": "M",
+      "sha256": null,
+      "note": "Regenerated from original segments after final response; integrity manifest holds per-message hashes."
+    },
+    {
+      "path": "docs/api-design.md",
+      "change": "M",
+      "sha256": "9b79e85ef8a85cb10bd69299bf729e1bfbd03ddb9d1c29dcc69c3c8e7ccce459"
+    },
+    {
+      "path": "docs/architecture-explained.md",
+      "change": "M",
+      "sha256": "297b96fa82a20fdea4d131999f6b9f69453f5ff55cb248e6594661b982163427"
+    },
+    {
+      "path": "docs/architecture.md",
+      "change": "M",
+      "sha256": "e8f002a5e440129ae0f1e5a7f044af65a16e6e5541fc93134a72e1ce39cd7cae"
+    },
+    {
+      "path": "docs/database-schema.md",
+      "change": "M",
+      "sha256": "f523dbc28c01207b79cf8d4224ab43211bc341c02a890d5f577cce40a18aab63"
+    },
+    {
+      "path": "docs/project-summary.md",
+      "change": "M",
+      "sha256": "7c00abec7eb19ed2b4fe857699d21a4380a02045fe56d787223f210a462e5cdf"
+    },
+    {
+      "path": "docs/submission-checklist.md",
+      "change": "M",
+      "sha256": "80c49baaa0cb2e02307e1d8dd263e1d20934c460502660c3e6888f7a5d00a2c0"
+    },
+    {
+      "path": "docs/submission-security.md",
+      "change": "M",
+      "sha256": "927875d163149fd0766c20f3688848edfb745eb34e2f25e9949ac1ac6cda6d95"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-wishlist-1440.png",
+      "change": "A",
+      "sha256": "4c6fb383e37e75d7313b046a788ec34e8308ada9be03de8866f6311332658497"
+    },
+    {
+      "path": "docs/ui-screenshots/keymarket-wishlist-390.png",
+      "change": "A",
+      "sha256": "109fab4832635284e3ba3572d69c538e259a2297cc7a208f45ec30320c467f58"
+    },
+    {
+      "path": "docs/wishlist-milestone.md",
+      "change": "A",
+      "sha256": "b2accb55e3fa00d4f0934ab9b5d5b0dc382d3ab417f441b2d346fc6a6b04bd43"
+    },
+    {
+      "path": "docs/wishlist-verification.json",
+      "change": "A",
+      "sha256": "0777f1a5c932303b0857299c655a312f8955c35f447cf41d3a87ccdd930a0d50"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "change": "M",
+      "sha256": "405c73e0396514d9b07d7ddac7334f3ed7ffe755dff4d0c21441e8a2de28a6bc"
+    },
+    {
+      "path": "frontend/src/components/Header.tsx",
+      "change": "M",
+      "sha256": "a964ce779bed0c96c424e18b2cb9f393ca0f855102e70e1a8997c8ccb12ffee6"
+    },
+    {
+      "path": "frontend/src/components/ProductCard.tsx",
+      "change": "M",
+      "sha256": "1e223d13b95d5ee57e1458f5a771a51e3094bab885468800420d6bc4acc6f0c6"
+    },
+    {
+      "path": "frontend/src/components/RequireAuth.tsx",
+      "change": "M",
+      "sha256": "822ffaa68458ee0c833d5bae5370242304a0ed749041ab35b17164101362ce9e"
+    },
+    {
+      "path": "frontend/src/components/WishlistButton.tsx",
+      "change": "A",
+      "sha256": "90a715ed84f01cd323cf289f2a0ce3ef8fbd10070c342e0715bd253c7adc69fb"
+    },
+    {
+      "path": "frontend/src/hooks/useSession.ts",
+      "change": "M",
+      "sha256": "60928661157e0643fa9684049b26cf1a3edcae54f79e54ae9d9441d6ac1014cb"
+    },
+    {
+      "path": "frontend/src/hooks/useWishlist.ts",
+      "change": "A",
+      "sha256": "27d745378ee50660f2bcd3a8451be4444961c64c93073ebd9809ec19de4e6861"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "change": "M",
+      "sha256": "8fc9621d7213460914ef11be188326ad3518d4481d7ceebb3a3e28c5b8252f6f"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "change": "M",
+      "sha256": "712344af67548927e9db91e97e11d4826562cb8e2e4fdc0998f4610a830b78ef"
+    },
+    {
+      "path": "frontend/src/lib/wishlistPrivacy.ts",
+      "change": "A",
+      "sha256": "056ccd9b39fca0caf081cbbd62a408780dccb111ddc808eb1864856255aba608"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "change": "M",
+      "sha256": "17efb0b9d63c1959dcb7ccd4777ded1135d250027b099f4b2e9ae6ea0043aec6"
+    },
+    {
+      "path": "frontend/src/pages/AuthPage.tsx",
+      "change": "M",
+      "sha256": "387ec873647366050c1242b857f6d1cd87abe018a7bfc683b66f113f2559d5f2"
+    },
+    {
+      "path": "frontend/src/pages/ProductPage.tsx",
+      "change": "M",
+      "sha256": "2c8bc4ee1bfebe75acaed86f6e67cb339cb45b92644941b20bbc1fc8cd556365"
+    },
+    {
+      "path": "frontend/src/pages/WishlistPage.tsx",
+      "change": "A",
+      "sha256": "f0a1eb0a637f258507f054d71950208c3471ef16f9dd09b5a5aa4fd3aeac3f5e"
+    },
+    {
+      "path": "frontend/src/styles/wishlist.css",
+      "change": "A",
+      "sha256": "d888c43533227482f78978f38ffa95b6e15e843c7789ad0508b1815a3dfba727"
+    },
+    {
+      "path": "frontend/src/types/api.ts",
+      "change": "M",
+      "sha256": "5cf9e90359c3e07d809bff8b1284989ef0f787c7a58e57dc22c0f988a35bdae0"
+    },
+    {
+      "path": "frontend/tests/wishlist.spec.ts",
+      "change": "A",
+      "sha256": "a080b4de869cda66c1583c1d6ad2835788e025250ae30a539c96b76425a45b51"
+    },
+    {
+      "path": "scripts/export-ai-chat.mjs",
+      "change": "M",
+      "sha256": "7e2f8365bcd2ac1b0ce8479ebc0f578f211d64eac763e750781eb4f791dd3d99"
+    },
+    {
+      "path": "scripts/export-ai-chat.test.mjs",
+      "change": "M",
+      "sha256": "7b47cb3d7fbb3882355896539a74fe09d82613d3d113c4feefc2e1ec75b55ddd"
+    }
+  ],
+  "unrelated_workspace_changes_left_untouched": [
+    ".gitignore",
+    ".vercelignore",
+    "vercel.json"
+  ]
+}

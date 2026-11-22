@@ -28,7 +28,7 @@ The gate scans tracked and nonignored untracked text for common provider/private
 
 ## Accurate conversation export
 
-[ai-chat-history.md](ai-chat-history.md) is generated from the actual local Codex JSONL session, using [export-ai-chat.mjs](../scripts/export-ai-chat.mjs). It retains original user task prompts/replies, assistant progress/final prose and tool-presented clarification questions in source order. It does not reconstruct earlier messages from a compaction summary. [The integrity manifest](ai-chat-history.integrity.json) records source timestamps, message IDs, original/exported hashes, counts and credential-redaction flags.
+[ai-chat-history.md](ai-chat-history.md) is generated from the actual local Codex JSONL session, using [export-ai-chat.mjs](../scripts/export-ai-chat.mjs). It retains original user task prompts/replies, assistant progress/final prose and tool-presented clarification questions in source order. Resumed sessions can use multiple JSONL segments: pass older originals with --prefix-source, in chronological order, and the latest original as the main input. Stable message IDs prevent duplicate records; text is never reconstructed from a summary. It does not reconstruct earlier messages from a compaction summary. [The integrity manifest](ai-chat-history.integrity.json) records source timestamps, message IDs, original/exported hashes, counts and credential-redaction flags.
 
 The export **excludes automatically supplied environment metadata, private system/developer instructions, internal reasoning, and tool execution transport/results**. These are not user/assistant conversation prose. The private raw session log can contain configuration/tool outputs and must never be committed. A direct human-prose export is possible here; a complete raw execution transcript is not being published.
 
@@ -38,10 +38,11 @@ The submission pass starts a temporary local --after-final exporter, tested to w
 
 ```powershell
 $sessionId = '01a1f4cc-3978-7db3-9808-a3bc55e4af26'
-$sessionFile = Get-ChildItem "$env:USERPROFILE/.codex/sessions" -Recurse -File -Filter "*$sessionId*.jsonl" |
-    Select-Object -First 1
-if (-not $sessionFile) { throw 'Original local session file was not found. Use native export instead.' }
-node scripts/export-ai-chat.mjs $sessionFile.FullName
+$sessionFiles = @(Get-ChildItem "$env:USERPROFILE/.codex/sessions" -Recurse -File -Filter "*$sessionId*.jsonl" | Sort-Object LastWriteTime)
+if (-not $sessionFiles.Count) { throw 'Original local session files were not found. Use native export instead.' }
+$latestSession = $sessionFiles[-1]
+$prefixArguments = @($sessionFiles | Select-Object -SkipLast 1 | ForEach-Object { '--prefix-source=' + $_.FullName })
+node scripts/export-ai-chat.mjs $latestSession.FullName docs/ai-chat-history.md @prefixArguments
 node scripts/check-submission-secrets.mjs
 ```
 

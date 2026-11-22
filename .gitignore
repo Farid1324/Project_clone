@@ -31,3 +31,4 @@
 **/*.pfx
 **/*.key
 /docs/submission-private/
+/.vercel/

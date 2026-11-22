@@ -8,7 +8,8 @@ export function AuthPage({ register = false }: { register?: boolean }) {
   usePageTitle(register ? 'Create account' : 'Sign in')
   const [params] = useSearchParams()
   const target = params.get('returnTo') ?? ''
-  const destination = ['/checkout', '/cart', '/orders', '/account'].includes(target) || /^\/orders\/[0-9a-f-]{36}$/i.test(target) ? target : '/cart'
+  const wishlistReturn = /^\/wishlist(?:\?save=[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}|\?page=[1-9][0-9]{0,4})?$/i.test(target)
+  const destination = ['/checkout', '/cart', '/orders', '/account'].includes(target) || /^\/orders\/[0-9a-f-]{36}$/i.test(target) || wishlistReturn ? target : '/cart'
   const session = useSession()
   const navigate = useNavigate()
   const [fields, setFields] = useState({ name: '', email: '', password: '', password_confirmation: '' })

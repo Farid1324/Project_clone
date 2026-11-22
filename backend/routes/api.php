@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\V1\HomepageController;
 use App\Http\Controllers\Api\V1\OfferController;
 use App\Http\Controllers\Api\V1\OrderController;
 use App\Http\Controllers\Api\V1\ProductController;
+use App\Http\Controllers\Api\V1\WishlistController;
 use App\Http\Middleware\PrivateResponse;
 use Illuminate\Support\Facades\Route;
 use Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
@@ -19,6 +20,12 @@ Route::prefix('v1')->name('api.v1.')->group(function (): void {
         Route::post('auth/register', [AuthController::class, 'register'])->middleware('throttle:auth')->block(10, 10)->name('auth.register');
         Route::post('auth/login', [AuthController::class, 'login'])->middleware('throttle:auth')->block(10, 10)->name('auth.login');
         Route::post('auth/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum')->block(10, 10)->name('auth.logout');
+        Route::middleware(['auth:sanctum', 'throttle:wishlist'])->group(function (): void {
+            Route::get('wishlist', [WishlistController::class, 'index'])->name('wishlist.index');
+            Route::get('wishlist/summary', [WishlistController::class, 'summary'])->name('wishlist.summary');
+            Route::post('wishlist', [WishlistController::class, 'store'])->block(10, 10)->name('wishlist.store');
+            Route::delete('wishlist/{product}', [WishlistController::class, 'destroy'])->whereUuid('product')->block(10, 10)->name('wishlist.destroy');
+        });
         Route::middleware(['auth:sanctum', 'throttle:checkout'])->group(function (): void {
             Route::get('checkout/quote', [CheckoutController::class, 'quote'])->block(10, 10)->name('checkout.quote');
             Route::post('checkout', [CheckoutController::class, 'store'])->block(10, 10)->name('checkout.store');

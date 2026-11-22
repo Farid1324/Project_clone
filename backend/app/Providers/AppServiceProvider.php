@@ -20,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
         RateLimiter::for('catalog', fn (Request $request): Limit => Limit::perMinute(120)->by($request->ip()));
         RateLimiter::for('search', fn (Request $request): Limit => Limit::perMinute(60)->by($request->ip()));
         RateLimiter::for('cart', fn (Request $request): Limit => Limit::perMinute(90)->by($request->ip()));
+        RateLimiter::for('wishlist', fn (Request $request): Limit => Limit::perMinute(120)->by($request->user()?->id ?? $request->ip()));
         RateLimiter::for('auth', fn (Request $request): array => [
             Limit::perMinute(20)->by('auth-ip:'.$request->ip()),
             Limit::perMinute(5)->by('auth-email:'.hash('sha256', is_string($request->input('email')) ? strtolower(trim($request->input('email'))) : 'invalid').'|'.$request->ip()),

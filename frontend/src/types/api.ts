@@ -44,6 +44,7 @@ export interface Product {
   currency: 'EUR'
   available_offer_count: number
   is_available: boolean
+  is_published?: boolean
   description?: string
   edition?: string | null
   publisher?: string | null
@@ -94,6 +95,7 @@ export interface Banner {
   destination: { type: 'store' | 'product'; product_slug: string | null }
 }
 export interface Envelope<T> { data: T }
+export interface WishlistSummary { count: number; product_ids: string[] }
 export interface Session { user: { id: string; name: string; email: string } | null; cart_merge_notices: string[] }
 export interface CheckoutQuote { cart: Cart; quote_token: string; checked_at: string; expires_at: string }
 export interface PurchaseRequest { quote_token: string; idempotency_key: string; scenario: 'approve' | 'decline' }

@@ -15,11 +15,11 @@ class ProductQuery
 {
     public function __construct(private RecentSalesQuery $sales) {}
 
-    public function cards(?Closure $offerFilter = null): Builder
+    public function cards(?Closure $offerFilter = null, bool $publishedOnly = true): Builder
     {
         $offerFilter ??= fn (Builder $offers): Builder => $offers->available();
 
-        return Product::query()->published()->select('products.*')
+        return Product::query()->when($publishedOnly, fn (Builder $query): Builder => $query->published())->select('products.*')
             ->with(['platform', 'region', 'categories', 'offers' => function (HasMany $offers) use ($offerFilter): void {
                 $offerFilter($offers->getQuery());
                 $offers->with(['seller', 'promotions' => fn (BelongsToMany $promotion): BelongsToMany => $promotion->active()])

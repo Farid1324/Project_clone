@@ -6,13 +6,15 @@ import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { createHash } from 'node:crypto'
 
-function exported(items) {
+function exported(items, prefixItems = []) {
   const directory = mkdtempSync(join(tmpdir(), 'keymarket-transcript-'))
   const source = join(directory, 'source.jsonl')
   const output = join(directory, 'history.md')
   try {
     writeFileSync(source, items.map(payload => JSON.stringify({ type: 'response_item', timestamp: '2026-11-20T00:00:00Z', payload })).join('\n'))
-    const result = spawnSync(process.execPath, [resolve('scripts/export-ai-chat.mjs'), source, output], { encoding: 'utf8' })
+    const prefix = join(directory, 'prefix.jsonl')
+    writeFileSync(prefix, prefixItems.map(payload => JSON.stringify({ type: 'response_item', timestamp: '2026-11-19T00:00:00Z', payload })).join('\n'))
+    const result = spawnSync(process.execPath, [resolve('scripts/export-ai-chat.mjs'), source, output, '--prefix-source=' + prefix], { encoding: 'utf8' })
     if (result.status !== 0) return { status: result.status }
     return { status: result.status, text: readFileSync(output, 'utf8'), manifest: JSON.parse(readFileSync(join(directory, 'history.integrity.json'), 'utf8')) }
   } finally {
@@ -56,19 +58,33 @@ test('fails rather than silently omitting an unsupported message', () => {
   assert.notEqual(exported([{ type: 'message', role: 'user', content: [{ type: 'input_text', text: 'Preserve this attachment too.' }, { type: 'unsupported_attachment' }] }]).status, 0)
 })
 
+test('merges resumed segments without omitting original messages or duplicating repeated records', () => {
+  const original = { ...message('user', 'The first exact prompt.'), id: 'original-prompt' }
+  const result = exported([original, message('assistant', 'The resumed answer.', 'final_answer')], [original, message('assistant', 'The original answer.', 'final_answer')])
+  assert.equal(result.status, 0)
+  assert.equal(result.manifest.source_segments, 2)
+  assert.equal(result.manifest.duplicate_records_skipped, 1)
+  assert.equal(result.manifest.exported_entries, 3)
+  assert.ok(result.text.indexOf('The original answer.') < result.text.indexOf('The resumed answer.'))
+  assert.equal(result.text.match(/The first exact prompt\./g).length, 1)
+})
+
 test('after-final mode captures an actual later final response from the persisted source', async () => {
   const directory = mkdtempSync(join(tmpdir(), 'keymarket-transcript-tail-'))
   const source = join(directory, 'source.jsonl')
   const output = join(directory, 'history.md')
+  const prefix = join(directory, 'prefix.jsonl')
+  writeFileSync(prefix, JSON.stringify({ type: 'response_item', payload: message('assistant', 'The previous complete answer.', 'final_answer') }) + '\n')
   writeFileSync(source, JSON.stringify({ type: 'response_item', payload: message('user', 'Original request') }) + '\n')
-  const child = spawn(process.execPath, [resolve('scripts/export-ai-chat.mjs'), source, output, '--after-final'], { stdio: 'ignore' })
+  const child = spawn(process.execPath, [resolve('scripts/export-ai-chat.mjs'), source, output, '--prefix-source=' + prefix, '--after-final'], { stdio: 'ignore' })
   try {
     const result = new Promise((accept, reject) => { child.once('error', reject); child.once('exit', accept) })
     await new Promise(accept => setTimeout(accept, 1000))
     appendFileSync(source, JSON.stringify({ type: 'response_item', payload: message('assistant', 'The actual final reply.', 'final_answer') }) + '\n')
     assert.equal(await result, 0)
     assert.ok(readFileSync(output, 'utf8').includes('The actual final reply.'))
-    assert.equal(JSON.parse(readFileSync(join(directory, 'history.integrity.json'), 'utf8')).exported_entries, 2)
+    assert.ok(readFileSync(output, 'utf8').includes('The previous complete answer.'))
+    assert.equal(JSON.parse(readFileSync(join(directory, 'history.integrity.json'), 'utf8')).exported_entries, 3)
   } finally {
     child.kill()
     for (const name of readdirSync(directory)) unlinkSync(join(directory, name))
