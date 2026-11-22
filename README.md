@@ -1,4 +1,4 @@
-# Keymarket â€” Eneba Intern Assignment 2027
+Eneba Intern Assignment 2027
 
 Independent marketplace demo using **React, TypeScript, Vite, Tailwind CSS, Laravel REST, PostgreSQL and Sanctum**. The interface is inspired by Eneba, with original demo artwork and a clear internship identity. No real money or redeemable keys are used.
 
